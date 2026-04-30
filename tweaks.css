@@ -1,0 +1,61 @@
+/* Tweaks panel UI */
+#tweaks-panel {
+  position: fixed; right: 16px; bottom: 60px;
+  width: 260px; z-index: 9998;
+  background: rgba(20, 16, 12, 0.92);
+  backdrop-filter: blur(20px) saturate(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+  border: 1px solid rgba(244, 236, 223, 0.12);
+  border-radius: 8px;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  color: var(--bone, #f4ecdf);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+.tw-head {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(244,236,223,0.1);
+}
+.tw-title { font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; opacity: 0.8; }
+.tw-close {
+  background: none; border: none; color: inherit;
+  font-size: 18px; line-height: 1; cursor: pointer; padding: 0; opacity: 0.6;
+}
+.tw-close:hover { opacity: 1; }
+.tw-body { padding: 12px 14px 16px; max-height: 70vh; overflow-y: auto; }
+.tw-section {
+  font-size: 9px; letter-spacing: 0.3em; text-transform: uppercase;
+  opacity: 0.5; margin: 14px 0 8px;
+}
+.tw-section:first-child { margin-top: 0; }
+
+.tw-row { display: flex; gap: 6px; flex-wrap: wrap; }
+.tw-swatch {
+  background: none; border: 1px solid rgba(244,236,223,0.15);
+  padding: 2px; cursor: pointer; border-radius: 4px;
+  display: flex; height: 28px; width: 44px;
+  transition: border-color .15s, transform .15s;
+}
+.tw-swatch span { flex: 1; height: 100%; }
+.tw-swatch:hover { border-color: rgba(244,236,223,0.5); }
+.tw-swatch.on { border-color: var(--copper, #C8804A); transform: scale(1.05); }
+.tw-swatch.one { width: 28px; }
+
+.tw-radio { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.tw-radio button {
+  background: rgba(244,236,223,0.05); border: 1px solid rgba(244,236,223,0.1);
+  color: inherit; font: inherit; padding: 8px;
+  font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase;
+  cursor: pointer; border-radius: 4px;
+  transition: background .15s, border-color .15s;
+}
+.tw-radio button:hover { background: rgba(244,236,223,0.1); }
+.tw-radio button.on { background: var(--copper, #C8804A); color: var(--ink, #0E0B08); border-color: var(--copper, #C8804A); }
+
+.tw-toggle {
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 11px; padding: 6px 0;
+  cursor: pointer;
+}
+.tw-toggle input { accent-color: var(--copper, #C8804A); }
