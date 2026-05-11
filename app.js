@@ -31,31 +31,6 @@ function setupReveal() {
   }, 3000);
 }
 
-// =============== Cursor ===============
-function setupCursor() {
-  if (matchMedia('(max-width: 900px)').matches) return;
-  const c = document.createElement('div');
-  c.className = 'cursor';
-  document.body.appendChild(c);
-  let tx = 0, ty = 0, cx = 0, cy = 0;
-  document.addEventListener('mousemove', (e) => {
-    tx = e.clientX;
-    ty = e.clientY;
-    c.classList.add('visible');
-  });
-  function loop() {
-    cx += (tx - cx) * 0.18;
-    cy += (ty - cy) * 0.18;
-    c.style.transform = `translate(${cx - 7}px, ${cy - 7}px)`;
-    requestAnimationFrame(loop);
-  }
-  loop();
-  document.querySelectorAll('a, button, .reel-card, .work-row').forEach(el => {
-    el.addEventListener('mouseenter', () => c.classList.add('hover'));
-    el.addEventListener('mouseleave', () => c.classList.remove('hover'));
-  });
-}
-
 // =============== Work hover preview ===============
 function setupWorkPreviews() {
   const preview = document.getElementById('work-preview');
@@ -120,7 +95,6 @@ function setupNav() {
 function initAll() {
   document.documentElement.classList.add('js');
   setupReveal();
-  setupCursor();
   setupWorkPreviews();
   setupHeroKinetic();
   setupNav();
