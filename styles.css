@@ -165,7 +165,7 @@ strong {
   top: 0;
   right: 0;
   bottom: 0;
-  left: 38%;
+  left: 30%;
   margin: 0;
   z-index: 0;
   overflow: hidden;
@@ -174,11 +174,14 @@ strong {
 }
 
 .hero-portrait img {
-  width: 100%;
+  width: min(52vw, 720px);
   height: 100%;
+  margin-left: auto;
   object-fit: cover;
-  object-position: center 42%;
+  object-position: center 38%;
   filter: saturate(0.96) contrast(1.03) brightness(1.02);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 18%, #000 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 18%, #000 100%);
 }
 
 .hero-portrait::after {
@@ -186,7 +189,7 @@ strong {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(243, 248, 247, 0.86) 0%, rgba(243, 248, 247, 0.28) 42%, rgba(243, 248, 247, 0.04) 100%),
+    linear-gradient(90deg, var(--cloud) 0%, rgba(243, 248, 247, 0.86) 20%, rgba(243, 248, 247, 0.36) 52%, rgba(243, 248, 247, 0.04) 100%),
     linear-gradient(180deg, rgba(243, 248, 247, 0.5) 0%, rgba(243, 248, 247, 0) 36%);
 }
 
@@ -334,7 +337,11 @@ strong {
   }
 
   .hero-portrait img {
+    width: 100%;
+    margin-left: 0;
     object-position: 54% 42%;
+    -webkit-mask-image: none;
+    mask-image: none;
   }
 
   .hero-portrait {
