@@ -4,11 +4,11 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Jan Roper — Composer · Music Director · Pianist</title>
+<link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="tweaks.css">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Lora:ital@0;1&family=Fraunces:ital,wght@0,400;0,500;1,400&family=Bodoni+Moda:ital,wght@0,400;1,400&family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -28,19 +28,24 @@
 
 <!-- ============== HERO ============== -->
 <header id="top" class="hero">
+  <figure class="hero-portrait">
+    <img src="images/jan-portrait.jpg" alt="Jan Roper portrait" />
+  </figure>
   <div class="hero-grain"></div>
   <div class="hero-marquee-top">
-    <span>Est. Los Angeles · CA</span>
-    <span>Composer in residence</span>
-    <span>2026 · Vol. XXVI</span>
+    <span>Los Angeles, CA</span>
+    <span>Original musicals and music direction</span>
+    <span>Composer · Pianist · Teacher</span>
   </div>
 
   <div class="hero-content">
     <div class="hero-left">
+      <p class="hero-kicker">Music for theater, studio, and stage.</p>
       <h1 class="hero-name">
-        <span class="first">JAN</span>
-        <span class="last">Rop<em>e</em>r</span>
+        <span class="first">Jan</span>
+        <span class="last">Roper.</span>
       </h1>
+      <p class="hero-copy">Composer, music director, pianist, singer, and teacher building emotionally direct work for live performance and recorded sound.</p>
       <div class="hero-roles">
         <span>Composer</span>
         <span>Music Director</span>
@@ -48,16 +53,11 @@
         <span>Singer</span>
         <span>Teacher</span>
       </div>
+      <div class="hero-actions">
+        <a class="button primary" href="#works">Explore works</a>
+        <a class="button secondary" href="#contact">Get in touch</a>
+      </div>
     </div>
-    <figure class="hero-portrait">
-      <span class="caption">Portrait — N. Hollywood, 2024</span>
-      <img src="images/hero-thumb-2.jpg" alt="Jan Roper portrait" />
-    </figure>
-  </div>
-
-  <!-- Piano -->
-  <div class="piano" id="piano">
-    <div class="piano-instr"><span class="dot"></span> Hover or tap a key — <em style="font-style:italic; color:var(--copper)">listen</em></div>
   </div>
 </header>
 
@@ -102,6 +102,7 @@
 
   <div class="works-list">
     <a href="https://thepathtocatherine.com" target="_blank" class="work-row reveal" data-preview="images/path-to-catherine.jpg">
+      <img class="work-thumb" src="images/path-to-catherine.jpg" alt="The Path to Catherine artwork" />
       <div class="work-num">N° 01</div>
       <div class="work-title-block">
         <div class="work-tag">Music · Full-length musical · 2022</div>
@@ -112,6 +113,7 @@
     </a>
 
     <a href="https://americatropicalmusical.com" target="_blank" class="work-row reveal" data-preview="images/america-tropical.jpg">
+      <img class="work-thumb" src="images/america-tropical.jpg" alt="América Tropical artwork" />
       <div class="work-num">N° 02</div>
       <div class="work-title-block">
         <div class="work-tag">Music · Book by Gallego · Lyrics by Bailey</div>
@@ -122,6 +124,7 @@
     </a>
 
     <a href="https://www.cityoflightmusical.com" target="_blank" class="work-row reveal" data-preview="images/city-of-light.jpg">
+      <img class="work-thumb" src="images/city-of-light.jpg" alt="City of Light artwork" />
       <div class="work-num">N° 03</div>
       <div class="work-title-block">
         <div class="work-tag">Music &amp; lyrics · Full-length musical</div>
@@ -132,6 +135,7 @@
     </a>
 
     <a href="https://vimeo.com/800712864" target="_blank" class="work-row reveal" data-preview="images/jerusalem.jpg">
+      <img class="work-thumb" src="images/jerusalem.jpg" alt="Jerusalem A.D. artwork" />
       <div class="work-num">N° 04</div>
       <div class="work-title-block">
         <div class="work-tag">Conceived &amp; produced w/ Brent Martz</div>
@@ -247,7 +251,7 @@
   <div class="contact-grid">
     <div>
       <h2 class="reveal reveal-1">Compose with <em>me.</em></h2>
-      <form class="contact-form reveal reveal-2" onsubmit="event.preventDefault(); this.querySelector('button').textContent = 'Sent — talk soon ✦';">
+      <form class="contact-form reveal reveal-2" onsubmit="event.preventDefault(); this.querySelector('button').textContent = 'Sent - talk soon';">
         <div class="field"><input type="text" id="fn" placeholder=" " required /><label for="fn">First name</label></div>
         <div class="field"><input type="text" id="ln" placeholder=" " required /><label for="ln">Last name</label></div>
         <div class="field full"><input type="email" id="em" placeholder=" " required /><label for="em">Email</label></div>
@@ -265,7 +269,7 @@
       <div class="label">Resume</div>
       <a class="val" href="https://www.janroper.com/_files/ugd/aec641_14ad6aeba1d54260bba329073839c3d4.pdf" target="_blank">Download PDF →</a>
       <div class="label" style="margin-top: 24px;">Social</div>
-      <div style="display:flex; gap: 18px; margin-top: 8px; font-family: var(--mono); font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase;">
+      <div style="display:flex; gap: 18px; margin-top: 8px; font-family: var(--mono); font-size: 12px; letter-spacing: 0; text-transform: uppercase;">
         <a href="https://www.facebook.com/jan.roper2" target="_blank">FB</a>
         <a href="https://www.instagram.com/janropermusic/" target="_blank">IG</a>
         <a href="https://www.tiktok.com/@pathtocatherinemusical" target="_blank">TT</a>
@@ -304,13 +308,6 @@
   </div>
 </footer>
 
-<!-- ============== AUDIO TOGGLE ============== -->
-<button id="audio-toggle" class="audio-toggle" aria-label="Toggle ambient sound">
-  <span class="bars"><span></span><span></span><span></span></span>
-  <span class="lbl">Sound off</span>
-</button>
-
 <script src="app.js"></script>
-<script src="tweaks.js"></script>
 </body>
 </html>
