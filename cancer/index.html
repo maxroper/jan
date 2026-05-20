@@ -9,12 +9,12 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate, max-age=0">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<meta name="build-version" content="2026-05-20.9">
+<meta name="build-version" content="2026-05-20.10">
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="cancer.css?v=2026-05-20.9">
+<link rel="stylesheet" href="cancer.css?v=2026-05-20.10">
 <script>
 // Light-touch cache-buster: if the page came from cache and the user hits reload,
 // force a fresh fetch of the HTML by appending a timestamp once per session.
@@ -87,102 +87,25 @@
   <details class="mobile-nav">
     <summary>Jump to chapter</summary>
     <ul class="nav-list">
-      <li><a href="#ch-findings">Key findings at a glance</a></li>
-      <li><a href="#ch-diagnosis">Ch. 01 · Diagnosis summary</a></li>
+      <li style="font-family: var(--mono); font-size: 9px; color: var(--muted); padding: 4px 10px; text-transform: uppercase; letter-spacing: 0.06em;">Current &amp; actionable</li>
       <li><a href="#ch-biopsy">Ch. 02a · Current biopsy</a></li>
-      <li><a href="#ch-research">Ch. 02b · Deep-dive literature</a></li>
-      <li><a href="#ch-imaging">Ch. 03 · Most recent imaging</a></li>
-      <li><a href="#ch-labs">Ch. 04 · Latest labs</a></li>
-      <li><a href="#ch-medications">Ch. 04b · Medications & supplements</a></li>
-      <li><a href="#ch-genomics">Ch. 05 · Tumor genomics</a></li>
+      <li><a href="#ch-medications">Ch. 04b · Medications &amp; supplements</a></li>
       <li><a href="#ch-hypothesis">Ch. 05b · Working hypothesis</a></li>
       <li><a href="#ch-recommendations">Ch. 06 · Recommendations</a></li>
       <li><a href="#ch-questions">Ch. 07 · Doctor questions</a></li>
+      <li style="font-family: var(--mono); font-size: 9px; color: var(--muted); padding: 4px 10px; text-transform: uppercase; letter-spacing: 0.06em; margin-top: 8px;">Background (collapsed)</li>
+      <li><a href="#ch-findings">Ch. 01 · Key findings at a glance</a></li>
+      <li><a href="#ch-diagnosis">Ch. 01 · Diagnosis summary</a></li>
+      <li><a href="#ch-history">Ch. 02 · Treatment &amp; event history</a></li>
+      <li><a href="#ch-research">Ch. 02b · Deep-dive literature</a></li>
+      <li><a href="#ch-imaging">Ch. 03 · Most recent imaging</a></li>
+      <li><a href="#ch-labs">Ch. 04 · Latest labs</a></li>
+      <li><a href="#ch-genomics">Ch. 05 · Tumor genomics</a></li>
       <li><a href="#ch-family">Ch. 08 · For the family</a></li>
       <li><a href="#ch-team">Ch. 09 · Care team</a></li>
       <li><a href="#ch-references">Ch. 10 · References</a></li>
     </ul>
   </details>
-
-  <!-- ============== KEY FINDINGS ============== -->
-  <section class="section" id="ch-findings">
-    <div class="section-head">
-      <h2>Key findings at a glance</h2>
-      <span class="note">4 critical · 3 follow-up · 1 advisory</span>
-    </div>
-    <div class="section-body">
-      <div class="findings">
-        <div class="finding warn">
-          <div class="label">Active premalignant lesion</div>
-          <div class="value"><span class="term" data-tip="A precancerous lesion in the middle of the dysplasia spectrum (mild → moderate → severe → carcinoma in situ → invasive cancer). 'Moderate' is treated as high-grade under modern WHO criteria.">Mod. dysplasia</span>, R maxilla</div>
-          <div class="sub">UCLA biopsy 02/24/2026 · Dr. Kang · awaiting management plan</div>
-        </div>
-        <div class="finding warn">
-          <div class="label">Likely diagnostic framing</div>
-          <div class="value"><span class="term" data-tip="Proliferative (Multifocal) Leukoplakia. A specific oral disease pattern with multiple white/precancerous patches at different times in different places. Affects mainly non-smoking women. Has a 43–74% lifetime cancer-conversion rate.">PMOL</span> pattern fits</div>
-          <div class="sub">Per 2021 consensus criteria · escalates surveillance intensity</div>
-        </div>
-        <div class="finding ok">
-          <div class="label">Imaging status</div>
-          <div class="value">CT neck + chest clear</div>
-          <div class="sub">04/03/2026 · no invasive disease seen</div>
-        </div>
-        <div class="finding info">
-          <div class="label">Actionable biomarkers</div>
-          <div class="value"><span class="term" data-tip="PD-L1 is a protein that some cancers use to evade the immune system. CPS (Combined Positive Score) of 5 means moderate expression — qualifies her for pembrolizumab (Keytruda) monotherapy if recurrence ever occurs.">PD-L1 CPS 5</span>, <span class="term" data-tip="A common cancer-driver mutation in the PI3-kinase pathway. Opens eligibility for clinical trials of drugs like alpelisib, inavolisib, capivasertib. Only relevant if there's a recurrence.">PIK3CA E542K</span></div>
-          <div class="sub">If recurrence: immunotherapy + PI3K-trial eligible</div>
-        </div>
-        <div class="finding warn">
-          <div class="label">Possible hereditary syndrome</div>
-          <div class="value"><span class="term" data-tip="TP53 is the most-mutated gene in human cancer ('guardian of the genome'). The R213P variant detected here has been reported in some families as a cause of Li-Fraumeni syndrome — a hereditary cancer predisposition.">TP53</span> + <span class="term" data-tip="CDKN2A encodes p16, a brake on cell division. Inherited mutations in CDKN2A cause the melanoma-pancreatic cancer syndrome. Her mother had melanoma, which raises the question.">CDKN2A</span> on tumor <span class="term" data-tip="Next-Generation Sequencing — DNA testing that reads many genes at once. Caris ran this on her 2023 lymph node tumor.">NGS</span></div>
-          <div class="sub">High-<span class="term" data-tip="Variant Allele Fraction — what percentage of the DNA copies carry the mutation. Around 50% suggests the mutation may be inherited (germline) rather than just in the tumor.">VAF</span> + 4 primaries — germline testing indicated</div>
-        </div>
-        <div class="finding flag">
-          <div class="label">Cardiovascular risk</div>
-          <div class="value">LDL 204 mg/dL</div>
-          <div class="sub">Trending up · PCP recommends <span class="term" data-tip="Cholesterol-lowering medications (e.g., atorvastatin, rosuvastatin). Beyond cardiovascular protection, observational data link statin use to improved survival in head and neck cancer.">statin</span> resumption</div>
-        </div>
-        <div class="finding warn">
-          <div class="label">CBC</div>
-          <div class="value">WBC 3.0 · Lymph 591</div>
-          <div class="sub">Mild <span class="term" data-tip="Lower-than-normal white blood cell count. Often persists for months to years after chemoradiation. Worth trending but rarely needs intervention unless severe.">leukopenia</span>, likely post-CRT; monitor trend</div>
-        </div>
-        <div class="finding info">
-          <div class="label">Background condition</div>
-          <div class="value"><span class="term" data-tip="A chronic immune-mediated inflammation of the mouth lining causing white lacy patches and sometimes painful erosions. About 1–2% transforms to oral cancer over years; that risk is much higher when combined with other features.">Oral lichen planus</span> since 2017</div>
-          <div class="sub"><span class="term" data-tip="When an entire area of tissue (the 'field') has been damaged by carcinogens or chronic inflammation and develops cancer-prone changes. Multiple separate cancers can arise from the same field.">Field cancerization</span> driver — lifelong oral surveillance</div>
-        </div>
-        <div class="finding info">
-          <div class="label">Late effects to manage</div>
-          <div class="value"><span class="term" data-tip="Osteoradionecrosis — dead/damaged bone in previously radiated tissue. Can be triggered by dental extractions or surgery in the radiated area.">ORN</span> risk, <span class="term" data-tip="Chronic dry mouth from radiation damage to salivary glands. Common after head and neck IMRT. Treatable with pilocarpine, cevimeline, saliva substitutes.">xerostomia</span>, neck fibrosis</div>
-          <div class="sub">Active prevention preferred over reactive care</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============== DIAGNOSIS SUMMARY ============== -->
-  <section class="section" id="ch-diagnosis">
-    <div class="section-head">
-      <h2>Diagnosis summary</h2>
-      <span class="note">Ch. 01</span>
-    </div>
-    <div class="section-body">
-      <p class="lede-clinical">Between Nov 2021 and May 2023, four primary <span class="term" data-tip="Squamous Cell Carcinoma — the most common cancer of the head and neck. Arises from the flat 'squamous' cells lining the mouth, throat, larynx.">squamous cell carcinomas</span> arose in the left oral cavity (lateral tongue, maxillary alveolar ridge, ventral tongue). All were <span class="term" data-tip="The smallest tumor stage: ≤2 cm in size with shallow invasion (≤5 mm deep). p = pathologic, T1 = the size/depth category.">pT1</span>, low-grade, with negative or widely clear margins. In Dec 2023 a contralateral right-sided cervical lymph node demonstrated metastatic SCC with <strong><span class="term" data-tip="Extranodal Extension — cancer cells in a lymph node broke through the node's outer wall (capsule). A high-risk feature that strongly predicts the need for chemoradiation after surgery.">extranodal extension (ENE)</span></strong> — staged rpTxN2aM0. Definitive adjuvant <span class="term" data-tip="Chemotherapy + radiation given at the same time. Each makes the other more effective. Standard approach for high-risk head/neck cancer after surgery, especially with ENE.">chemoradiation</span> followed in early 2024. CT surveillance has remained clear. In February 2026, a UCLA biopsy of a gingival lesion identified <strong>squamous atypia suspicious for moderate dysplasia on the right posterior maxilla</strong> — a precancerous lesion in a previously uninvolved field on the same side as the prior nodal recurrence.</p>
-      <dl class="kv">
-        <dt>Primary site</dt><dd>Oral cavity — multifocal (tongue × 2, maxillary alveolar ridge × 1)</dd>
-        <dt>Histology</dt><dd>Keratinizing squamous cell carcinoma, NOS · G1–G2</dd>
-        <dt>HPV status</dt><dd>Negative (HPV 16/18 negative; EBV negative)</dd>
-        <dt>Initial T stage</dt><dd>pT1 (all four primaries)</dd>
-        <dt>Initial N stage</dt><dd>pN0 left neck (0/55 nodes); pN2a right neck (1/37, ENE+, 1.3 cm)</dd>
-        <dt>Initial M stage</dt><dd>M0 (no distant disease)</dd>
-        <dt>Current lesion</dt><dd><strong>Right posterior maxilla — atypia suspicious for moderate dysplasia</strong> (UCLA SSW-26-05090, 02/24/2026). Left maxilla biopsy at same encounter: <span class="term" data-tip="Thickening of the outermost (keratin) layer of mucosa. Common, often inflammatory, and not itself precancerous — but in a high-risk patient warrants follow-up.">hyperkeratosis</span> only, negative for dysplasia/malignancy.</dd>
-        <dt>Background</dt><dd>Oral <span class="term" data-tip="A chronic immune-mediated inflammation of the mouth lining causing white lacy patches and sometimes painful erosions. About 1–2% transforms to oral cancer over years.">lichen planus</span> (since 2017) · history of oral dysplasia · generalized <span class="term" data-tip="Inflammation and destruction of the gums and the bone supporting teeth. Recent data links the bacteria responsible (F. nucleatum, P. gingivalis) directly to oral cancer progression.">periodontitis</span> · hyperlipidemia</dd>
-        <dt>Risk factors</dt><dd>Never smoker · no significant alcohol · no HPV — atypical demographic for HNSCC</dd>
-        <dt>Family history</dt><dd>Mother: melanoma + uterine cancer + cervical precancer (TAH 30s)</dd>
-      </dl>
-    </div>
-  </section>
 
   <!-- ============== CURRENT BIOPSY FINDING ============== -->
   <section class="section" id="ch-biopsy">
@@ -238,438 +161,6 @@
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- ============== TREATMENT HISTORY ============== -->
-  <section class="section">
-    <div class="section-head">
-      <h2>Treatment & event history</h2>
-      <span class="note">Ch. 02 · chronological</span>
-    </div>
-    <div class="section-body nopad">
-      <div class="timeline">
-        <div class="tl-row surgery">
-          <span class="tl-date">11/30/2021</span>
-          <span class="tl-marker"></span>
-          <div class="tl-body">
-            <div class="tl-title">Partial glossectomy — left lateral tongue</div>
-            <div class="tl-detail">Surgeon: McNicoll. Path: focal residual invasive SCC, 1.5 mm, DOI 2.5 mm, −LVI, −PNI, margins clear (closest 1.5 mm). No adjuvant.</div>
-          </div>
-          <div class="tl-badges"><span class="badge muted">pT1Nx</span></div>
-        </div>
-        <div class="tl-row surgery">
-          <span class="tl-date">12/27/2022</span>
-          <span class="tl-marker"></span>
-          <div class="tl-body">
-            <div class="tl-title">Subtotal maxillectomy + STSG — left maxillary alveolar ridge</div>
-            <div class="tl-detail">Surgeon: McNicoll. Path: 0.9 cm G2 SCC, DOI 5 mm, +focal PNI, margins clear (closest 3 mm). Fitted for obturator at UCLA.</div>
-          </div>
-          <div class="tl-badges"><span class="badge muted">pT1Nx</span><span class="badge warn">+PNI</span></div>
-        </div>
-        <div class="tl-row surgery">
-          <span class="tl-date">01/31/2023</span>
-          <span class="tl-marker"></span>
-          <div class="tl-body">
-            <div class="tl-title">Elective left neck dissection, levels I–IV</div>
-            <div class="tl-detail">Surgeon: Lin. Path: 0/55 nodes positive — completely clean.</div>
-          </div>
-          <div class="tl-badges"><span class="badge ok">pN0</span></div>
-        </div>
-        <div class="tl-row surgery">
-          <span class="tl-date">05/23/2023</span>
-          <span class="tl-marker"></span>
-          <div class="tl-body">
-            <div class="tl-title">Partial glossectomy — left anterior ventral tongue</div>
-            <div class="tl-detail">Surgeon: McNicoll. Path: 1.5 mm residual SCC, DOI 2 mm, margins widely clear, −LVI, −PNI.</div>
-          </div>
-          <div class="tl-badges"><span class="badge muted">pT1</span></div>
-        </div>
-        <div class="tl-row recurrence">
-          <span class="tl-date">11/17/2023</span>
-          <span class="tl-marker"></span>
-          <div class="tl-body">
-            <div class="tl-title">Right level I lymph node noticed by patient</div>
-            <div class="tl-detail">Did not respond to antibiotics; FNAs 11/22 and 12/01 showed atypical cells. CT chest/abdomen negative for distant disease.</div>
-          </div>
-          <div class="tl-badges"><span class="badge warn">Workup</span></div>
-        </div>
-        <div class="tl-row recurrence">
-          <span class="tl-date">12/19/2023</span>
-          <span class="tl-marker"></span>
-          <div class="tl-body">
-            <div class="tl-title">Right modified radical neck dissection — recurrence confirmed</div>
-            <div class="tl-detail">Surgeon: Lin. Path: 1/7 level I nodes positive — 1.3 cm metastatic SCC with <strong>extranodal extension (ENE)</strong>. Levels II–IV all negative (0/30).</div>
-          </div>
-          <div class="tl-badges"><span class="badge flag">pN2a · ENE+</span></div>
-        </div>
-        <div class="tl-row imaging">
-          <span class="tl-date">01/19/2024</span>
-          <span class="tl-marker"></span>
-          <div class="tl-body">
-            <div class="tl-title">Caris MI Tumor Seek+ molecular profile</div>
-            <div class="tl-detail">Tumor genomic profiling completed on right neck node specimen. Key findings: PD-L1 CPS 5+, PIK3CA E542K, TP53 R213P, CDKN2A R80*. See Tumor genomics section.</div>
-          </div>
-          <div class="tl-badges"><span class="badge info">NGS</span></div>
-        </div>
-        <div class="tl-row treatment">
-          <span class="tl-date">Early 2024</span>
-          <span class="tl-marker"></span>
-          <div class="tl-body">
-            <div class="tl-title">Adjuvant chemoradiation — cisplatin + IMRT</div>
-            <div class="tl-detail">Bilateral neck <span class="term" data-tip="Intensity-Modulated Radiation Therapy — a precise form of radiation that shapes the dose to match the tumor while sparing nearby healthy tissue (salivary glands, spinal cord). Standard for head/neck cancer.">IMRT</span> over 6–6.5 weeks with concurrent <span class="term" data-tip="A platinum-based chemotherapy drug. Given alongside radiation to make tumor cells more sensitive to radiation. Very effective but can cause hearing loss, kidney effects, and persistent low blood counts.">cisplatin</span>. Indication: ENE — per joint RTOG/EORTC analysis (Bernier NEJM 2004, Cooper NEJM 2004). Consulted at both Kaiser (Iganej/Vazquez) and Cedars-Sinai (Zumsteg).</div>
-          </div>
-          <div class="tl-badges"><span class="badge warn">CRT</span></div>
-        </div>
-        <div class="tl-row clear">
-          <span class="tl-date">03/26/2025</span>
-          <span class="tl-marker"></span>
-          <div class="tl-body">
-            <div class="tl-title">1-year surveillance CT — clear</div>
-            <div class="tl-detail">Used as comparison study for current imaging. No evidence of disease.</div>
-          </div>
-          <div class="tl-badges"><span class="badge ok">Clear</span></div>
-        </div>
-        <div class="tl-row clear">
-          <span class="tl-date">03/30/2026</span>
-          <span class="tl-marker"></span>
-          <div class="tl-body">
-            <div class="tl-title">CT neck + CT chest with contrast — both clear</div>
-            <div class="tl-detail">CT neck: prior left hemimaxillectomy; no neck mass, no lymphadenopathy; mild bilateral maxillary sinus mucosal thickening; stable 4 mm left thyroid nodule. CT chest: no intrathoracic metastatic disease; mild biapical pleural-parenchymal scarring stable. <em>"Look great, no evidence of active cancer."</em> — Dr. Scher 04/04/2026.</div>
-          </div>
-          <div class="tl-badges"><span class="badge ok">NED</span></div>
-        </div>
-        <div class="tl-row recurrence">
-          <span class="tl-date">02/24/2026</span>
-          <span class="tl-marker"></span>
-          <div class="tl-body">
-            <div class="tl-title">UCLA gingival biopsy — moderate dysplasia found (right)</div>
-            <div class="tl-detail">Surgeon: Kang. Pathologist: Sajed. Left maxilla: hyperkeratosis only, no dysplasia. <strong>Right maxilla: atypia suspicious for moderate dysplasia, negative for invasive carcinoma.</strong> First premalignant lesion identified on the right (contralateral) side. Surgical management indicated.</div>
-          </div>
-          <div class="tl-badges"><span class="badge warn">Mod. dysplasia</span></div>
-        </div>
-        <div class="tl-row imaging">
-          <span class="tl-date">05/04/2026</span>
-          <span class="tl-marker"></span>
-          <div class="tl-body">
-            <div class="tl-title">Preoperative labs drawn</div>
-            <div class="tl-detail">CBC, CMP, lipid panel, urinalysis, PT/INR, PTT — "Preop labs will be forwarded to the surgeon" per PCP note 05/05. Likely tied to planned excision of the dysplastic lesion. LDL flagged at 204; mild leukopenia (WBC 3.0) noted.</div>
-          </div>
-          <div class="tl-badges"><span class="badge info">Preop</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============== DEEP DIVE — WHAT THE 2024–2026 LITERATURE SAYS ============== -->
-  <section class="section" id="ch-research">
-    <div class="section-head">
-      <h2>Deep-dive · what the latest literature says about this biopsy</h2>
-      <span class="note">Ch. 02b · evidence digest, 2024–2026</span>
-    </div>
-    <div class="section-body">
-      <p class="lede-clinical">A focused literature scan changes the framing in three important ways. <strong>(1)</strong> The pattern of four primaries + lichen planus + new bilateral gingival changes likely meets criteria for a specific entity called <span class="term" data-tip="Proliferative (Multifocal) Leukoplakia — a rare oral disease pattern with multiple white patches that appear at different times in different parts of the mouth, often in non-smoking women. Has a much higher cancer-conversion rate than ordinary leukoplakia.">PMOL</span>, not just "dysplasia on lichen planus background." <strong>(2)</strong> The 2024 American Head and Neck Society guideline is now the most authoritative US document on management of this exact problem. <strong>(3)</strong> Two investigational treatments — topical <span class="term" data-tip="A topical immune-stimulating cream (brand: Aldara) originally approved for skin precancers and warts. Being studied for oral dysplasia — recent reports show 65–82% of patients have lesions shrink ≥50%.">imiquimod</span> and <span class="term" data-tip="Pembrolizumab/nivolumab (Keytruda/Opdivo) injected directly into a precancerous lesion. Trial NCT06561087 reported 85% clinical response and 41% histologic improvement at low doses — and her PD-L1 CPS 5 result makes her tumor biology a match.">intralesional nivolumab</span> — are emerging with promising data that may matter to her specifically.</p>
-    </div>
-
-    <div class="section-body" style="border-top: 1px solid var(--line);">
-      <div class="grid-2">
-        <div>
-          <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--muted); letter-spacing: 0.05em; margin-bottom: 8px;">Does Jan have PMOL?</div>
-          <p style="font-size: 13px; color: var(--text); line-height: 1.6;">The 2021 Woo/Thompson expert consensus on <span class="term" data-tip="Two names for the same disease entity. PVL = Proliferative Verrucous Leukoplakia (older term, required wart-like appearance). PMOL = Proliferative Multifocal Oral Leukoplakia (newer, broader term that doesn't require the verrucous look).">PVL/PMOL</span> requires: <strong>(a)</strong> multifocal disease (≥2 separate sites), <strong>(b)</strong> progression over time (new sites, expansion, or histologic worsening), and <strong>(c)</strong> exclusion of clear etiology like heavy tobacco use. Jan's profile — never-smoker female, four prior primaries 2021–2023, oral lichen planus background, now new bilateral gingival lesions (one moderate dysplasia, one hyperkeratosis) — fits the demographic and progression criteria well.</p>
-          <p style="font-size: 13px; color: var(--text); line-height: 1.6; margin-top: 10px;">Pooled malignant transformation rate for PMOL: <strong>43–74% over follow-up</strong>, vs ~10% for ordinary moderate dysplasia and ~1.4% for OLP alone. <strong>If accepted as a PMOL diagnosis, surveillance intensity escalates</strong> — quarterly oral medicine review with photographic field mapping, lower threshold for biopsy of any new lesion, and multidisciplinary co-management.</p>
-          <div class="deep">
-            <h5>Most important framing question for Dr. Kang</h5>
-            "Do my clinical pattern + this new dysplasia meet the 2021 PVL/PMOL consensus criteria — and if yes, can we move from spot-dysplasia management to a unified PMOL surveillance protocol with UCLA Oral Medicine, Pathology, and H&N Surgery?"
-          </div>
-        </div>
-        <div>
-          <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--muted); letter-spacing: 0.05em; margin-bottom: 8px;">What AHNS 2024 actually recommends</div>
-          <p style="font-size: 13px; color: var(--text); line-height: 1.6;">The American Head and Neck Society's Cancer Prevention Service published an updated 2024 guideline (Gates et al., Head & Neck, Nov 2024 — the most current US expert consensus on this exact problem).</p>
-          <ul style="font-size: 13px; color: var(--text); margin-top: 10px; padding-left: 18px; line-height: 1.6;">
-            <li><strong>Formal excision or ablation</strong> for any dysplastic lesion (mild, moderate, or severe) when feasible.</li>
-            <li><strong>Excisional margins: 2–5 mm</strong> in depth and width.</li>
-            <li><strong>Clinical surveillance every 3 months</strong> for moderate dysplasia.</li>
-            <li><strong>Re-biopsy every 12–18 months</strong> for moderate dysplasia even if visually stable.</li>
-            <li><strong>Active surveillance for at least 5 years</strong> — transformation risk persists 10–15 years.</li>
-            <li>No single chemopreventive agent has durable efficacy as monotherapy.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="section-body" style="border-top: 1px solid var(--line);">
-      <div class="grid-2">
-        <div>
-          <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--muted); letter-spacing: 0.05em; margin-bottom: 8px;">Molecular workup worth requesting on the excised tissue</div>
-          <ul style="font-size: 13px; color: var(--text); padding-left: 18px; line-height: 1.6;">
-            <li><strong><span class="term" data-tip="Immunohistochemistry — a lab test that uses antibodies to stain specific proteins in a tissue slide. Tells you which proteins a cell is making or has lost.">p53 IHC</span> pattern</strong> — distinguishes mutant pattern (overexpression/null) from wild-type. A mutant pattern argues for true neoplastic clonal expansion rather than reactive inflammation.</li>
-            <li><strong>p16 IHC</strong> — given her CDKN2A R80* mutation, expect loss; confirms HPV-independent pathway.</li>
-            <li><strong><span class="term" data-tip="A protein marker of cell division. High Ki-67 percentage means cells are multiplying rapidly. Useful for predicting which precancers are most likely to progress.">Ki-67</span> proliferation index</strong> — high suprabasal staining predicts higher transformation risk.</li>
-            <li><strong><span class="term" data-tip="Loss of Heterozygosity — losing one of the two copies of a gene. Classic markers at chromosomes 3p14, 9p21, 17p13 identify oral lesions with greatly elevated cancer risk (30× higher in some studies).">LOH</span> at 3p14, 9p21, 17p13</strong> — the classical Rosin/Zhang field-cancerization panel.</li>
-            <li><strong>Repeat <span class="term" data-tip="Next-Generation Sequencing — reading the DNA of the tumor to find mutations. Caris already did this on the 2023 tumor.">NGS</span> on the new lesion</strong> — does it share the same TP53 R213P, CDKN2A R80*, PIK3CA E542K signature as her 2023 tumor? Shared mutations → clonal field expansion. Different mutations → independent new primary. This changes prognostic framing.</li>
-            <li><strong>Tumor-informed <span class="term" data-tip="Circulating Tumor DNA — small fragments of tumor DNA in the bloodstream. Custom panels built from her 2023 tumor (Signatera, NeXT Personal, Haystack MRD) can detect microscopic residual disease before imaging would catch it. Useful in HPV-negative HNSCC per 2024 Clin Cancer Res data.">ctDNA</span> (Signatera / NeXT Personal / Haystack MRD)</strong> — personalized panel built from her 2023 tumor for blood-based surveillance.</li>
-          </ul>
-        </div>
-        <div>
-          <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--muted); letter-spacing: 0.05em; margin-bottom: 8px;">Investigational chemoprevention worth knowing about</div>
-          <ul style="font-size: 13px; color: var(--text); padding-left: 18px; line-height: 1.6;">
-            <li><strong><span class="term" data-tip="A common diabetes medication (Glucophage) being studied for cancer prevention. Phase IIa in oral premalignancy showed 17% clinical and 60% partial histologic response. Generally safe even in non-diabetics.">Metformin</span> for oral premalignancy</strong> — Phase IIa (Gutkind 2021) positive; Phase IIb <span class="mono">NCT05237960</span> ongoing. Generally well-tolerated.</li>
-            <li><strong>Topical <span class="term" data-tip="A topical immune-stimulating cream (brand: Aldara) originally approved for skin precancers and warts. Being studied for oral dysplasia — recent reports show 65–82% of patients have lesions shrink ≥50%.">imiquimod</span> 5%</strong> — 2025 two-center retrospective: 65–82% had ≥50% size reduction; 32–42% complete resolution. Trial <span class="mono">NCT07210775</span> active.</li>
-            <li><strong>Intralesional <span class="term" data-tip="Anti-PD-1 immunotherapy (Opdivo) — the same class of drug as pembrolizumab. Being injected directly into precancerous oral lesions in trial NCT06561087. Early data: 85% clinical response, 41% histologic improvement.">nivolumab</span></strong> — Phase II <span class="mono">NCT06561087</span> in high-risk OPL. Early data: 85% clinical / 41% histologic improvement at low doses. <strong>Her CPS 5 makes her tumor biology a biomarker match.</strong></li>
-            <li><strong><span class="term" data-tip="A natural turmeric compound. Phase IIB at 3.6 g/day showed clinical response 67.5% vs 55.3% placebo with durable 6-month effect. Adjunctive supplement; generally safe.">Curcumin</span> 3.6 g/day</strong> — Phase IIB Kuriakose 2016: 67.5% vs 55.3% response. Safe adjunct.</li>
-            <li><strong>Photodynamic therapy (5-ALA)</strong> — 86% overall response in oral leukoplakia in published cohort; useful where surgery is morbid.</li>
-            <li><strong>13-cis-retinoic acid · erlotinib (EPOC)</strong> — both <em>negative</em> in long-term trials. Not standard.</li>
-          </ul>
-          <div class="deep" style="margin-top: 12px;">
-            <h5>Pragmatic note</h5>
-            None of the above is FDA-approved for oral premalignancy as monotherapy. <strong>Surgical excision remains primary; these are adjuncts or trial options for diffuse / recurrent disease.</strong>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="section-body" style="border-top: 1px solid var(--line);">
-      <div class="grid-2">
-        <div>
-          <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--muted); letter-spacing: 0.05em; margin-bottom: 8px;">Periodontitis as an active driver</div>
-          <p style="font-size: 13px; color: var(--text); line-height: 1.6;">Dr. Kang's clinical note describes "generalized periodontitis and gingival inflammation" as the context for the biopsy. Recent literature (2023–2025) increasingly identifies <em>F. nucleatum</em> and <em>P. gingivalis</em> — the two main periodontitis bacteria — as <strong>active drivers of oral SCC progression</strong>, not just passengers. A 2025 study in <em>Infectious Agents and Cancer</em> showed their co-infection accelerates the cell cycle and amplifies pro-inflammatory pathways in oral cancer cells.</p>
-          <p style="font-size: 13px; color: var(--text); line-height: 1.6; margin-top: 10px;">Two practical implications: <strong>(1)</strong> Active gingival inflammation can mimic dysplasia histologically — controlling the periodontitis aggressively before any re-biopsy or excision improves diagnostic clarity. <strong>(2)</strong> Aggressive periodontal management may itself be cancer-prevention, not just dental hygiene.</p>
-          <div class="deep">
-            <h5>Worth asking</h5>
-            "Should I be co-managed by an oncology-aware periodontist (UCLA Special Patient Care / Hospital Dentistry) and have the periodontitis brought under control before/after the excision?"
-          </div>
-        </div>
-        <div>
-          <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--muted); letter-spacing: 0.05em; margin-bottom: 8px;">Operating in a previously radiated field</div>
-          <p style="font-size: 13px; color: var(--text); line-height: 1.6;">The right posterior maxillary alveolus sits within her 2024 right neck IMRT field. <span class="term" data-tip="Osteoradionecrosis — dead/damaged bone in a previously radiated area. Can occur after dental extractions or surgery in radiated bone. Less common in the upper jaw than the lower, but still a meaningful concern.">Osteoradionecrosis (ORN)</span> is a real, if low-probability, complication of any procedure in that field.</p>
-          <ul style="font-size: 13px; color: var(--text); padding-left: 18px; line-height: 1.6; margin-top: 10px;">
-            <li><strong>PENTO protocol</strong> (<span class="term" data-tip="Pentoxifylline (a blood-flow-improving medication) plus vitamin E (an antioxidant). Combination shown in multiple studies to reduce or treat radiation-related bone necrosis. Standard regimen: pentoxifylline 400 mg twice daily + vitamin E 1000 IU daily, started 1 week before procedure and continued ~8 weeks after.">pentoxifylline 400 mg BID + vitamin E 1000 IU daily</span>) starting 1 wk pre-procedure, continued 8 wks post — supported by 2023–2025 reviews.</li>
-            <li><strong>Hyperbaric oxygen no longer first-line</strong> after the 2019 HOPON trial showed no benefit for prophylaxis.</li>
-            <li><strong>Maxillary ORN rarer than mandibular</strong> (better blood supply) — but post-IMRT maxilla is not no-risk.</li>
-            <li>Atraumatic technique, primary closure where possible, antibiotic prophylaxis (amoxicillin or clindamycin if penicillin-allergic).</li>
-          </ul>
-          <div class="deep">
-            <h5>Worth asking</h5>
-            "What dose did the right posterior maxillary alveolus actually receive on my 2024 IMRT plan? If above 60 Gy, can we start PENTO before any excision?"
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="section-body" style="border-top: 1px solid var(--line);">
-      <div class="grid-2">
-        <div>
-          <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--muted); letter-spacing: 0.05em; margin-bottom: 8px;">Lichen planus treatment in a cancer survivor</div>
-          <p style="font-size: 13px; color: var(--text); line-height: 1.6;">A 2024 retrospective in <em>BDJ Open</em> compared OLP treatments and found <strong>topical clobetasol associated with the lowest subsequent OSCC risk</strong> (HR 0.73) among studied OLP therapies. Tacrolimus showed a weaker protective signal and carries theoretical (though clinically weak) concerns about long-term local immunosuppression in cancer survivors. <strong>If pharmacotherapy is needed, clobetasol is preferred over tacrolimus in this setting.</strong></p>
-        </div>
-        <div>
-          <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--muted); letter-spacing: 0.05em; margin-bottom: 8px;">UCLA program structure — who to be on file with</div>
-          <ul style="font-size: 13px; color: var(--text); padding-left: 18px; line-height: 1.6;">
-            <li><strong>Dr. Robert Kang</strong> — H&N Surgery (already on file, leading this case)</li>
-            <li><strong>Dr. Dipti Sajed</strong> — UCLA H&N Pathology (signed this biopsy)</li>
-            <li><strong>Dr. Diana Messadi</strong> — Chair, UCLA Oral Medicine Faculty Practice. Oral cancer early detection / chemoprevention research focus. Cross-referral worth asking about. <span class="mono">(310) 825-7338</span></li>
-            <li><strong>Dr. Deborah Wong</strong> or <strong>Dr. Wanxing Chai-Ho</strong> — UCLA H&N medical oncology (separate from Dr. Scher at Cedars; useful for trial access)</li>
-            <li><strong>UCLA Cancer Genetics</strong> — Gerald F. Strauss Cancer Genetics Program (for the TP53/CDKN2A germline workup)</li>
-            <li><strong>UCLA Special Patient Care / Hospital Dentistry</strong> — for PENTO prescribing and oncology-aware dental/periodontal management</li>
-            <li><strong>UCLA H&N Multidisciplinary Tumor Board</strong> — meets weekly; worth asking whether her case can be formally presented with the biopsy + 2023 ENE+ recurrence + Caris NGS + germline question on one slide</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============== CURRENT IMAGING ============== -->
-  <section class="section" id="ch-imaging">
-    <details class="section-collapsible">
-    <summary class="section-head">
-      <h2>Most recent imaging</h2>
-      <span class="note">Ch. 03 · imaging only — see Ch. 02a for the biopsy</span>
-    </summary>
-    <div class="section-body nopad">
-      <table class="data">
-        <thead>
-          <tr>
-            <th style="width: 120px;">Date</th>
-            <th>Study</th>
-            <th>Impression</th>
-            <th>Reader</th>
-            <th style="width: 100px;">Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><span class="when">04/03/2026</span></td>
-            <td><strong>CT Neck w/ contrast</strong></td>
-            <td>Prior left hemimaxillectomy. <strong>No evidence for neck mass or cervical lymphadenopathy.</strong> Mild bilateral maxillary sinus mucosal thickening. Stable 4 mm left thyroid nodule.</td>
-            <td>Moser FG, MD<br><span class="when">Dictated by Nguyen DO</span></td>
-            <td><span class="badge ok">Clear</span></td>
-          </tr>
-          <tr>
-            <td><span class="when">03/30/2026</span></td>
-            <td><strong>CT Chest w/ contrast</strong></td>
-            <td>History of oral cavity cancer, <strong>without evidence of intrathoracic metastatic disease, stable.</strong> Mild coronary artery calcifications. Stable biapical pleural-parenchymal scarring.</td>
-            <td>Lee C, MD</td>
-            <td><span class="badge ok">Clear</span></td>
-          </tr>
-          <tr>
-            <td><span class="when">03/26/2025</span></td>
-            <td><strong>CT Neck (comparison)</strong></td>
-            <td>Comparison study — no evidence of disease at 1-yr post-CRT.</td>
-            <td>—</td>
-            <td><span class="badge ok">Clear</span></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    </details>
-  </section>
-
-  <!-- ============== LATEST LABS ============== -->
-  <section class="section" id="ch-labs">
-    <details class="section-collapsible">
-    <summary class="section-head">
-      <h2>Latest labs · 05/04/2026</h2>
-      <span class="note">Ch. 04 · drawn 8:16 AM, Cedars-Sinai / Quest · LDL high, WBC mildly low, rest normal</span>
-    </summary>
-    <div class="section-body nopad">
-      <div class="labs">
-        <div class="lab flag">
-          <span class="lab-name">Total cholesterol</span>
-          <span class="lab-value">320 <span class="u">mg/dL</span></span>
-          <div class="lab-bar">
-            <div class="range-zone" style="left: 0%; width: 50%;"></div>
-            <span class="mark" style="left: 80%;"></span>
-          </div>
-          <span class="lab-range">Normal &lt; 200</span>
-        </div>
-        <div class="lab flag">
-          <span class="lab-name">LDL cholesterol</span>
-          <span class="lab-value">204 <span class="u">mg/dL</span></span>
-          <div class="lab-bar">
-            <div class="range-zone" style="left: 0%; width: 28%;"></div>
-            <span class="mark" style="left: 82%;"></span>
-          </div>
-          <span class="lab-range">Goal &lt; 70 (cardiac hx) · was 177 in Jan</span>
-        </div>
-        <div class="lab ok">
-          <span class="lab-name">HDL cholesterol</span>
-          <span class="lab-value">99 <span class="u">mg/dL</span></span>
-          <div class="lab-bar">
-            <div class="range-zone" style="left: 25%; width: 75%;"></div>
-            <span class="mark" style="left: 75%;"></span>
-          </div>
-          <span class="lab-range">Goal ≥ 50 · excellent</span>
-        </div>
-        <div class="lab warn">
-          <span class="lab-name">WBC</span>
-          <span class="lab-value">3.0 <span class="u">K/µL</span></span>
-          <div class="lab-bar">
-            <div class="range-zone" style="left: 35%; width: 60%;"></div>
-            <span class="mark" style="left: 26%;"></span>
-          </div>
-          <span class="lab-range">Normal 3.8 – 10.8 · mild leukopenia</span>
-        </div>
-        <div class="lab warn">
-          <span class="lab-name"><span class="term" data-tip="Lymphocytes are a type of white blood cell that fights infections and tumors. Lower-than-normal lymphocytes are very common after chemoradiation and usually recover over time.">Lymphocytes</span> (abs.)</span>
-          <span class="lab-value">591 <span class="u">/µL</span></span>
-          <div class="lab-bar">
-            <div class="range-zone" style="left: 20%; width: 75%;"></div>
-            <span class="mark" style="left: 14%;"></span>
-          </div>
-          <span class="lab-range">Normal 850 – 3900</span>
-        </div>
-        <div class="lab ok">
-          <span class="lab-name">Hemoglobin</span>
-          <span class="lab-value">13.7 <span class="u">g/dL</span></span>
-          <div class="lab-bar">
-            <div class="range-zone" style="left: 0%; width: 100%;"></div>
-            <span class="mark" style="left: 53%;"></span>
-          </div>
-          <span class="lab-range">Normal 11.7 – 15.5</span>
-        </div>
-        <div class="lab ok">
-          <span class="lab-name">Platelets</span>
-          <span class="lab-value">233 <span class="u">K/µL</span></span>
-          <div class="lab-bar">
-            <div class="range-zone" style="left: 0%; width: 100%;"></div>
-            <span class="mark" style="left: 36%;"></span>
-          </div>
-          <span class="lab-range">Normal 140 – 400</span>
-        </div>
-        <div class="lab ok">
-          <span class="lab-name">Glucose (fasting)</span>
-          <span class="lab-value">81 <span class="u">mg/dL</span></span>
-          <div class="lab-bar">
-            <div class="range-zone" style="left: 0%; width: 100%;"></div>
-            <span class="mark" style="left: 47%;"></span>
-          </div>
-          <span class="lab-range">Normal 65 – 99</span>
-        </div>
-        <div class="lab ok">
-          <span class="lab-name">Creatinine</span>
-          <span class="lab-value">0.67 <span class="u">mg/dL</span></span>
-          <div class="lab-bar">
-            <div class="range-zone" style="left: 0%; width: 100%;"></div>
-            <span class="mark" style="left: 31%;"></span>
-          </div>
-          <span class="lab-range">Normal 0.50 – 1.05</span>
-        </div>
-        <div class="lab ok">
-          <span class="lab-name"><span class="term" data-tip="Estimated Glomerular Filtration Rate — measures how well the kidneys filter blood. Higher is better. Above 60 is normal; below 30 is significant kidney impairment.">eGFR</span></span>
-          <span class="lab-value">98</span>
-          <div class="lab-bar">
-            <div class="range-zone" style="left: 60%; width: 40%;"></div>
-            <span class="mark" style="left: 98%;"></span>
-          </div>
-          <span class="lab-range">Goal ≥ 60</span>
-        </div>
-        <div class="lab ok">
-          <span class="lab-name">AST / ALT</span>
-          <span class="lab-value">20 / 13</span>
-          <div class="lab-bar">
-            <div class="range-zone" style="left: 0%; width: 100%;"></div>
-            <span class="mark" style="left: 30%;"></span>
-          </div>
-          <span class="lab-range">Normal (10–35 / 6–29)</span>
-        </div>
-        <div class="lab ok">
-          <span class="lab-name"><span class="term" data-tip="Thyroid Stimulating Hormone — measures thyroid function. High TSH = underactive thyroid (common late effect of neck radiation). Should be checked annually after head/neck radiation.">TSH</span></span>
-          <span class="lab-value">3.56 <span class="u">mIU/L</span></span>
-          <div class="lab-bar">
-            <div class="range-zone" style="left: 0%; width: 100%;"></div>
-            <span class="mark" style="left: 70%;"></span>
-          </div>
-          <span class="lab-range">Normal 0.35 – 4.94 · monitor annually</span>
-        </div>
-        <div class="lab ok">
-          <span class="lab-name">INR</span>
-          <span class="lab-value">1.0</span>
-          <div class="lab-bar">
-            <div class="range-zone" style="left: 0%; width: 100%;"></div>
-            <span class="mark" style="left: 50%;"></span>
-          </div>
-          <span class="lab-range">Normal 0.9 – 1.1</span>
-        </div>
-        <div class="lab ok">
-          <span class="lab-name">PTT</span>
-          <span class="lab-value">25 <span class="u">sec</span></span>
-          <div class="lab-bar">
-            <div class="range-zone" style="left: 0%; width: 100%;"></div>
-            <span class="mark" style="left: 22%;"></span>
-          </div>
-          <span class="lab-range">Normal 23 – 32</span>
-        </div>
-        <div class="lab ok">
-          <span class="lab-name">Urinalysis</span>
-          <span class="lab-value">No UTI</span>
-          <div class="lab-bar">
-            <div class="range-zone" style="left: 0%; width: 100%;"></div>
-            <span class="mark" style="left: 50%;"></span>
-          </div>
-          <span class="lab-range">Mild WBC (likely contamination); culture neg</span>
-        </div>
-      </div>
-    </div>
-    </details>
   </section>
 
   <!-- ============== CURRENT MEDICATIONS & SUPPLEMENTS ============== -->
@@ -816,106 +307,6 @@
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- ============== TUMOR GENOMICS ============== -->
-  <section class="section" id="ch-genomics">
-    <details class="section-collapsible">
-    <summary class="section-head">
-      <h2>Tumor genomics · Caris MI Tumor Seek+ · 01/19/2024</h2>
-      <span class="note">Ch. 05 · PD-L1 CPS 5 · TMB low · PIK3CA E542K (favorable) · TP53 + CDKN2A (possible germline)</span>
-    </summary>
-    <div class="section-body">
-      <p class="lede-clinical">Whole exome and transcriptome sequencing of the right cervical node specimen identified <strong>PD-L1 positivity (CPS 5)</strong> — qualifying for pembrolizumab monotherapy if first-line treatment for recurrent/metastatic disease ever becomes necessary — and a <strong>PIK3CA E542K hotspot mutation</strong> opening eligibility for PI3K-inhibitor clinical trials. HPV and EBV negative. Microsatellite stable. Tumor mutational burden low (4 mut/Mb). Two mutations (TP53 R213P, CDKN2A R80*) at variant allele fractions consistent with possible germline origin warrant dedicated germline workup.</p>
-    </div>
-
-    <div class="section-body nopad" style="border-top: 1px solid var(--line);">
-      <table class="data">
-        <thead>
-          <tr>
-            <th>Biomarker</th>
-            <th>Result</th>
-            <th>Clinical relevance</th>
-            <th class="right">Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong><span class="term" data-tip="A protein on cell surfaces that 'turns off' attacking immune cells. Cancers that express it hide from the immune system. Drugs like pembrolizumab/nivolumab block this and let the immune system attack the tumor.">PD-L1</span> (22c3)</strong></td>
-            <td class="num">Positive · CPS 5</td>
-            <td>Eligible for <span class="term" data-tip="Brand name Keytruda. An anti-PD-1 antibody that re-activates the immune system against cancer. FDA-approved for many cancers including head/neck.">pembrolizumab</span> monotherapy in 1st-line R/M HNSCC if recurrence (KEYNOTE-048)</td>
-            <td class="right"><span class="badge ok">Druggable</span></td>
-          </tr>
-          <tr>
-            <td><strong><span class="term" data-tip="Tumor Mutational Burden — how many mutations the tumor carries. High TMB tumors often respond better to immunotherapy because they look more 'foreign' to the immune system. Threshold for 'high' is usually ≥10 mutations per million bases.">TMB</span></strong></td>
-            <td class="num">4 mut/Mb (low)</td>
-            <td>Below TMB-high threshold; does not by itself favor immunotherapy</td>
-            <td class="right"><span class="badge muted">Informational</span></td>
-          </tr>
-          <tr>
-            <td><strong><span class="term" data-tip="Microsatellite Instability — a sign that the cell's DNA repair machinery is broken. MSI-High tumors respond very well to immunotherapy. 'Stable' means the repair system is intact (normal).">MSI</span></strong></td>
-            <td class="num">Stable</td>
-            <td>Mismatch repair intact</td>
-            <td class="right"><span class="badge muted">Informational</span></td>
-          </tr>
-          <tr>
-            <td><strong>HPV / EBV</strong></td>
-            <td class="num">Negative / Negative</td>
-            <td><span class="term" data-tip="Human Papillomavirus — sexually transmitted virus that causes a specific subtype of throat cancer with better prognosis. Her cancer is HPV-NEGATIVE — driven by something else (likely lichen planus + field cancerization), behaves more aggressively than HPV+ throat cancer.">HPV</span>-negative OSCC; no viral driver; behaves more aggressively than HPV+ OPSCC</td>
-            <td class="right"><span class="badge muted">Informational</span></td>
-          </tr>
-          <tr>
-            <td><span class="gene"><span class="term" data-tip="The most-mutated gene in human cancer; nicknamed 'guardian of the genome.' Normally tells damaged cells to stop dividing or die. When broken, damaged cells survive and accumulate more damage.">TP53</span></span></td>
-            <td><span class="variant">p.R213P · 34% VAF</span></td>
-            <td>Likely pathogenic. R213P has been reported as a <strong><span class="term" data-tip="A mutation present in every cell of the body since birth — inherited from a parent. Different from a 'somatic' mutation, which arises in the tumor only. Germline mutations can be passed to children and indicate hereditary cancer syndromes.">germline</span></strong> variant causal for <span class="term" data-tip="Li-Fraumeni syndrome — a hereditary cancer predisposition caused by inherited TP53 mutations. People with LFS develop multiple cancers (sarcomas, breast, brain, adrenal, leukemia) often at young ages. The Toronto Protocol of annual whole-body MRI is the screening standard.">Li-Fraumeni syndrome</span>. VAF + multiple primaries make germline workup important.</td>
-            <td class="right"><span class="badge warn">Possible germline</span></td>
-          </tr>
-          <tr>
-            <td><span class="gene"><span class="term" data-tip="Encodes p16, a critical brake on cell division. Loss of CDKN2A is one of the most common molecular events in head and neck cancer. Inherited (germline) mutations in CDKN2A cause familial melanoma–pancreatic-cancer syndrome.">CDKN2A</span></span></td>
-            <td><span class="variant">p.R80* · 36% VAF</span></td>
-            <td>Pathogenic loss of p16. Germline CDKN2A causes melanoma–pancreatic-cancer syndrome. Mother had melanoma — link worth exploring.</td>
-            <td class="right"><span class="badge warn">Possible germline</span></td>
-          </tr>
-          <tr>
-            <td><span class="gene"><span class="term" data-tip="A frequently mutated cancer driver gene in the PI3-kinase pathway. Targeted drugs are now FDA-approved for some PIK3CA-mutant cancers (breast); active trials in head/neck.">PIK3CA</span></span></td>
-            <td><span class="variant">p.E542K · 13% <span class="term" data-tip="Variant Allele Fraction — % of DNA copies carrying the mutation. ~13% here suggests this is a tumor-only (somatic) mutation rather than inherited.">VAF</span></span></td>
-            <td>Oncogenic hotspot. <strong>E542K is the <em>favorable</em> helical-domain PIK3CA variant per the Korean TRIUMPH umbrella trial</strong> — median PFS to <span class="term" data-tip="An FDA-approved PI3K-alpha inhibitor (Piqray). Approved for PIK3CA-mutant breast cancer; being studied in head/neck cancer trials.">alpelisib</span> 7.3 vs 1.6 months for kinase-domain variants (p=0.017). Also: ALASCCA trial (NEJM 2025) showed aspirin reduced recurrence in PIK3CA-hotspot cancers including E542K.</td>
-            <td class="right"><span class="badge info">Trial-eligible · favorable subtype</span></td>
-          </tr>
-          <tr>
-            <td><span class="gene">TERT promoter</span></td>
-            <td><span class="variant">c.-124C&gt;T · 15% VAF</span></td>
-            <td>Activates telomerase; common in HNSCC; no direct drug</td>
-            <td class="right"><span class="badge muted">Tumor-acquired</span></td>
-          </tr>
-          <tr>
-            <td><span class="gene">CASP8</span></td>
-            <td><span class="variant">p.M53fs · 16% VAF</span></td>
-            <td>Apoptosis dysregulation; common in HPV-neg HNSCC</td>
-            <td class="right"><span class="badge muted">Tumor-acquired</span></td>
-          </tr>
-          <tr>
-            <td><span class="gene">RHOA</span></td>
-            <td><span class="variant">p.Y42H · 20% VAF</span></td>
-            <td>Likely pathogenic; promotes motility/metastasis; no approved drug</td>
-            <td class="right"><span class="badge muted">Tumor-acquired</span></td>
-          </tr>
-          <tr>
-            <td><span class="gene">ASXL1</span></td>
-            <td><span class="variant">p.R596fs · 14% VAF</span></td>
-            <td>Chromatin regulator. Note: also seen in age-related clonal hematopoiesis — possible relevance to the leukopenia/lymphopenia.</td>
-            <td class="right"><span class="badge muted">Tumor-acquired</span></td>
-          </tr>
-          <tr>
-            <td><span class="gene">HLA-A</span></td>
-            <td><span class="variant">A*24:02 / A*24:02 (homozygous)</span></td>
-            <td>Affects neoantigen presentation; relevant for some HLA-restricted trials</td>
-            <td class="right"><span class="badge muted">Trial-relevant</span></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    </details>
   </section>
 
   <!-- ============== WORKING HYPOTHESIS ============== -->
@@ -1436,12 +827,640 @@
     </div>
   </section>
 
+
+  <!-- ============== BACKGROUND SEPARATOR ============== -->
+  <div class="bg-separator">
+    <h2>Background &amp; full record</h2>
+    <p>Everything below is reference material — full diagnosis, complete treatment timeline, deep-dive literature, imaging, labs, genomics, family-planning detail, care team, and citations. Each section is collapsed by default. Tap any to expand. Chapter numbers reflect the original topical order, not reading order.</p>
+  </div>
+
+  <!-- ============== KEY FINDINGS ============== -->
+  <section class="section" id="ch-findings">
+    <details class="section-collapsible">
+    <summary class="section-head">
+      <h2>Key findings at a glance</h2>
+      <span class="note">Ch. 01 · 8-tile summary — already distilled into Hypothesis &amp; Recommendations above</span>
+    </summary>
+    <div class="section-body">
+      <div class="findings">
+        <div class="finding warn">
+          <div class="label">Active premalignant lesion</div>
+          <div class="value"><span class="term" data-tip="A precancerous lesion in the middle of the dysplasia spectrum (mild → moderate → severe → carcinoma in situ → invasive cancer). 'Moderate' is treated as high-grade under modern WHO criteria.">Mod. dysplasia</span>, R maxilla</div>
+          <div class="sub">UCLA biopsy 02/24/2026 · Dr. Kang · awaiting management plan</div>
+        </div>
+        <div class="finding warn">
+          <div class="label">Likely diagnostic framing</div>
+          <div class="value"><span class="term" data-tip="Proliferative (Multifocal) Leukoplakia. A specific oral disease pattern with multiple white/precancerous patches at different times in different places. Affects mainly non-smoking women. Has a 43–74% lifetime cancer-conversion rate.">PMOL</span> pattern fits</div>
+          <div class="sub">Per 2021 consensus criteria · escalates surveillance intensity</div>
+        </div>
+        <div class="finding ok">
+          <div class="label">Imaging status</div>
+          <div class="value">CT neck + chest clear</div>
+          <div class="sub">04/03/2026 · no invasive disease seen</div>
+        </div>
+        <div class="finding info">
+          <div class="label">Actionable biomarkers</div>
+          <div class="value"><span class="term" data-tip="PD-L1 is a protein that some cancers use to evade the immune system. CPS (Combined Positive Score) of 5 means moderate expression — qualifies her for pembrolizumab (Keytruda) monotherapy if recurrence ever occurs.">PD-L1 CPS 5</span>, <span class="term" data-tip="A common cancer-driver mutation in the PI3-kinase pathway. Opens eligibility for clinical trials of drugs like alpelisib, inavolisib, capivasertib. Only relevant if there's a recurrence.">PIK3CA E542K</span></div>
+          <div class="sub">If recurrence: immunotherapy + PI3K-trial eligible</div>
+        </div>
+        <div class="finding warn">
+          <div class="label">Possible hereditary syndrome</div>
+          <div class="value"><span class="term" data-tip="TP53 is the most-mutated gene in human cancer ('guardian of the genome'). The R213P variant detected here has been reported in some families as a cause of Li-Fraumeni syndrome — a hereditary cancer predisposition.">TP53</span> + <span class="term" data-tip="CDKN2A encodes p16, a brake on cell division. Inherited mutations in CDKN2A cause the melanoma-pancreatic cancer syndrome. Her mother had melanoma, which raises the question.">CDKN2A</span> on tumor <span class="term" data-tip="Next-Generation Sequencing — DNA testing that reads many genes at once. Caris ran this on her 2023 lymph node tumor.">NGS</span></div>
+          <div class="sub">High-<span class="term" data-tip="Variant Allele Fraction — what percentage of the DNA copies carry the mutation. Around 50% suggests the mutation may be inherited (germline) rather than just in the tumor.">VAF</span> + 4 primaries — germline testing indicated</div>
+        </div>
+        <div class="finding flag">
+          <div class="label">Cardiovascular risk</div>
+          <div class="value">LDL 204 mg/dL</div>
+          <div class="sub">Trending up · PCP recommends <span class="term" data-tip="Cholesterol-lowering medications (e.g., atorvastatin, rosuvastatin). Beyond cardiovascular protection, observational data link statin use to improved survival in head and neck cancer.">statin</span> resumption</div>
+        </div>
+        <div class="finding warn">
+          <div class="label">CBC</div>
+          <div class="value">WBC 3.0 · Lymph 591</div>
+          <div class="sub">Mild <span class="term" data-tip="Lower-than-normal white blood cell count. Often persists for months to years after chemoradiation. Worth trending but rarely needs intervention unless severe.">leukopenia</span>, likely post-CRT; monitor trend</div>
+        </div>
+        <div class="finding info">
+          <div class="label">Background condition</div>
+          <div class="value"><span class="term" data-tip="A chronic immune-mediated inflammation of the mouth lining causing white lacy patches and sometimes painful erosions. About 1–2% transforms to oral cancer over years; that risk is much higher when combined with other features.">Oral lichen planus</span> since 2017</div>
+          <div class="sub"><span class="term" data-tip="When an entire area of tissue (the 'field') has been damaged by carcinogens or chronic inflammation and develops cancer-prone changes. Multiple separate cancers can arise from the same field.">Field cancerization</span> driver — lifelong oral surveillance</div>
+        </div>
+        <div class="finding info">
+          <div class="label">Late effects to manage</div>
+          <div class="value"><span class="term" data-tip="Osteoradionecrosis — dead/damaged bone in previously radiated tissue. Can be triggered by dental extractions or surgery in the radiated area.">ORN</span> risk, <span class="term" data-tip="Chronic dry mouth from radiation damage to salivary glands. Common after head and neck IMRT. Treatable with pilocarpine, cevimeline, saliva substitutes.">xerostomia</span>, neck fibrosis</div>
+          <div class="sub">Active prevention preferred over reactive care</div>
+        </div>
+      </div>
+    </div>
+    </details>
+  </section>
+
+  <!-- ============== DIAGNOSIS SUMMARY ============== -->
+  <section class="section" id="ch-diagnosis">
+    <details class="section-collapsible">
+    <summary class="section-head">
+      <h2>Diagnosis summary</h2>
+      <span class="note">Ch. 01 · diagnosis, staging, risk factors, family history</span>
+    </summary>
+    <div class="section-body">
+      <p class="lede-clinical">Between Nov 2021 and May 2023, four primary <span class="term" data-tip="Squamous Cell Carcinoma — the most common cancer of the head and neck. Arises from the flat 'squamous' cells lining the mouth, throat, larynx.">squamous cell carcinomas</span> arose in the left oral cavity (lateral tongue, maxillary alveolar ridge, ventral tongue). All were <span class="term" data-tip="The smallest tumor stage: ≤2 cm in size with shallow invasion (≤5 mm deep). p = pathologic, T1 = the size/depth category.">pT1</span>, low-grade, with negative or widely clear margins. In Dec 2023 a contralateral right-sided cervical lymph node demonstrated metastatic SCC with <strong><span class="term" data-tip="Extranodal Extension — cancer cells in a lymph node broke through the node's outer wall (capsule). A high-risk feature that strongly predicts the need for chemoradiation after surgery.">extranodal extension (ENE)</span></strong> — staged rpTxN2aM0. Definitive adjuvant <span class="term" data-tip="Chemotherapy + radiation given at the same time. Each makes the other more effective. Standard approach for high-risk head/neck cancer after surgery, especially with ENE.">chemoradiation</span> followed in early 2024. CT surveillance has remained clear. In February 2026, a UCLA biopsy of a gingival lesion identified <strong>squamous atypia suspicious for moderate dysplasia on the right posterior maxilla</strong> — a precancerous lesion in a previously uninvolved field on the same side as the prior nodal recurrence.</p>
+      <dl class="kv">
+        <dt>Primary site</dt><dd>Oral cavity — multifocal (tongue × 2, maxillary alveolar ridge × 1)</dd>
+        <dt>Histology</dt><dd>Keratinizing squamous cell carcinoma, NOS · G1–G2</dd>
+        <dt>HPV status</dt><dd>Negative (HPV 16/18 negative; EBV negative)</dd>
+        <dt>Initial T stage</dt><dd>pT1 (all four primaries)</dd>
+        <dt>Initial N stage</dt><dd>pN0 left neck (0/55 nodes); pN2a right neck (1/37, ENE+, 1.3 cm)</dd>
+        <dt>Initial M stage</dt><dd>M0 (no distant disease)</dd>
+        <dt>Current lesion</dt><dd><strong>Right posterior maxilla — atypia suspicious for moderate dysplasia</strong> (UCLA SSW-26-05090, 02/24/2026). Left maxilla biopsy at same encounter: <span class="term" data-tip="Thickening of the outermost (keratin) layer of mucosa. Common, often inflammatory, and not itself precancerous — but in a high-risk patient warrants follow-up.">hyperkeratosis</span> only, negative for dysplasia/malignancy.</dd>
+        <dt>Background</dt><dd>Oral <span class="term" data-tip="A chronic immune-mediated inflammation of the mouth lining causing white lacy patches and sometimes painful erosions. About 1–2% transforms to oral cancer over years.">lichen planus</span> (since 2017) · history of oral dysplasia · generalized <span class="term" data-tip="Inflammation and destruction of the gums and the bone supporting teeth. Recent data links the bacteria responsible (F. nucleatum, P. gingivalis) directly to oral cancer progression.">periodontitis</span> · hyperlipidemia</dd>
+        <dt>Risk factors</dt><dd>Never smoker · no significant alcohol · no HPV — atypical demographic for HNSCC</dd>
+        <dt>Family history</dt><dd>Mother: melanoma + uterine cancer + cervical precancer (TAH 30s)</dd>
+      </dl>
+    </div>
+    </details>
+  </section>
+
+  <!-- ============== TREATMENT HISTORY ============== -->
+  <section class="section" id="ch-history">
+    <details class="section-collapsible">
+    <summary class="section-head">
+      <h2>Treatment & event history</h2>
+      <span class="note">Ch. 02 · full chronological timeline 2021–2026 · all 4 primaries + recurrence + CRT + biopsy</span>
+    </summary>
+    <div class="section-body nopad">
+      <div class="timeline">
+        <div class="tl-row surgery">
+          <span class="tl-date">11/30/2021</span>
+          <span class="tl-marker"></span>
+          <div class="tl-body">
+            <div class="tl-title">Partial glossectomy — left lateral tongue</div>
+            <div class="tl-detail">Surgeon: McNicoll. Path: focal residual invasive SCC, 1.5 mm, DOI 2.5 mm, −LVI, −PNI, margins clear (closest 1.5 mm). No adjuvant.</div>
+          </div>
+          <div class="tl-badges"><span class="badge muted">pT1Nx</span></div>
+        </div>
+        <div class="tl-row surgery">
+          <span class="tl-date">12/27/2022</span>
+          <span class="tl-marker"></span>
+          <div class="tl-body">
+            <div class="tl-title">Subtotal maxillectomy + STSG — left maxillary alveolar ridge</div>
+            <div class="tl-detail">Surgeon: McNicoll. Path: 0.9 cm G2 SCC, DOI 5 mm, +focal PNI, margins clear (closest 3 mm). Fitted for obturator at UCLA.</div>
+          </div>
+          <div class="tl-badges"><span class="badge muted">pT1Nx</span><span class="badge warn">+PNI</span></div>
+        </div>
+        <div class="tl-row surgery">
+          <span class="tl-date">01/31/2023</span>
+          <span class="tl-marker"></span>
+          <div class="tl-body">
+            <div class="tl-title">Elective left neck dissection, levels I–IV</div>
+            <div class="tl-detail">Surgeon: Lin. Path: 0/55 nodes positive — completely clean.</div>
+          </div>
+          <div class="tl-badges"><span class="badge ok">pN0</span></div>
+        </div>
+        <div class="tl-row surgery">
+          <span class="tl-date">05/23/2023</span>
+          <span class="tl-marker"></span>
+          <div class="tl-body">
+            <div class="tl-title">Partial glossectomy — left anterior ventral tongue</div>
+            <div class="tl-detail">Surgeon: McNicoll. Path: 1.5 mm residual SCC, DOI 2 mm, margins widely clear, −LVI, −PNI.</div>
+          </div>
+          <div class="tl-badges"><span class="badge muted">pT1</span></div>
+        </div>
+        <div class="tl-row recurrence">
+          <span class="tl-date">11/17/2023</span>
+          <span class="tl-marker"></span>
+          <div class="tl-body">
+            <div class="tl-title">Right level I lymph node noticed by patient</div>
+            <div class="tl-detail">Did not respond to antibiotics; FNAs 11/22 and 12/01 showed atypical cells. CT chest/abdomen negative for distant disease.</div>
+          </div>
+          <div class="tl-badges"><span class="badge warn">Workup</span></div>
+        </div>
+        <div class="tl-row recurrence">
+          <span class="tl-date">12/19/2023</span>
+          <span class="tl-marker"></span>
+          <div class="tl-body">
+            <div class="tl-title">Right modified radical neck dissection — recurrence confirmed</div>
+            <div class="tl-detail">Surgeon: Lin. Path: 1/7 level I nodes positive — 1.3 cm metastatic SCC with <strong>extranodal extension (ENE)</strong>. Levels II–IV all negative (0/30).</div>
+          </div>
+          <div class="tl-badges"><span class="badge flag">pN2a · ENE+</span></div>
+        </div>
+        <div class="tl-row imaging">
+          <span class="tl-date">01/19/2024</span>
+          <span class="tl-marker"></span>
+          <div class="tl-body">
+            <div class="tl-title">Caris MI Tumor Seek+ molecular profile</div>
+            <div class="tl-detail">Tumor genomic profiling completed on right neck node specimen. Key findings: PD-L1 CPS 5+, PIK3CA E542K, TP53 R213P, CDKN2A R80*. See Tumor genomics section.</div>
+          </div>
+          <div class="tl-badges"><span class="badge info">NGS</span></div>
+        </div>
+        <div class="tl-row treatment">
+          <span class="tl-date">Early 2024</span>
+          <span class="tl-marker"></span>
+          <div class="tl-body">
+            <div class="tl-title">Adjuvant chemoradiation — cisplatin + IMRT</div>
+            <div class="tl-detail">Bilateral neck <span class="term" data-tip="Intensity-Modulated Radiation Therapy — a precise form of radiation that shapes the dose to match the tumor while sparing nearby healthy tissue (salivary glands, spinal cord). Standard for head/neck cancer.">IMRT</span> over 6–6.5 weeks with concurrent <span class="term" data-tip="A platinum-based chemotherapy drug. Given alongside radiation to make tumor cells more sensitive to radiation. Very effective but can cause hearing loss, kidney effects, and persistent low blood counts.">cisplatin</span>. Indication: ENE — per joint RTOG/EORTC analysis (Bernier NEJM 2004, Cooper NEJM 2004). Consulted at both Kaiser (Iganej/Vazquez) and Cedars-Sinai (Zumsteg).</div>
+          </div>
+          <div class="tl-badges"><span class="badge warn">CRT</span></div>
+        </div>
+        <div class="tl-row clear">
+          <span class="tl-date">03/26/2025</span>
+          <span class="tl-marker"></span>
+          <div class="tl-body">
+            <div class="tl-title">1-year surveillance CT — clear</div>
+            <div class="tl-detail">Used as comparison study for current imaging. No evidence of disease.</div>
+          </div>
+          <div class="tl-badges"><span class="badge ok">Clear</span></div>
+        </div>
+        <div class="tl-row clear">
+          <span class="tl-date">03/30/2026</span>
+          <span class="tl-marker"></span>
+          <div class="tl-body">
+            <div class="tl-title">CT neck + CT chest with contrast — both clear</div>
+            <div class="tl-detail">CT neck: prior left hemimaxillectomy; no neck mass, no lymphadenopathy; mild bilateral maxillary sinus mucosal thickening; stable 4 mm left thyroid nodule. CT chest: no intrathoracic metastatic disease; mild biapical pleural-parenchymal scarring stable. <em>"Look great, no evidence of active cancer."</em> — Dr. Scher 04/04/2026.</div>
+          </div>
+          <div class="tl-badges"><span class="badge ok">NED</span></div>
+        </div>
+        <div class="tl-row recurrence">
+          <span class="tl-date">02/24/2026</span>
+          <span class="tl-marker"></span>
+          <div class="tl-body">
+            <div class="tl-title">UCLA gingival biopsy — moderate dysplasia found (right)</div>
+            <div class="tl-detail">Surgeon: Kang. Pathologist: Sajed. Left maxilla: hyperkeratosis only, no dysplasia. <strong>Right maxilla: atypia suspicious for moderate dysplasia, negative for invasive carcinoma.</strong> First premalignant lesion identified on the right (contralateral) side. Surgical management indicated.</div>
+          </div>
+          <div class="tl-badges"><span class="badge warn">Mod. dysplasia</span></div>
+        </div>
+        <div class="tl-row imaging">
+          <span class="tl-date">05/04/2026</span>
+          <span class="tl-marker"></span>
+          <div class="tl-body">
+            <div class="tl-title">Preoperative labs drawn</div>
+            <div class="tl-detail">CBC, CMP, lipid panel, urinalysis, PT/INR, PTT — "Preop labs will be forwarded to the surgeon" per PCP note 05/05. Likely tied to planned excision of the dysplastic lesion. LDL flagged at 204; mild leukopenia (WBC 3.0) noted.</div>
+          </div>
+          <div class="tl-badges"><span class="badge info">Preop</span></div>
+        </div>
+      </div>
+    </div>
+    </details>
+  </section>
+
+  <!-- ============== DEEP DIVE — WHAT THE 2024–2026 LITERATURE SAYS ============== -->
+  <section class="section" id="ch-research">
+    <details class="section-collapsible">
+    <summary class="section-head">
+      <h2>Deep-dive · what the latest literature says about this biopsy</h2>
+      <span class="note">Ch. 02b · 2024–2026 evidence · AHNS guideline, PMOL framing, chemoprevention options, UCLA program</span>
+    </summary>
+    <div class="section-body">
+      <p class="lede-clinical">A focused literature scan changes the framing in three important ways. <strong>(1)</strong> The pattern of four primaries + lichen planus + new bilateral gingival changes likely meets criteria for a specific entity called <span class="term" data-tip="Proliferative (Multifocal) Leukoplakia — a rare oral disease pattern with multiple white patches that appear at different times in different parts of the mouth, often in non-smoking women. Has a much higher cancer-conversion rate than ordinary leukoplakia.">PMOL</span>, not just "dysplasia on lichen planus background." <strong>(2)</strong> The 2024 American Head and Neck Society guideline is now the most authoritative US document on management of this exact problem. <strong>(3)</strong> Two investigational treatments — topical <span class="term" data-tip="A topical immune-stimulating cream (brand: Aldara) originally approved for skin precancers and warts. Being studied for oral dysplasia — recent reports show 65–82% of patients have lesions shrink ≥50%.">imiquimod</span> and <span class="term" data-tip="Pembrolizumab/nivolumab (Keytruda/Opdivo) injected directly into a precancerous lesion. Trial NCT06561087 reported 85% clinical response and 41% histologic improvement at low doses — and her PD-L1 CPS 5 result makes her tumor biology a match.">intralesional nivolumab</span> — are emerging with promising data that may matter to her specifically.</p>
+    </div>
+
+    <div class="section-body" style="border-top: 1px solid var(--line);">
+      <div class="grid-2">
+        <div>
+          <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--muted); letter-spacing: 0.05em; margin-bottom: 8px;">Does Jan have PMOL?</div>
+          <p style="font-size: 13px; color: var(--text); line-height: 1.6;">The 2021 Woo/Thompson expert consensus on <span class="term" data-tip="Two names for the same disease entity. PVL = Proliferative Verrucous Leukoplakia (older term, required wart-like appearance). PMOL = Proliferative Multifocal Oral Leukoplakia (newer, broader term that doesn't require the verrucous look).">PVL/PMOL</span> requires: <strong>(a)</strong> multifocal disease (≥2 separate sites), <strong>(b)</strong> progression over time (new sites, expansion, or histologic worsening), and <strong>(c)</strong> exclusion of clear etiology like heavy tobacco use. Jan's profile — never-smoker female, four prior primaries 2021–2023, oral lichen planus background, now new bilateral gingival lesions (one moderate dysplasia, one hyperkeratosis) — fits the demographic and progression criteria well.</p>
+          <p style="font-size: 13px; color: var(--text); line-height: 1.6; margin-top: 10px;">Pooled malignant transformation rate for PMOL: <strong>43–74% over follow-up</strong>, vs ~10% for ordinary moderate dysplasia and ~1.4% for OLP alone. <strong>If accepted as a PMOL diagnosis, surveillance intensity escalates</strong> — quarterly oral medicine review with photographic field mapping, lower threshold for biopsy of any new lesion, and multidisciplinary co-management.</p>
+          <div class="deep">
+            <h5>Most important framing question for Dr. Kang</h5>
+            "Do my clinical pattern + this new dysplasia meet the 2021 PVL/PMOL consensus criteria — and if yes, can we move from spot-dysplasia management to a unified PMOL surveillance protocol with UCLA Oral Medicine, Pathology, and H&N Surgery?"
+          </div>
+        </div>
+        <div>
+          <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--muted); letter-spacing: 0.05em; margin-bottom: 8px;">What AHNS 2024 actually recommends</div>
+          <p style="font-size: 13px; color: var(--text); line-height: 1.6;">The American Head and Neck Society's Cancer Prevention Service published an updated 2024 guideline (Gates et al., Head & Neck, Nov 2024 — the most current US expert consensus on this exact problem).</p>
+          <ul style="font-size: 13px; color: var(--text); margin-top: 10px; padding-left: 18px; line-height: 1.6;">
+            <li><strong>Formal excision or ablation</strong> for any dysplastic lesion (mild, moderate, or severe) when feasible.</li>
+            <li><strong>Excisional margins: 2–5 mm</strong> in depth and width.</li>
+            <li><strong>Clinical surveillance every 3 months</strong> for moderate dysplasia.</li>
+            <li><strong>Re-biopsy every 12–18 months</strong> for moderate dysplasia even if visually stable.</li>
+            <li><strong>Active surveillance for at least 5 years</strong> — transformation risk persists 10–15 years.</li>
+            <li>No single chemopreventive agent has durable efficacy as monotherapy.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-body" style="border-top: 1px solid var(--line);">
+      <div class="grid-2">
+        <div>
+          <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--muted); letter-spacing: 0.05em; margin-bottom: 8px;">Molecular workup worth requesting on the excised tissue</div>
+          <ul style="font-size: 13px; color: var(--text); padding-left: 18px; line-height: 1.6;">
+            <li><strong><span class="term" data-tip="Immunohistochemistry — a lab test that uses antibodies to stain specific proteins in a tissue slide. Tells you which proteins a cell is making or has lost.">p53 IHC</span> pattern</strong> — distinguishes mutant pattern (overexpression/null) from wild-type. A mutant pattern argues for true neoplastic clonal expansion rather than reactive inflammation.</li>
+            <li><strong>p16 IHC</strong> — given her CDKN2A R80* mutation, expect loss; confirms HPV-independent pathway.</li>
+            <li><strong><span class="term" data-tip="A protein marker of cell division. High Ki-67 percentage means cells are multiplying rapidly. Useful for predicting which precancers are most likely to progress.">Ki-67</span> proliferation index</strong> — high suprabasal staining predicts higher transformation risk.</li>
+            <li><strong><span class="term" data-tip="Loss of Heterozygosity — losing one of the two copies of a gene. Classic markers at chromosomes 3p14, 9p21, 17p13 identify oral lesions with greatly elevated cancer risk (30× higher in some studies).">LOH</span> at 3p14, 9p21, 17p13</strong> — the classical Rosin/Zhang field-cancerization panel.</li>
+            <li><strong>Repeat <span class="term" data-tip="Next-Generation Sequencing — reading the DNA of the tumor to find mutations. Caris already did this on the 2023 tumor.">NGS</span> on the new lesion</strong> — does it share the same TP53 R213P, CDKN2A R80*, PIK3CA E542K signature as her 2023 tumor? Shared mutations → clonal field expansion. Different mutations → independent new primary. This changes prognostic framing.</li>
+            <li><strong>Tumor-informed <span class="term" data-tip="Circulating Tumor DNA — small fragments of tumor DNA in the bloodstream. Custom panels built from her 2023 tumor (Signatera, NeXT Personal, Haystack MRD) can detect microscopic residual disease before imaging would catch it. Useful in HPV-negative HNSCC per 2024 Clin Cancer Res data.">ctDNA</span> (Signatera / NeXT Personal / Haystack MRD)</strong> — personalized panel built from her 2023 tumor for blood-based surveillance.</li>
+          </ul>
+        </div>
+        <div>
+          <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--muted); letter-spacing: 0.05em; margin-bottom: 8px;">Investigational chemoprevention worth knowing about</div>
+          <ul style="font-size: 13px; color: var(--text); padding-left: 18px; line-height: 1.6;">
+            <li><strong><span class="term" data-tip="A common diabetes medication (Glucophage) being studied for cancer prevention. Phase IIa in oral premalignancy showed 17% clinical and 60% partial histologic response. Generally safe even in non-diabetics.">Metformin</span> for oral premalignancy</strong> — Phase IIa (Gutkind 2021) positive; Phase IIb <span class="mono">NCT05237960</span> ongoing. Generally well-tolerated.</li>
+            <li><strong>Topical <span class="term" data-tip="A topical immune-stimulating cream (brand: Aldara) originally approved for skin precancers and warts. Being studied for oral dysplasia — recent reports show 65–82% of patients have lesions shrink ≥50%.">imiquimod</span> 5%</strong> — 2025 two-center retrospective: 65–82% had ≥50% size reduction; 32–42% complete resolution. Trial <span class="mono">NCT07210775</span> active.</li>
+            <li><strong>Intralesional <span class="term" data-tip="Anti-PD-1 immunotherapy (Opdivo) — the same class of drug as pembrolizumab. Being injected directly into precancerous oral lesions in trial NCT06561087. Early data: 85% clinical response, 41% histologic improvement.">nivolumab</span></strong> — Phase II <span class="mono">NCT06561087</span> in high-risk OPL. Early data: 85% clinical / 41% histologic improvement at low doses. <strong>Her CPS 5 makes her tumor biology a biomarker match.</strong></li>
+            <li><strong><span class="term" data-tip="A natural turmeric compound. Phase IIB at 3.6 g/day showed clinical response 67.5% vs 55.3% placebo with durable 6-month effect. Adjunctive supplement; generally safe.">Curcumin</span> 3.6 g/day</strong> — Phase IIB Kuriakose 2016: 67.5% vs 55.3% response. Safe adjunct.</li>
+            <li><strong>Photodynamic therapy (5-ALA)</strong> — 86% overall response in oral leukoplakia in published cohort; useful where surgery is morbid.</li>
+            <li><strong>13-cis-retinoic acid · erlotinib (EPOC)</strong> — both <em>negative</em> in long-term trials. Not standard.</li>
+          </ul>
+          <div class="deep" style="margin-top: 12px;">
+            <h5>Pragmatic note</h5>
+            None of the above is FDA-approved for oral premalignancy as monotherapy. <strong>Surgical excision remains primary; these are adjuncts or trial options for diffuse / recurrent disease.</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-body" style="border-top: 1px solid var(--line);">
+      <div class="grid-2">
+        <div>
+          <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--muted); letter-spacing: 0.05em; margin-bottom: 8px;">Periodontitis as an active driver</div>
+          <p style="font-size: 13px; color: var(--text); line-height: 1.6;">Dr. Kang's clinical note describes "generalized periodontitis and gingival inflammation" as the context for the biopsy. Recent literature (2023–2025) increasingly identifies <em>F. nucleatum</em> and <em>P. gingivalis</em> — the two main periodontitis bacteria — as <strong>active drivers of oral SCC progression</strong>, not just passengers. A 2025 study in <em>Infectious Agents and Cancer</em> showed their co-infection accelerates the cell cycle and amplifies pro-inflammatory pathways in oral cancer cells.</p>
+          <p style="font-size: 13px; color: var(--text); line-height: 1.6; margin-top: 10px;">Two practical implications: <strong>(1)</strong> Active gingival inflammation can mimic dysplasia histologically — controlling the periodontitis aggressively before any re-biopsy or excision improves diagnostic clarity. <strong>(2)</strong> Aggressive periodontal management may itself be cancer-prevention, not just dental hygiene.</p>
+          <div class="deep">
+            <h5>Worth asking</h5>
+            "Should I be co-managed by an oncology-aware periodontist (UCLA Special Patient Care / Hospital Dentistry) and have the periodontitis brought under control before/after the excision?"
+          </div>
+        </div>
+        <div>
+          <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--muted); letter-spacing: 0.05em; margin-bottom: 8px;">Operating in a previously radiated field</div>
+          <p style="font-size: 13px; color: var(--text); line-height: 1.6;">The right posterior maxillary alveolus sits within her 2024 right neck IMRT field. <span class="term" data-tip="Osteoradionecrosis — dead/damaged bone in a previously radiated area. Can occur after dental extractions or surgery in radiated bone. Less common in the upper jaw than the lower, but still a meaningful concern.">Osteoradionecrosis (ORN)</span> is a real, if low-probability, complication of any procedure in that field.</p>
+          <ul style="font-size: 13px; color: var(--text); padding-left: 18px; line-height: 1.6; margin-top: 10px;">
+            <li><strong>PENTO protocol</strong> (<span class="term" data-tip="Pentoxifylline (a blood-flow-improving medication) plus vitamin E (an antioxidant). Combination shown in multiple studies to reduce or treat radiation-related bone necrosis. Standard regimen: pentoxifylline 400 mg twice daily + vitamin E 1000 IU daily, started 1 week before procedure and continued ~8 weeks after.">pentoxifylline 400 mg BID + vitamin E 1000 IU daily</span>) starting 1 wk pre-procedure, continued 8 wks post — supported by 2023–2025 reviews.</li>
+            <li><strong>Hyperbaric oxygen no longer first-line</strong> after the 2019 HOPON trial showed no benefit for prophylaxis.</li>
+            <li><strong>Maxillary ORN rarer than mandibular</strong> (better blood supply) — but post-IMRT maxilla is not no-risk.</li>
+            <li>Atraumatic technique, primary closure where possible, antibiotic prophylaxis (amoxicillin or clindamycin if penicillin-allergic).</li>
+          </ul>
+          <div class="deep">
+            <h5>Worth asking</h5>
+            "What dose did the right posterior maxillary alveolus actually receive on my 2024 IMRT plan? If above 60 Gy, can we start PENTO before any excision?"
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-body" style="border-top: 1px solid var(--line);">
+      <div class="grid-2">
+        <div>
+          <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--muted); letter-spacing: 0.05em; margin-bottom: 8px;">Lichen planus treatment in a cancer survivor</div>
+          <p style="font-size: 13px; color: var(--text); line-height: 1.6;">A 2024 retrospective in <em>BDJ Open</em> compared OLP treatments and found <strong>topical clobetasol associated with the lowest subsequent OSCC risk</strong> (HR 0.73) among studied OLP therapies. Tacrolimus showed a weaker protective signal and carries theoretical (though clinically weak) concerns about long-term local immunosuppression in cancer survivors. <strong>If pharmacotherapy is needed, clobetasol is preferred over tacrolimus in this setting.</strong></p>
+        </div>
+        <div>
+          <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--muted); letter-spacing: 0.05em; margin-bottom: 8px;">UCLA program structure — who to be on file with</div>
+          <ul style="font-size: 13px; color: var(--text); padding-left: 18px; line-height: 1.6;">
+            <li><strong>Dr. Robert Kang</strong> — H&N Surgery (already on file, leading this case)</li>
+            <li><strong>Dr. Dipti Sajed</strong> — UCLA H&N Pathology (signed this biopsy)</li>
+            <li><strong>Dr. Diana Messadi</strong> — Chair, UCLA Oral Medicine Faculty Practice. Oral cancer early detection / chemoprevention research focus. Cross-referral worth asking about. <span class="mono">(310) 825-7338</span></li>
+            <li><strong>Dr. Deborah Wong</strong> or <strong>Dr. Wanxing Chai-Ho</strong> — UCLA H&N medical oncology (separate from Dr. Scher at Cedars; useful for trial access)</li>
+            <li><strong>UCLA Cancer Genetics</strong> — Gerald F. Strauss Cancer Genetics Program (for the TP53/CDKN2A germline workup)</li>
+            <li><strong>UCLA Special Patient Care / Hospital Dentistry</strong> — for PENTO prescribing and oncology-aware dental/periodontal management</li>
+            <li><strong>UCLA H&N Multidisciplinary Tumor Board</strong> — meets weekly; worth asking whether her case can be formally presented with the biopsy + 2023 ENE+ recurrence + Caris NGS + germline question on one slide</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </details>
+  </section>
+
+  <!-- ============== CURRENT IMAGING ============== -->
+  <section class="section" id="ch-imaging">
+    <details class="section-collapsible">
+    <summary class="section-head">
+      <h2>Most recent imaging</h2>
+      <span class="note">Ch. 03 · imaging only — see Ch. 02a for the biopsy</span>
+    </summary>
+    <div class="section-body nopad">
+      <table class="data">
+        <thead>
+          <tr>
+            <th style="width: 120px;">Date</th>
+            <th>Study</th>
+            <th>Impression</th>
+            <th>Reader</th>
+            <th style="width: 100px;">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="when">04/03/2026</span></td>
+            <td><strong>CT Neck w/ contrast</strong></td>
+            <td>Prior left hemimaxillectomy. <strong>No evidence for neck mass or cervical lymphadenopathy.</strong> Mild bilateral maxillary sinus mucosal thickening. Stable 4 mm left thyroid nodule.</td>
+            <td>Moser FG, MD<br><span class="when">Dictated by Nguyen DO</span></td>
+            <td><span class="badge ok">Clear</span></td>
+          </tr>
+          <tr>
+            <td><span class="when">03/30/2026</span></td>
+            <td><strong>CT Chest w/ contrast</strong></td>
+            <td>History of oral cavity cancer, <strong>without evidence of intrathoracic metastatic disease, stable.</strong> Mild coronary artery calcifications. Stable biapical pleural-parenchymal scarring.</td>
+            <td>Lee C, MD</td>
+            <td><span class="badge ok">Clear</span></td>
+          </tr>
+          <tr>
+            <td><span class="when">03/26/2025</span></td>
+            <td><strong>CT Neck (comparison)</strong></td>
+            <td>Comparison study — no evidence of disease at 1-yr post-CRT.</td>
+            <td>—</td>
+            <td><span class="badge ok">Clear</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </details>
+  </section>
+
+  <!-- ============== LATEST LABS ============== -->
+  <section class="section" id="ch-labs">
+    <details class="section-collapsible">
+    <summary class="section-head">
+      <h2>Latest labs · 05/04/2026</h2>
+      <span class="note">Ch. 04 · drawn 8:16 AM, Cedars-Sinai / Quest · LDL high, WBC mildly low, rest normal</span>
+    </summary>
+    <div class="section-body nopad">
+      <div class="labs">
+        <div class="lab flag">
+          <span class="lab-name">Total cholesterol</span>
+          <span class="lab-value">320 <span class="u">mg/dL</span></span>
+          <div class="lab-bar">
+            <div class="range-zone" style="left: 0%; width: 50%;"></div>
+            <span class="mark" style="left: 80%;"></span>
+          </div>
+          <span class="lab-range">Normal &lt; 200</span>
+        </div>
+        <div class="lab flag">
+          <span class="lab-name">LDL cholesterol</span>
+          <span class="lab-value">204 <span class="u">mg/dL</span></span>
+          <div class="lab-bar">
+            <div class="range-zone" style="left: 0%; width: 28%;"></div>
+            <span class="mark" style="left: 82%;"></span>
+          </div>
+          <span class="lab-range">Goal &lt; 70 (cardiac hx) · was 177 in Jan</span>
+        </div>
+        <div class="lab ok">
+          <span class="lab-name">HDL cholesterol</span>
+          <span class="lab-value">99 <span class="u">mg/dL</span></span>
+          <div class="lab-bar">
+            <div class="range-zone" style="left: 25%; width: 75%;"></div>
+            <span class="mark" style="left: 75%;"></span>
+          </div>
+          <span class="lab-range">Goal ≥ 50 · excellent</span>
+        </div>
+        <div class="lab warn">
+          <span class="lab-name">WBC</span>
+          <span class="lab-value">3.0 <span class="u">K/µL</span></span>
+          <div class="lab-bar">
+            <div class="range-zone" style="left: 35%; width: 60%;"></div>
+            <span class="mark" style="left: 26%;"></span>
+          </div>
+          <span class="lab-range">Normal 3.8 – 10.8 · mild leukopenia</span>
+        </div>
+        <div class="lab warn">
+          <span class="lab-name"><span class="term" data-tip="Lymphocytes are a type of white blood cell that fights infections and tumors. Lower-than-normal lymphocytes are very common after chemoradiation and usually recover over time.">Lymphocytes</span> (abs.)</span>
+          <span class="lab-value">591 <span class="u">/µL</span></span>
+          <div class="lab-bar">
+            <div class="range-zone" style="left: 20%; width: 75%;"></div>
+            <span class="mark" style="left: 14%;"></span>
+          </div>
+          <span class="lab-range">Normal 850 – 3900</span>
+        </div>
+        <div class="lab ok">
+          <span class="lab-name">Hemoglobin</span>
+          <span class="lab-value">13.7 <span class="u">g/dL</span></span>
+          <div class="lab-bar">
+            <div class="range-zone" style="left: 0%; width: 100%;"></div>
+            <span class="mark" style="left: 53%;"></span>
+          </div>
+          <span class="lab-range">Normal 11.7 – 15.5</span>
+        </div>
+        <div class="lab ok">
+          <span class="lab-name">Platelets</span>
+          <span class="lab-value">233 <span class="u">K/µL</span></span>
+          <div class="lab-bar">
+            <div class="range-zone" style="left: 0%; width: 100%;"></div>
+            <span class="mark" style="left: 36%;"></span>
+          </div>
+          <span class="lab-range">Normal 140 – 400</span>
+        </div>
+        <div class="lab ok">
+          <span class="lab-name">Glucose (fasting)</span>
+          <span class="lab-value">81 <span class="u">mg/dL</span></span>
+          <div class="lab-bar">
+            <div class="range-zone" style="left: 0%; width: 100%;"></div>
+            <span class="mark" style="left: 47%;"></span>
+          </div>
+          <span class="lab-range">Normal 65 – 99</span>
+        </div>
+        <div class="lab ok">
+          <span class="lab-name">Creatinine</span>
+          <span class="lab-value">0.67 <span class="u">mg/dL</span></span>
+          <div class="lab-bar">
+            <div class="range-zone" style="left: 0%; width: 100%;"></div>
+            <span class="mark" style="left: 31%;"></span>
+          </div>
+          <span class="lab-range">Normal 0.50 – 1.05</span>
+        </div>
+        <div class="lab ok">
+          <span class="lab-name"><span class="term" data-tip="Estimated Glomerular Filtration Rate — measures how well the kidneys filter blood. Higher is better. Above 60 is normal; below 30 is significant kidney impairment.">eGFR</span></span>
+          <span class="lab-value">98</span>
+          <div class="lab-bar">
+            <div class="range-zone" style="left: 60%; width: 40%;"></div>
+            <span class="mark" style="left: 98%;"></span>
+          </div>
+          <span class="lab-range">Goal ≥ 60</span>
+        </div>
+        <div class="lab ok">
+          <span class="lab-name">AST / ALT</span>
+          <span class="lab-value">20 / 13</span>
+          <div class="lab-bar">
+            <div class="range-zone" style="left: 0%; width: 100%;"></div>
+            <span class="mark" style="left: 30%;"></span>
+          </div>
+          <span class="lab-range">Normal (10–35 / 6–29)</span>
+        </div>
+        <div class="lab ok">
+          <span class="lab-name"><span class="term" data-tip="Thyroid Stimulating Hormone — measures thyroid function. High TSH = underactive thyroid (common late effect of neck radiation). Should be checked annually after head/neck radiation.">TSH</span></span>
+          <span class="lab-value">3.56 <span class="u">mIU/L</span></span>
+          <div class="lab-bar">
+            <div class="range-zone" style="left: 0%; width: 100%;"></div>
+            <span class="mark" style="left: 70%;"></span>
+          </div>
+          <span class="lab-range">Normal 0.35 – 4.94 · monitor annually</span>
+        </div>
+        <div class="lab ok">
+          <span class="lab-name">INR</span>
+          <span class="lab-value">1.0</span>
+          <div class="lab-bar">
+            <div class="range-zone" style="left: 0%; width: 100%;"></div>
+            <span class="mark" style="left: 50%;"></span>
+          </div>
+          <span class="lab-range">Normal 0.9 – 1.1</span>
+        </div>
+        <div class="lab ok">
+          <span class="lab-name">PTT</span>
+          <span class="lab-value">25 <span class="u">sec</span></span>
+          <div class="lab-bar">
+            <div class="range-zone" style="left: 0%; width: 100%;"></div>
+            <span class="mark" style="left: 22%;"></span>
+          </div>
+          <span class="lab-range">Normal 23 – 32</span>
+        </div>
+        <div class="lab ok">
+          <span class="lab-name">Urinalysis</span>
+          <span class="lab-value">No UTI</span>
+          <div class="lab-bar">
+            <div class="range-zone" style="left: 0%; width: 100%;"></div>
+            <span class="mark" style="left: 50%;"></span>
+          </div>
+          <span class="lab-range">Mild WBC (likely contamination); culture neg</span>
+        </div>
+      </div>
+    </div>
+    </details>
+  </section>
+
+  <!-- ============== TUMOR GENOMICS ============== -->
+  <section class="section" id="ch-genomics">
+    <details class="section-collapsible">
+    <summary class="section-head">
+      <h2>Tumor genomics · Caris MI Tumor Seek+ · 01/19/2024</h2>
+      <span class="note">Ch. 05 · PD-L1 CPS 5 · TMB low · PIK3CA E542K (favorable) · TP53 + CDKN2A (possible germline)</span>
+    </summary>
+    <div class="section-body">
+      <p class="lede-clinical">Whole exome and transcriptome sequencing of the right cervical node specimen identified <strong>PD-L1 positivity (CPS 5)</strong> — qualifying for pembrolizumab monotherapy if first-line treatment for recurrent/metastatic disease ever becomes necessary — and a <strong>PIK3CA E542K hotspot mutation</strong> opening eligibility for PI3K-inhibitor clinical trials. HPV and EBV negative. Microsatellite stable. Tumor mutational burden low (4 mut/Mb). Two mutations (TP53 R213P, CDKN2A R80*) at variant allele fractions consistent with possible germline origin warrant dedicated germline workup.</p>
+    </div>
+
+    <div class="section-body nopad" style="border-top: 1px solid var(--line);">
+      <table class="data">
+        <thead>
+          <tr>
+            <th>Biomarker</th>
+            <th>Result</th>
+            <th>Clinical relevance</th>
+            <th class="right">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong><span class="term" data-tip="A protein on cell surfaces that 'turns off' attacking immune cells. Cancers that express it hide from the immune system. Drugs like pembrolizumab/nivolumab block this and let the immune system attack the tumor.">PD-L1</span> (22c3)</strong></td>
+            <td class="num">Positive · CPS 5</td>
+            <td>Eligible for <span class="term" data-tip="Brand name Keytruda. An anti-PD-1 antibody that re-activates the immune system against cancer. FDA-approved for many cancers including head/neck.">pembrolizumab</span> monotherapy in 1st-line R/M HNSCC if recurrence (KEYNOTE-048)</td>
+            <td class="right"><span class="badge ok">Druggable</span></td>
+          </tr>
+          <tr>
+            <td><strong><span class="term" data-tip="Tumor Mutational Burden — how many mutations the tumor carries. High TMB tumors often respond better to immunotherapy because they look more 'foreign' to the immune system. Threshold for 'high' is usually ≥10 mutations per million bases.">TMB</span></strong></td>
+            <td class="num">4 mut/Mb (low)</td>
+            <td>Below TMB-high threshold; does not by itself favor immunotherapy</td>
+            <td class="right"><span class="badge muted">Informational</span></td>
+          </tr>
+          <tr>
+            <td><strong><span class="term" data-tip="Microsatellite Instability — a sign that the cell's DNA repair machinery is broken. MSI-High tumors respond very well to immunotherapy. 'Stable' means the repair system is intact (normal).">MSI</span></strong></td>
+            <td class="num">Stable</td>
+            <td>Mismatch repair intact</td>
+            <td class="right"><span class="badge muted">Informational</span></td>
+          </tr>
+          <tr>
+            <td><strong>HPV / EBV</strong></td>
+            <td class="num">Negative / Negative</td>
+            <td><span class="term" data-tip="Human Papillomavirus — sexually transmitted virus that causes a specific subtype of throat cancer with better prognosis. Her cancer is HPV-NEGATIVE — driven by something else (likely lichen planus + field cancerization), behaves more aggressively than HPV+ throat cancer.">HPV</span>-negative OSCC; no viral driver; behaves more aggressively than HPV+ OPSCC</td>
+            <td class="right"><span class="badge muted">Informational</span></td>
+          </tr>
+          <tr>
+            <td><span class="gene"><span class="term" data-tip="The most-mutated gene in human cancer; nicknamed 'guardian of the genome.' Normally tells damaged cells to stop dividing or die. When broken, damaged cells survive and accumulate more damage.">TP53</span></span></td>
+            <td><span class="variant">p.R213P · 34% VAF</span></td>
+            <td>Likely pathogenic. R213P has been reported as a <strong><span class="term" data-tip="A mutation present in every cell of the body since birth — inherited from a parent. Different from a 'somatic' mutation, which arises in the tumor only. Germline mutations can be passed to children and indicate hereditary cancer syndromes.">germline</span></strong> variant causal for <span class="term" data-tip="Li-Fraumeni syndrome — a hereditary cancer predisposition caused by inherited TP53 mutations. People with LFS develop multiple cancers (sarcomas, breast, brain, adrenal, leukemia) often at young ages. The Toronto Protocol of annual whole-body MRI is the screening standard.">Li-Fraumeni syndrome</span>. VAF + multiple primaries make germline workup important.</td>
+            <td class="right"><span class="badge warn">Possible germline</span></td>
+          </tr>
+          <tr>
+            <td><span class="gene"><span class="term" data-tip="Encodes p16, a critical brake on cell division. Loss of CDKN2A is one of the most common molecular events in head and neck cancer. Inherited (germline) mutations in CDKN2A cause familial melanoma–pancreatic-cancer syndrome.">CDKN2A</span></span></td>
+            <td><span class="variant">p.R80* · 36% VAF</span></td>
+            <td>Pathogenic loss of p16. Germline CDKN2A causes melanoma–pancreatic-cancer syndrome. Mother had melanoma — link worth exploring.</td>
+            <td class="right"><span class="badge warn">Possible germline</span></td>
+          </tr>
+          <tr>
+            <td><span class="gene"><span class="term" data-tip="A frequently mutated cancer driver gene in the PI3-kinase pathway. Targeted drugs are now FDA-approved for some PIK3CA-mutant cancers (breast); active trials in head/neck.">PIK3CA</span></span></td>
+            <td><span class="variant">p.E542K · 13% <span class="term" data-tip="Variant Allele Fraction — % of DNA copies carrying the mutation. ~13% here suggests this is a tumor-only (somatic) mutation rather than inherited.">VAF</span></span></td>
+            <td>Oncogenic hotspot. <strong>E542K is the <em>favorable</em> helical-domain PIK3CA variant per the Korean TRIUMPH umbrella trial</strong> — median PFS to <span class="term" data-tip="An FDA-approved PI3K-alpha inhibitor (Piqray). Approved for PIK3CA-mutant breast cancer; being studied in head/neck cancer trials.">alpelisib</span> 7.3 vs 1.6 months for kinase-domain variants (p=0.017). Also: ALASCCA trial (NEJM 2025) showed aspirin reduced recurrence in PIK3CA-hotspot cancers including E542K.</td>
+            <td class="right"><span class="badge info">Trial-eligible · favorable subtype</span></td>
+          </tr>
+          <tr>
+            <td><span class="gene">TERT promoter</span></td>
+            <td><span class="variant">c.-124C&gt;T · 15% VAF</span></td>
+            <td>Activates telomerase; common in HNSCC; no direct drug</td>
+            <td class="right"><span class="badge muted">Tumor-acquired</span></td>
+          </tr>
+          <tr>
+            <td><span class="gene">CASP8</span></td>
+            <td><span class="variant">p.M53fs · 16% VAF</span></td>
+            <td>Apoptosis dysregulation; common in HPV-neg HNSCC</td>
+            <td class="right"><span class="badge muted">Tumor-acquired</span></td>
+          </tr>
+          <tr>
+            <td><span class="gene">RHOA</span></td>
+            <td><span class="variant">p.Y42H · 20% VAF</span></td>
+            <td>Likely pathogenic; promotes motility/metastasis; no approved drug</td>
+            <td class="right"><span class="badge muted">Tumor-acquired</span></td>
+          </tr>
+          <tr>
+            <td><span class="gene">ASXL1</span></td>
+            <td><span class="variant">p.R596fs · 14% VAF</span></td>
+            <td>Chromatin regulator. Note: also seen in age-related clonal hematopoiesis — possible relevance to the leukopenia/lymphopenia.</td>
+            <td class="right"><span class="badge muted">Tumor-acquired</span></td>
+          </tr>
+          <tr>
+            <td><span class="gene">HLA-A</span></td>
+            <td><span class="variant">A*24:02 / A*24:02 (homozygous)</span></td>
+            <td>Affects neoantigen presentation; relevant for some HLA-restricted trials</td>
+            <td class="right"><span class="badge muted">Trial-relevant</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </details>
+  </section>
+
   <!-- ============== FAMILY IMPLICATIONS ============== -->
   <section class="section" id="ch-family">
-    <div class="section-head">
+    <details class="section-collapsible">
+    <summary class="section-head">
       <h2>What this means for the family</h2>
-      <span class="note">Ch. 08 · hereditary risk for Jan's daughter and son · click each card to expand</span>
-    </div>
+      <span class="note">Ch. 08 · hereditary risk for daughter (35, has a 1-yo) and son (39)</span>
+    </summary>
     <div class="section-body">
       <p class="lede-clinical">Two of the mutations in Jan's tumor — <strong>TP53 R213P</strong> and <strong>CDKN2A R80*</strong> — have established hereditary forms. The variant fractions (34% and 36%) are consistent with — but don't prove — a germline origin. Combined with her four primaries and her mother's melanoma + uterine + cervical precancer history, the probability that at least one is inherited is meaningful.</p>
       <p class="lede-clinical" style="margin-top: 10px;"><strong>Three generations are affected if she's a carrier:</strong> Jan → her <strong>daughter (35, has a 1-year-old son)</strong> → her son. Two specific consequences of those ages:</p>
@@ -1742,6 +1761,7 @@
         </div>
       </details>
     </div>
+    </details>
   </section>
 
   <!-- ============== CARE TEAM ============== -->
@@ -1843,7 +1863,7 @@
   <div class="footer-note">
     <span>Patient: Roper, Janice S. · MRN 020518503</span>
     <span>Records reviewed: 18 PDFs · 2021–2026</span>
-    <span>Compiled 05/20/2026 · build <strong>2026-05-20.9</strong> · <a href="../index.html">janroper.com</a></span>
+    <span>Compiled 05/20/2026 · build <strong>2026-05-20.10</strong> · <a href="../index.html">janroper.com</a></span>
   </div>
 
 </main>

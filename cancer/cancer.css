@@ -687,6 +687,39 @@ table.data td.right, table.data th.right { text-align: right; }
   letter-spacing: 0;
 }
 
+/* ============== Background separator (between active and reference) ============== */
+.bg-separator {
+  margin-top: 36px;
+  padding: 22px 24px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, var(--bg-tint), var(--bg-tint-2));
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--info);
+}
+.bg-separator h2 {
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--info);
+  margin-bottom: 6px;
+}
+.bg-separator p {
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.55;
+  margin: 0;
+}
+@media (max-width: 600px) {
+  .bg-separator {
+    margin-top: 22px;
+    padding: 14px 16px;
+  }
+  .bg-separator h2 { font-size: 12px; }
+  .bg-separator p { font-size: 12px; }
+}
+
 /* ============== Collapsible section wrapper ============== */
 .section-collapsible {
   width: 100%;
