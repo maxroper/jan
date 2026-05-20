@@ -9,12 +9,12 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate, max-age=0">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<meta name="build-version" content="2026-05-20.6">
+<meta name="build-version" content="2026-05-20.7">
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="cancer.css?v=2026-05-20.6">
+<link rel="stylesheet" href="cancer.css?v=2026-05-20.7">
 <script>
 // Light-touch cache-buster: if the page came from cache and the user hits reload,
 // force a fresh fetch of the HTML by appending a timestamp once per session.
@@ -707,8 +707,8 @@
           <tr>
             <td><span class="gene"><span class="term" data-tip="A frequently mutated cancer driver gene in the PI3-kinase pathway. Targeted drugs are now FDA-approved for some PIK3CA-mutant cancers (breast); active trials in head/neck.">PIK3CA</span></span></td>
             <td><span class="variant">p.E542K · 13% <span class="term" data-tip="Variant Allele Fraction — % of DNA copies carrying the mutation. ~13% here suggests this is a tumor-only (somatic) mutation rather than inherited.">VAF</span></span></td>
-            <td>Oncogenic hotspot. Opens trial eligibility for <span class="term" data-tip="An FDA-approved PI3K-alpha inhibitor (Piqray). Approved for PIK3CA-mutant breast cancer; being studied in head/neck cancer trials.">alpelisib</span>, inavolisib, capivasertib. Relevant only if recurrence — keep on file.</td>
-            <td class="right"><span class="badge info">Trial-eligible</span></td>
+            <td>Oncogenic hotspot. <strong>E542K is the <em>favorable</em> helical-domain PIK3CA variant per the Korean TRIUMPH umbrella trial</strong> — median PFS to <span class="term" data-tip="An FDA-approved PI3K-alpha inhibitor (Piqray). Approved for PIK3CA-mutant breast cancer; being studied in head/neck cancer trials.">alpelisib</span> 7.3 vs 1.6 months for kinase-domain variants (p=0.017). Also: ALASCCA trial (NEJM 2025) showed aspirin reduced recurrence in PIK3CA-hotspot cancers including E542K.</td>
+            <td class="right"><span class="badge info">Trial-eligible · favorable subtype</span></td>
           </tr>
           <tr>
             <td><span class="gene">TERT promoter</span></td>
@@ -752,46 +752,82 @@
       <span class="note">Ch. 05b · synthesis from the records · not consensus, not medical advice</span>
     </div>
     <div class="section-body">
-      <p class="lede-clinical">Jan has almost <strong>none of the standard risk factors</strong> for head-and-neck cancer — no tobacco, no significant alcohol, HPV-negative, EBV-negative, no occupational carcinogen exposure on record. Yet four primaries before age 60 and a node-positive recurrence. Statistically, something other than the usual carcinogens is doing the work. Looking at the file as a whole, three patterns converge — and the third one is the one that may be most underweighted in current care.</p>
+      <p class="lede-clinical">Jan has almost <strong>none of the standard risk factors</strong> for head-and-neck cancer — no tobacco, no significant alcohol, HPV-negative, EBV-negative, no occupational carcinogen exposure on record. Yet four primaries before age 60 and a node-positive recurrence. Statistically, something other than the usual carcinogens is doing the work. Looking at the file as a whole, three patterns converge — and after a deeper international literature scan, <strong>one of them now stands out as the leading unifying explanation</strong>.</p>
       <div class="advisory" style="margin-top: 14px;">
         <strong>How to read this section.</strong> This is pattern-matching across her records, not an examination. Treat each item as a <em>hypothesis to push her medical team on</em>, with confidence labels honest about what the literature supports vs. what is speculative.
       </div>
     </div>
 
+    <!-- Update banner -->
+    <div class="section-body" style="border-top: 1px solid var(--line); background: var(--info-bg);">
+      <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--info); letter-spacing: 0.08em; margin-bottom: 10px;">What's new — May 2026 international literature update</div>
+      <ul style="font-size: 13px; color: var(--ink-3); padding-left: 22px; line-height: 1.7;">
+        <li><strong>Jeong et al. 2022</strong> — published case report of a 39-year-old never-smoker female with multifocal recurrent OSCC + mother with melanoma + tongue cancer + germline <span class="term" data-tip="A tumor suppressor gene encoding p16. Inherited mutations cause melanoma-pancreatic cancer syndrome.">CDKN2A</span> mutation. <strong>Near-identical phenotype to Jan's.</strong> Promotes Pattern 01 from "possible" to <em>leading candidate</em>.</li>
+        <li><strong>ALASCCA trial (NEJM 2025)</strong> — low-dose aspirin in <span class="term" data-tip="A cancer-driver gene mutation in the PI3-kinase pathway. The E542K hotspot is exactly the one ALASCCA showed responds to aspirin.">PIK3CA</span>-mutant cancers reduced 3-year recurrence from 14.1% → 7.7%. Jan's PIK3CA E542K is in the tested hotspot. Promotes aspirin from "weak observational" to <em>molecularly matched</em>.</li>
+        <li><strong>TRIUMPH trial</strong> — her PIK3CA E542K is the <em>favorable</em> helical-domain variant for alpelisib response (median PFS 7.3 vs 1.6 mo for kinase-domain variants).</li>
+        <li><strong>Hanna 2023 JAMA Oncology + AACR 2026</strong> — intralesional nivolumab in high-risk oral leukoplakia: <strong>85% clinical response, 41% histologic downgrade</strong>. Her PD-L1 CPS 5 is a biologic match. Promotes intralesional IO from speculative to evidence-based.</li>
+        <li><strong>Palermo 2025 cohort (Front Oral Health)</strong> — 75% of multifocal OSCC in elderly never-smoking women were denture wearers. Upgrades Pattern 03 confidence from speculative to <em>moderate</em>.</li>
+        <li><strong>Fn → AhR/TDO2 → anti-PD-1 resistance</strong> (2025) — periodontitis bacteria don't just promote inflammation, they can <em>actively suppress immunotherapy efficacy</em>. Raises the stakes on periodontal control.</li>
+      </ul>
+    </div>
+
     <!-- Pattern 1 -->
     <div class="section-body" style="border-top: 1px solid var(--line);">
       <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 10px; flex-wrap: wrap;">
-        <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--info); letter-spacing: 0.08em;">Pattern 01 · most consequential if confirmed</div>
-        <span class="badge info">Confidence: moderate–strong · pending germline test</span>
+        <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--info); letter-spacing: 0.08em;">Pattern 01 · now the leading unifying explanation</div>
+        <span class="badge info">Confidence: strong · pending germline test</span>
       </div>
-      <h3 style="font-family: var(--sans); font-size: 22px; font-weight: 600; color: var(--ink); margin-bottom: 8px;">An <em style="color:var(--info)">inherited DNA-repair vulnerability</em> may be the underlying engine</h3>
-      <p style="font-size: 14px; color: var(--text); line-height: 1.6;">Her tumor showed <strong>TP53 R213P at 34% VAF</strong> and <strong>CDKN2A R80* at 36% VAF</strong>. Those fractions, combined with four primaries before age 60 and a mother with melanoma + uterine cancer, fit the classic signal for a hereditary cancer syndrome — most likely <span class="term" data-tip="Li-Fraumeni Syndrome — a hereditary cancer predisposition caused by inherited TP53 mutations. People with LFS develop multiple cancers (sarcomas, breast, brain, adrenal) often at younger-than-typical ages.">Li-Fraumeni</span> or the CDKN2A melanoma-pancreatic variant.</p>
-      <p style="font-size: 14px; color: var(--text); line-height: 1.6; margin-top: 10px;"><strong>Why this matters:</strong> if she's germline-positive, her cells can't repair DNA damage as efficiently as a normal person's. Ordinary inflammatory or mechanical insults that wouldn't cause cancer in most people <em>do</em> in her body. This reframes the strategy: it's not about finding one carcinogen — it's about <strong>reducing every possible source of chronic cellular damage</strong>, knowing her cellular repair budget is lower than average. This is why germline testing is the single most consequential next step.</p>
+      <h3 style="font-family: var(--sans); font-size: 22px; font-weight: 600; color: var(--ink); margin-bottom: 8px;">An <em style="color:var(--info)">inherited DNA-repair vulnerability</em> — most likely germline CDKN2A — appears to be the engine</h3>
+      <p style="font-size: 14px; color: var(--text); line-height: 1.6;">Her tumor showed <strong>TP53 R213P at 34% VAF</strong> and <strong>CDKN2A R80* at 36% VAF</strong>. Both fractions are consistent with germline inheritance. Combined with four primaries before age 60 and her mother's melanoma + uterine cancer, this fits the classic signal for hereditary cancer — most likely the <strong>CDKN2A melanoma-pancreatic-HNSCC variant</strong>, possibly with concurrent <span class="term" data-tip="Li-Fraumeni Syndrome — a hereditary cancer predisposition caused by inherited TP53 mutations. People with LFS develop multiple cancers (sarcomas, breast, brain, adrenal) often at younger-than-typical ages.">Li-Fraumeni</span> involvement.</p>
+
+      <div class="deep" style="margin-top: 14px;">
+        <h5>The phenotype match that changes the framing</h5>
+        <p style="font-size: 13px; color: var(--ink-3); line-height: 1.6;"><strong>Jeong et al. 2022</strong> (J Otolaryngol Head Neck Surg, PMC8818223) reported a 39-year-old never-smoker female with <strong>multifocal recurrent oral SCC</strong> harboring germline CDKN2A G101W. <strong>Her mother had melanoma and tongue cancer.</strong> The authors proposed routine germline CDKN2A testing in familial / young HNSCC and HNSCC-spectrum surveillance in carriers. Jan's clinical pattern is a near-perfect match. <strong>If her CDKN2A R80* is germline, the entire framework collapses into a clean Knudson two-hit FAMMM-with-HNSCC-spectrum picture — a familial syndrome that explains everything without invoking other drivers.</strong></p>
+      </div>
+
+      <p style="font-size: 14px; color: var(--text); line-height: 1.6; margin-top: 14px;"><strong>Two important caveats from the deeper literature:</strong></p>
+      <ul style="font-size: 13px; color: var(--text); padding-left: 22px; line-height: 1.6;">
+        <li><strong>"R213P" is an unusual TP53 nucleotide notation.</strong> The much more commonly reported R213 variants are <strong>R213*</strong> (a well-described pathogenic LFS nonsense allele), R213Q, R213K. R213P is rare in IARC/ClinVar. Worth asking the genetic counselor to <strong>confirm the exact nucleotide change</strong> (likely c.638G>C) and reclassify against the IARC TP53 database — if it's actually R213*, the pathogenicity call is unambiguous.</li>
+        <li><strong>TP53 VAF ~34% in tumor could be germline, postzygotic mosaic, or clonal-hematopoiesis contamination.</strong> Discrimination requires testing both blood AND cultured skin fibroblasts. Identical TP53 in multiple of her prior tumors + low in blood + present in fibroblasts → <strong>mosaic LFS</strong>, which is well-recognized and would also explain multifocality.</li>
+      </ul>
+
+      <p style="font-size: 14px; color: var(--text); line-height: 1.6; margin-top: 14px;"><strong>Why this matters:</strong> if she's germline-positive, her cells can't repair DNA damage as efficiently as a normal person's. Ordinary inflammatory or mechanical insults that wouldn't cause cancer in most people <em>do</em> in her body. This reframes the strategy: it's not about finding one carcinogen — it's about <strong>reducing every possible source of chronic cellular damage</strong>, knowing her repair budget is lower than average. Germline testing remains the single most consequential next step.</p>
     </div>
 
     <!-- Pattern 2 -->
     <div class="section-body" style="border-top: 1px solid var(--line);">
       <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 10px; flex-wrap: wrap;">
         <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--info); letter-spacing: 0.08em;">Pattern 02 · directly modifiable today</div>
-        <span class="badge info">Confidence: moderate · evidence-supported, undertreated</span>
+        <span class="badge info">Confidence: moderate–strong · undertreated</span>
       </div>
       <h3 style="font-family: var(--sans); font-size: 22px; font-weight: 600; color: var(--ink); margin-bottom: 8px;">Two <em style="color:var(--info)">chronic inflammatory conditions</em> are doing carcinogenic work daily</h3>
-      <p style="font-size: 14px; color: var(--text); line-height: 1.6;"><span class="term" data-tip="A chronic immune-mediated inflammation of the mouth lining causing white lacy patches and sometimes painful erosions.">Oral lichen planus</span> since 2017 and <span class="term" data-tip="Inflammation and destruction of the gums and the bone supporting teeth, driven mainly by F. nucleatum, P. gingivalis, and related bacteria.">generalized periodontitis</span> live continuously in her mouth. Both produce the same biological cascade: T-cell-mediated inflammation → reactive oxygen species → epithelial DNA damage → constant cell turnover to replace damaged cells → more opportunities for a bad mutation to escape.</p>
+      <p style="font-size: 14px; color: var(--text); line-height: 1.6;"><span class="term" data-tip="A chronic immune-mediated inflammation of the mouth lining causing white lacy patches and sometimes painful erosions.">Oral lichen planus</span> since 2017 (erosive subtype — annual transformation rate ~6%, vs ~1.4% overall) and <span class="term" data-tip="Inflammation and destruction of the gums and the bone supporting teeth, driven mainly by F. nucleatum, P. gingivalis, and related bacteria.">generalized periodontitis</span> live continuously in her mouth. Both produce the same biological cascade: T-cell-mediated inflammation → reactive oxygen species → epithelial DNA damage → constant cell turnover to replace damaged cells → more opportunities for a bad mutation to escape.</p>
       <p style="font-size: 14px; color: var(--text); line-height: 1.6; margin-top: 10px;">The 2023–2025 literature directly implicates <em>Fusobacterium nucleatum</em> and <em>Porphyromonas gingivalis</em> — the dominant periodontitis bacteria — as <strong>active drivers of OSCC progression</strong>, not just bystanders. And in her specific case, Dr. Kang's biopsy clinical note explicitly says "generalized periodontitis, gingival inflammation" — and the new dysplasia was found at the <strong>edge of an inflamed tooth socket</strong>. The geographic match is hard to ignore.</p>
       <div class="deep" style="margin-top: 12px;">
+        <h5>New 2025 mechanistic finding — periodontitis can actively suppress immunotherapy</h5>
+        <p style="font-size: 13px; color: var(--ink-3); line-height: 1.6;"><em>Fusobacterium nucleatum</em> outer-membrane vesicles activate <strong>AhR/TDO2 signaling in tumor-associated macrophages</strong> → drives anti-PD-1 resistance (PMC12003102, 2025). And a 2025 Head & Neck cohort showed <strong>higher salivary <em>Lachnoanaerobaculum</em> at baseline → median OS 71 vs 36 months</strong> in HNSCC patients on chemoradiation. This means controlling periodontitis isn't just inflammation reduction — it's also <strong>protecting future immunotherapy efficacy</strong> if she ever needs pembrolizumab.</p>
+      </div>
+      <div class="deep" style="margin-top: 10px;">
         <h5>Where the wedge is</h5>
-        Aggressive periodontal control + consistent topical clobetasol for the OLP are both inexpensive, low-risk, and have data behind them. Neither appears to be on the current chart as an active priority.
+        Aggressive periodontal control (avoid chlorhexidine long-term — MASCC/ISOO recommends against; favor <span class="term" data-tip="Hypochlorous acid — a gentle, broad-spectrum antimicrobial mouth rinse (brands: Vashe, Avenova). Preferred over chlorhexidine in oncology dentistry because it doesn't disrupt the microbiome or stain teeth.">HOCl rinses</span> + povidone-iodine; consider <em>S. salivarius K12</em> probiotic lozenges, which directly antagonize Fn/Pg). Topical clobetasol for the OLP (preferred over tacrolimus in cancer survivors per 2024 BDJ Open data). None of these appear to be on the current chart as active priorities.
       </div>
     </div>
 
     <!-- Pattern 3 -->
     <div class="section-body" style="border-top: 1px solid var(--line);">
       <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 10px; flex-wrap: wrap;">
-        <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--info); letter-spacing: 0.08em;">Pattern 03 · the underweighted one</div>
-        <span class="badge info">Confidence: speculative — striking pattern, not formally tested</span>
+        <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--info); letter-spacing: 0.08em;">Pattern 03 · stronger than initially indicated</div>
+        <span class="badge info">Confidence: moderate · upgraded from speculative</span>
       </div>
-      <h3 style="font-family: var(--sans); font-size: 22px; font-weight: 600; color: var(--ink); margin-bottom: 8px;">Every lesion is at a <em style="color:var(--info)">tooth-mucosa contact point</em></h3>
-      <p style="font-size: 14px; color: var(--text); line-height: 1.6;">Mapping the lesions across five years against the anatomy of her mouth produces this:</p>
+      <h3 style="font-family: var(--sans); font-size: 22px; font-weight: 600; color: var(--ink); margin-bottom: 8px;">Every lesion is at a <em style="color:var(--info)">tooth-mucosa contact point</em> — and an Italian 2025 case-cohort matches her phenotype</h3>
+      <p style="font-size: 14px; color: var(--text); line-height: 1.6;">A deeper literature scan found three meta-analyses and a 2025 case-cohort that elevate this from speculation to a moderate-evidence hypothesis:</p>
+      <ul style="font-size: 13px; color: var(--text); padding-left: 22px; line-height: 1.6;">
+        <li><strong>Gupta 2021 meta-analysis</strong> (PMC8554704): chronic mechanical irritation and OSCC, <strong>RR 2.56 (95% CI 1.96–3.35)</strong>. Co-factor rather than independent driver.</li>
+        <li><strong>Manoharan 2014 Oral Oncol meta</strong> (PMID 25169920): ill-fitting dentures + OSCC, <strong>OR 3.90 (2.48–6.13)</strong>.</li>
+        <li><strong>Piemonte 2022 Argentine case-control</strong> (PMID 35727376): CMI alone <strong>OR 7.02 (3.57–13.78)</strong>; CMI + alcohol OR 53.83 (synergistic with carcinogens).</li>
+        <li><strong>Tafili 2025 Palermo cohort</strong> (Front Oral Health, DOI 10.3389/froh.2025.1653210): <strong>8 elderly women with multifocal OSCC, no traditional risk factors. 75% were denture wearers; 50% had prior potentially malignant disorders (37.5% PVL).</strong> The authors explicitly invoke chronic prosthetic irritation as a candidate driver in non-smoking women with field cancerization. <strong>This is essentially Jan's phenotype.</strong></li>
+      </ul>
+      <p style="font-size: 14px; color: var(--text); line-height: 1.6; margin-top: 10px;">Mapping her lesions across five years against the anatomy of her mouth produces this:</p>
     </div>
 
     <div class="section-body nopad" style="border-top: 1px solid var(--line);">
@@ -850,6 +886,34 @@
       <p style="font-size: 14px; color: var(--text); line-height: 1.6; margin-top: 10px;">This is speculative — there's no controlled trial of "mechanical trauma as oral SCC risk factor in PMOL." But the pattern is striking enough that <strong>a careful prosthodontic/periodontal review of every dental contact point at her existing lesion sites is worth requesting.</strong> Sharp restoration edges, calculus deposits, an obturator with a rough contact point, or a tooth migrating into thinned post-radiation mucosa are all small, fixable insults that would matter more in her than in most people.</p>
     </div>
 
+    <!-- Four tests that would resolve the hypothesis -->
+    <div class="section-body" style="border-top: 1px solid var(--line);">
+      <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--info); letter-spacing: 0.08em; margin-bottom: 12px;">Four tests that would actually distinguish the hypotheses</div>
+      <p style="font-size: 14px; color: var(--text); line-height: 1.6; margin-bottom: 14px;">Most of the 3-pattern uncertainty can be collapsed with four specific diagnostic moves. Each is concrete and can be requested at her next UCLA visit.</p>
+      <div class="expand-grid" style="margin-top: 0;">
+        <div>
+          <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--info); margin-bottom: 6px;">Test 1 · highest-yield</div>
+          <strong style="font-size: 14px; color: var(--ink);">Germline panel on cultured skin fibroblasts</strong>
+          <p style="font-size: 13px; color: var(--text); line-height: 1.55; margin-top: 6px;">CDKN2A + TP53 + multi-gene hereditary cancer panel. Skin fibroblasts avoid clonal-hematopoiesis contamination. <strong>If CDKN2A R80* is germline, the entire puzzle resolves.</strong></p>
+        </div>
+        <div>
+          <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--info); margin-bottom: 6px;">Test 2 · quick win</div>
+          <strong style="font-size: 14px; color: var(--ink);">Confirm exact TP53 R213 nucleotide change</strong>
+          <p style="font-size: 13px; color: var(--text); line-height: 1.55; margin-top: 6px;">R213P is unusual. R213* (nonsense, c.637C>T) is the well-described LFS allele. A single lab-level nucleotide re-check reclassifies pathogenicity against the IARC TP53 database.</p>
+        </div>
+        <div>
+          <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--info); margin-bottom: 6px;">Test 3 · molecular clonality</div>
+          <strong style="font-size: 14px; color: var(--ink);">Pairwise NGS across her 4 prior tumors</strong>
+          <p style="font-size: 13px; color: var(--text); line-height: 1.55; margin-top: 6px;">Same identical TP53/CDKN2A/PIK3CA across all four = clonal field expansion (or germline-driven independent primaries). Different driver patterns = convergent damage in a shared field. Resolves a major mechanistic question.</p>
+        </div>
+        <div>
+          <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--info); margin-bottom: 6px;">Test 4 · pathology re-read</div>
+          <strong style="font-size: 14px; color: var(--ink);">Re-read the 02/2026 biopsy against PVL/PMOL criteria</strong>
+          <p style="font-size: 13px; color: var(--text); line-height: 1.55; margin-top: 6px;">30% of PVL cases initially appear lichenoid. Per Thompson 2021 PVL consensus, if her lesion fits PVL criteria, transformation risk jumps from ~1.4% (OLP) to 60–100% (PVL) — and intralesional nivolumab becomes a real non-surgical option.</p>
+        </div>
+      </div>
+    </div>
+
     <!-- What might be making it come back -->
     <div class="section-body" style="border-top: 1px solid var(--line); background: var(--bg-tint);">
       <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--copper, #b45309); letter-spacing: 0.08em; margin-bottom: 12px;">The most likely modifiable drivers in her current life</div>
@@ -868,24 +932,48 @@
 
       <div class="grid-2">
         <div>
-          <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--muted); letter-spacing: 0.05em; margin-bottom: 8px;">Repurposed drugs with cancer-prevention signal</div>
+          <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--copper, #b45309); letter-spacing: 0.05em; margin-bottom: 8px;">Tier A — strong evidence, molecularly matched to her tumor</div>
           <ul style="font-size: 13px; color: var(--text); padding-left: 18px; line-height: 1.7;">
-            <li><strong>Statin daily</strong> — cardio + HNSCC survival signal. Most underused given her LDL 204.</li>
-            <li><strong>Metformin</strong> even though non-diabetic — Phase IIa positive in oral premalignancy; generally very safe. Trial <span class="mono">NCT05237960</span> ongoing.</li>
-            <li><strong>Low-dose aspirin (81 mg)</strong> — observational HNSCC survival benefit. Bleeding-risk read needed from PCP.</li>
-            <li><strong>High-bioavailability curcumin</strong> (Meriva / Theracurmin, not raw turmeric) — Phase IIB positive in oral leukoplakia at 3.6 g/day.</li>
-            <li><strong>Vitamin D to ≥ 40 ng/mL</strong> — meta-analysis of 81,000+ patients: lower HNC incidence and improved survival.</li>
+            <li><strong>Low-dose aspirin (81–100 mg/day)</strong> — <strong>upgraded</strong>. The <strong>ALASCCA trial (NEJM 2025)</strong> showed aspirin reduced 3-yr recurrence from 14.1% → 7.7% in PIK3CA-altered cancers. <strong>Her PIK3CA E542K is in the exact hotspot ALASCCA tested.</strong> Strongest molecular rationale of any oral chemoprevention agent for her specifically.</li>
+            <li><strong>Statin daily</strong> — cardio + HNSCC survival + improved checkpoint-inhibitor response (Cancer Med 2025). Atorvastatin or rosuvastatin. LDL 204 makes this urgent on cardiac grounds alone.</li>
+            <li><strong>Intralesional nivolumab</strong> via trial enrollment (<span class="mono">NCT06561087</span>) — Hanna 2023 JAMA Oncol: 85% clinical response in high-risk oral leukoplakia; AACR 2026: 41% histologic downgrade. <strong>Her PD-L1 CPS 5 is a direct biomarker match.</strong> Avoid systemic IO toxicity in someone with OLP autoimmunity.</li>
+            <li><strong>Vitamin D to 40–60 ng/mL</strong> — meta-analyses: ~30% lower HNC incidence + improved survival. Cheap, safe. Test 25-OH-D, supplement with cholecalciferol per result.</li>
           </ul>
         </div>
         <div>
-          <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--muted); letter-spacing: 0.05em; margin-bottom: 8px;">Periodontal / oral microbiome</div>
+          <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--muted); letter-spacing: 0.05em; margin-bottom: 8px;">Tier B — good rationale, modest data, low risk</div>
           <ul style="font-size: 13px; color: var(--text); padding-left: 18px; line-height: 1.7;">
-            <li><strong>Oncology-aware periodontist</strong> (UCLA Special Patient Care). Scaling and root planing has data for reducing pharyngeal cancer risk in periodontitis patients.</li>
+            <li><strong>Metformin 1000–2000 mg/day</strong> even non-diabetic — Phase IIa positive (Gutkind 2021); Phase IIb <span class="mono">NCT05237960</span> ongoing. PI3K/mTOR pathway blockade is biologically aligned with her tumor.</li>
+            <li><strong>Topical imiquimod 5%</strong> for the current dysplasia (<span class="mono">NCT07210775</span>) — 65–82% lesion reduction in recent retrospective series.</li>
+            <li><strong>High-bioavailability curcumin</strong> — <strong>form matters enormously.</strong> Bioavailability hierarchy: NovaSOL ~185× &gt; Longvida ~100× &gt; Meriva ~48× &gt; Theracurmin ~16× &gt; standard 1×. <strong>Meriva or Longvida</strong> at 3.6 g/day if pursued.</li>
+            <li><strong>Tumor-informed ctDNA surveillance</strong> (Signatera, NeXT Personal, or Haystack MRD) — validated in HPV-neg HNSCC (Honoré 2024); built from her 2023 tumor block. Detects recurrence before scans can.</li>
+            <li><strong>Acupuncture for xerostomia</strong> if symptomatic — JAMA Network Open 2024 multicenter RCT: Level-1 evidence post-CRT.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid-2" style="margin-top: 18px;">
+        <div>
+          <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--muted); letter-spacing: 0.05em; margin-bottom: 8px;">Periodontal / oral microbiome — now Tier A given immunotherapy implications</div>
+          <ul style="font-size: 13px; color: var(--text); padding-left: 18px; line-height: 1.7;">
+            <li><strong>Oncology-aware periodontist now</strong> (UCLA Special Patient Care / Hospital Dentistry). Aggressive scaling and root planing. <strong>This isn't just dental hygiene — it's anti-PD-1 protection.</strong></li>
+            <li><strong>Stop chlorhexidine long-term</strong> — MASCC/ISOO 2020 explicitly recommends <em>against</em> CHX for HN RT, causes dysbiosis. Switch to <strong>HOCl rinse (Vashe / Avenova) daily ± periodic povidone-iodine</strong>.</li>
             <li><strong>Stop alcohol-containing mouthwash forever.</strong></li>
-            <li><strong>Interdental brushes daily</strong>, not just floss.</li>
-            <li><em>Lactobacillus reuteri</em> Prodentis lozenges — small but real data for reducing periodontal pathogens.</li>
-            <li><strong>Custom nightly fluoride tray.</strong></li>
-            <li><strong>Aggressive control of any cavities or rough restoration edges</strong> at existing lesion sites.</li>
+            <li><strong><em>Streptococcus salivarius</em> K12 lozenges</strong> — JCO 2024 RCT: reduced severe RT-mucositis; in vitro suppresses Fn, Pg, Aa.</li>
+            <li><strong>Interdental brushes daily</strong>, not just floss. Custom nightly fluoride tray.</li>
+            <li><strong>Consider enrollment in NCT06807034</strong> (Impact of Oral Microbiota on Relapse in HNSCC) — biobanking + risk-stratification.</li>
+          </ul>
+        </div>
+        <div>
+          <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--flag); letter-spacing: 0.05em; margin-bottom: 8px;">Things to avoid — negative trials or active harm signal</div>
+          <ul style="font-size: 13px; color: var(--text); padding-left: 18px; line-height: 1.7;">
+            <li><strong>Chronic chlorhexidine rinses</strong> — see above.</li>
+            <li><strong>VELscope / OralID autofluorescence surveillance</strong> — high false-positive rate in OLP-inflamed mucosa; multiple papers caution against in OLP backgrounds. NBI is the better adjunct.</li>
+            <li><strong>IV bisphosphonates (zoledronate)</strong> — ORN risk in irradiated jaw. 2024 ISOO-MASCC-ASCO guideline. Oral bisphosphonates lower risk but still require dental clearance.</li>
+            <li><strong>High-dose vitamin E + β-carotene supplements</strong> — SELECT trial + Bairati HNSCC trial showed increased second-primary risk in some subgroups. Maintain dietary repletion only.</li>
+            <li><strong>N-acetylcysteine</strong> for cancer prevention — EUROSCAN (n=2,592) was negative for SPT and survival.</li>
+            <li><strong>13-cis-retinoic acid</strong> — high toxicity, no durable benefit in ECOG-ACRIN C0590.</li>
+            <li><strong>Cannabis smoking</strong> — 2025 cohort: cannabis use disorder → 5-yr oral cancer 0.74% vs 0.23%.</li>
           </ul>
         </div>
       </div>
@@ -1556,7 +1644,7 @@
   <div class="footer-note">
     <span>Patient: Roper, Janice S. · MRN 020518503</span>
     <span>Records reviewed: 18 PDFs · 2021–2026</span>
-    <span>Compiled 05/20/2026 · build <strong>2026-05-20.6</strong> · <a href="../index.html">janroper.com</a></span>
+    <span>Compiled 05/20/2026 · build <strong>2026-05-20.7</strong> · <a href="../index.html">janroper.com</a></span>
   </div>
 
 </main>
