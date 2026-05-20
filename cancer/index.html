@@ -9,12 +9,12 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate, max-age=0">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<meta name="build-version" content="2026-05-20.8">
+<meta name="build-version" content="2026-05-20.9">
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="cancer.css?v=2026-05-20.8">
+<link rel="stylesheet" href="cancer.css?v=2026-05-20.9">
 <script>
 // Light-touch cache-buster: if the page came from cache and the user hits reload,
 // force a fresh fetch of the HTML by appending a timestamp once per session.
@@ -93,6 +93,7 @@
       <li><a href="#ch-research">Ch. 02b · Deep-dive literature</a></li>
       <li><a href="#ch-imaging">Ch. 03 · Most recent imaging</a></li>
       <li><a href="#ch-labs">Ch. 04 · Latest labs</a></li>
+      <li><a href="#ch-medications">Ch. 04b · Medications & supplements</a></li>
       <li><a href="#ch-genomics">Ch. 05 · Tumor genomics</a></li>
       <li><a href="#ch-hypothesis">Ch. 05b · Working hypothesis</a></li>
       <li><a href="#ch-recommendations">Ch. 06 · Recommendations</a></li>
@@ -478,10 +479,11 @@
 
   <!-- ============== CURRENT IMAGING ============== -->
   <section class="section" id="ch-imaging">
-    <div class="section-head">
+    <details class="section-collapsible">
+    <summary class="section-head">
       <h2>Most recent imaging</h2>
       <span class="note">Ch. 03 · imaging only — see Ch. 02a for the biopsy</span>
-    </div>
+    </summary>
     <div class="section-body nopad">
       <table class="data">
         <thead>
@@ -518,14 +520,16 @@
         </tbody>
       </table>
     </div>
+    </details>
   </section>
 
   <!-- ============== LATEST LABS ============== -->
   <section class="section" id="ch-labs">
-    <div class="section-head">
+    <details class="section-collapsible">
+    <summary class="section-head">
       <h2>Latest labs · 05/04/2026</h2>
-      <span class="note">Ch. 04 · drawn 8:16 AM, Cedars-Sinai / Quest</span>
-    </div>
+      <span class="note">Ch. 04 · drawn 8:16 AM, Cedars-Sinai / Quest · LDL high, WBC mildly low, rest normal</span>
+    </summary>
     <div class="section-body nopad">
       <div class="labs">
         <div class="lab flag">
@@ -665,14 +669,162 @@
         </div>
       </div>
     </div>
+    </details>
+  </section>
+
+  <!-- ============== CURRENT MEDICATIONS & SUPPLEMENTS ============== -->
+  <section class="section" id="ch-medications">
+    <div class="section-head">
+      <h2>Current medications & supplements</h2>
+      <span class="note">Ch. 04b · daily regimen as of 05/2026 · hip replacement pending</span>
+    </div>
+    <div class="section-body">
+      <p class="lede-clinical">Beyond the cancer history, Jan also has <strong>hip osteoarthritis pending replacement</strong> — which explains the daily acetaminophen and adds an important time-sensitive layer to the analysis. <strong>The current daily regimen has one prescription, one OTC analgesic, and seven supplements.</strong> Most are reasonable. A few warrant attention — and three things that should probably be added are not yet on the list.</p>
+    </div>
+
+    <!-- ACTIVE CONCERN — Vitamin A + E + β-carotene -->
+    <div class="section-body" style="border-top: 1px solid var(--line); background: var(--flag-bg);">
+      <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--flag); letter-spacing: 0.08em; margin-bottom: 8px;">Active concern · please discuss with Dr. Scher within 1–2 weeks</div>
+      <h3 style="font-family: var(--sans); font-size: 18px; font-weight: 600; color: var(--ink); margin-bottom: 8px;">She is currently taking the exact combination shown to <em style="color:var(--flag)">increase second primary cancer risk</em> in HNSCC patients</h3>
+      <p style="font-size: 14px; color: var(--ink-3); line-height: 1.6;">Her multivitamin contains <strong>β-carotene + d-α-tocopherol (vitamin E)</strong>, and she additionally takes <strong>separate vitamin A (1,500 mcg)</strong>. The <strong>Bairati 2005 randomized trial (J Natl Cancer Inst, PMID 15983241)</strong> tested exactly this combination — α-tocopherol 400 IU/day + β-carotene 30 mg/day vs placebo — in 540 stage I/II HNSCC patients. <strong>Result: the supplemented group had a higher second-primary cancer rate (RR 2.88, 95% CI 1.56–5.31)</strong> during supplementation, with an excess that persisted on long-term follow-up. Consistent with the CARET trial (β-carotene → lung cancer in smokers) and SELECT (α-tocopherol → prostate cancer).</p>
+      <p style="font-size: 14px; color: var(--ink-3); line-height: 1.6; margin-top: 8px;"><strong>The simplest fix:</strong> replace the high-potency multi with a low-dose, β-carotene-free multivitamin (or skip the multi entirely and rely on Mediterranean dietary pattern). Drop the separate vitamin A. Keep targeted single nutrients (D3, K2) at directed doses.</p>
+    </div>
+
+    <!-- Medication / supplement table -->
+    <div class="section-body nopad" style="border-top: 1px solid var(--line);">
+      <table class="data">
+        <thead>
+          <tr>
+            <th style="width: 22%;">Medication / supplement</th>
+            <th style="width: 14%;">Daily dose</th>
+            <th>Purpose & assessment</th>
+            <th class="right" style="width: 140px;">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Rosuvastatin</strong> <span class="badge muted" style="margin-left:4px;">Rx</span></td>
+            <td class="num">10 mg</td>
+            <td>Cholesterol + HNSCC survival signal (Cancer Med 2025). The PCP previously wrote <em>"at least 3× weekly"</em>, suggesting prior non-compliance. <strong>Confirm true daily dosing</strong> — LDL 204 in May suggests sub-optimal compliance even on this dose.</td>
+            <td class="right"><span class="badge ok">Keep · verify daily</span></td>
+          </tr>
+          <tr>
+            <td><strong>Acetaminophen</strong></td>
+            <td class="num">1,000 mg AM</td>
+            <td>For hip osteoarthritis pain pending replacement. Liver enzymes normal (AST 20, ALT 13) so safety is fine. <strong>Chronic acetaminophen depletes glutathione</strong> — the body's primary antioxidant — a theoretical concern in a cancer survivor but not actionable in isolation. <strong>Real fix is the hip replacement.</strong></td>
+            <td class="right"><span class="badge warn">Keep · address root</span></td>
+          </tr>
+          <tr>
+            <td><strong>Curcumin</strong></td>
+            <td class="num">700 mg</td>
+            <td>Phase IIB oral leukoplakia trial (Kuriakose 2016) used <strong>3,600 mg/day of BCM-95</strong>. Standard curcumin has ~1% bioavailability → ~7 mg actually absorbed. <strong>Form matters enormously.</strong> Switch to NovaSOL (~185× standard), Longvida (~100×), or Meriva (~48×) — same 700 mg dose would then be trial-equivalent or better.</td>
+            <td class="right"><span class="badge warn">Change form</span></td>
+          </tr>
+          <tr>
+            <td><strong>Vitamin D3</strong></td>
+            <td class="num">125 mcg<br><span class="muted">(5,000 IU)</span></td>
+            <td>Aggressive supplementation — appropriate if she's deficient, potentially excessive if already sufficient. <strong>Get a 25-OH vitamin D level.</strong> Target 40–60 ng/mL; toxicity above 100 ng/mL. Without that lab, 5,000 IU/day is flying blind.</td>
+            <td class="right"><span class="badge info">Check level</span></td>
+          </tr>
+          <tr>
+            <td><strong>Vitamin K2</strong></td>
+            <td class="num">500 mcg</td>
+            <td>Bone + vascular health. Pairs well with D3 for calcium handling. No HNSCC concerns. <strong>Hold ~5 days before hip surgery</strong> (per orthopedic surgeon's bleeding-risk preferences).</td>
+            <td class="right"><span class="badge ok">Keep · hold pre-op</span></td>
+          </tr>
+          <tr>
+            <td><strong>L-Lysine</strong></td>
+            <td class="num">1,000 mg</td>
+            <td>Sometimes used for cold sore prevention. Neutral to HNSCC context.</td>
+            <td class="right"><span class="badge ok">Keep · neutral</span></td>
+          </tr>
+          <tr>
+            <td><strong>Fatty15 (C15:0)</strong></td>
+            <td class="num">~100 mg</td>
+            <td>Pentadecanoic acid — emerging cellular-health supplement with anti-inflammatory and mitochondrial signal. Limited but encouraging early data. Not contraindicated.</td>
+            <td class="right"><span class="badge ok">Keep · neutral</span></td>
+          </tr>
+          <tr style="background: var(--flag-bg);">
+            <td><strong>High-potency multivitamin</strong></td>
+            <td class="num">1 serving</td>
+            <td>Contains <strong>β-carotene (~475 mcg) + d-α-tocopherol</strong> + supraphysiologic B-vitamin doses + minerals + added antioxidants (taurine, cysteine, quercetin, hesperidin). The β-carotene + α-tocopherol combination is the Bairati 2005 contraindicated stack. <strong>Active concern in an HNSCC survivor.</strong></td>
+            <td class="right"><span class="badge flag">Stop or replace</span></td>
+          </tr>
+          <tr style="background: var(--flag-bg);">
+            <td><strong>Vitamin A (separate)</strong></td>
+            <td class="num">1,500 mcg<br><span class="muted">(~5,000 IU)</span></td>
+            <td>On top of vitamin A in the multi → total intake likely above the 3,000 mcg tolerable upper limit. Chronic high vitamin A causes bone density loss (concern before hip replacement) and possibly oncologic harm in this setting. No specific indication on the chart for separate vitamin A.</td>
+            <td class="right"><span class="badge flag">Stop</span></td>
+          </tr>
+          <tr style="border-top: 2px solid var(--line);">
+            <td colspan="4" style="background: var(--bg-tint); padding: 8px 18px; font-family: var(--mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted);">Items missing from current regimen that the analysis suggests</td>
+          </tr>
+          <tr style="background: var(--info-bg);">
+            <td><strong>Low-dose aspirin</strong></td>
+            <td class="num">81 mg</td>
+            <td><strong>The single biggest gap.</strong> ALASCCA NEJM 2025: aspirin reduced PIK3CA-mutant cancer recurrence ~45% — her E542K is in the tested hotspot. Time carefully around the hip replacement — typically stopped 7 days pre-op, resumed post-op once cleared by ortho.</td>
+            <td class="right"><span class="badge info">Add · after hip</span></td>
+          </tr>
+          <tr style="background: var(--info-bg);">
+            <td><strong>HOCl mouth rinse</strong></td>
+            <td class="num">Daily</td>
+            <td>Avenova / Vashe — broad-spectrum antimicrobial without the dysbiosis of chronic chlorhexidine. <strong>Critical before hip replacement to reduce oral bacteremia risk to the new joint.</strong></td>
+            <td class="right"><span class="badge info">Add · before hip</span></td>
+          </tr>
+          <tr style="background: var(--info-bg);">
+            <td><strong><em>S. salivarius</em> K12 lozenges</strong></td>
+            <td class="num">1 daily</td>
+            <td>Probiotic that directly antagonizes F. nucleatum / P. gingivalis (the periodontitis bacteria). JCO 2024 RCT positive for reducing severe RT-mucositis.</td>
+            <td class="right"><span class="badge info">Add</span></td>
+          </tr>
+          <tr style="background: var(--info-bg);">
+            <td><strong>Topical clobetasol 0.05% gel</strong></td>
+            <td class="num">2× daily PRN</td>
+            <td>For OLP control. 2024 BDJ Open data: topical clobetasol associated with the lowest subsequent OSCC risk among OLP therapies. If she's not already using consistently for OLP flares, ask oral medicine about establishing a regimen.</td>
+            <td class="right"><span class="badge info">Confirm / add</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- HIP REPLACEMENT CONTEXT -->
+    <div class="section-body" style="border-top: 1px solid var(--line);">
+      <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--info); letter-spacing: 0.08em; margin-bottom: 10px;">Hip replacement — perioperative considerations specific to her</div>
+      <div class="grid-2">
+        <div>
+          <h4 style="font-family: var(--sans); font-size: 14px; font-weight: 600; color: var(--ink); margin-bottom: 8px;">Sequencing question — periodontitis first</h4>
+          <p style="font-size: 13px; color: var(--text); line-height: 1.6;">Joint replacements can be seeded by oral bacteremia during/after dental work. Standard guidance: <strong>address active oral infection (her periodontitis) <em>before</em> elective joint replacement.</strong> This is one more reason to get to UCLA Special Patient Care / Hospital Dentistry now. Also worth asking: does the maxillary dysplasia excision come <em>before</em> or <em>after</em> the hip? Orthopedic surgeons generally prefer dental work cleared first.</p>
+        </div>
+        <div>
+          <h4 style="font-family: var(--sans); font-size: 14px; font-weight: 600; color: var(--ink); margin-bottom: 8px;">Pre-op supplement timing</h4>
+          <ul style="font-size: 13px; color: var(--text); padding-left: 20px; line-height: 1.6;">
+            <li><strong>Stop curcumin, vitamin E, and vitamin K2</strong> ~14 days before surgery (bleeding/anti-platelet effects).</li>
+            <li><strong>Continue rosuvastatin</strong> through surgery — cardioprotective perioperatively.</li>
+            <li>If aspirin is started, follow ortho's 7-day pre-op stop window. Restart only when cleared.</li>
+            <li><strong>DVT prophylaxis</strong> (LMWH or DOAC) is standard 14–35 days post-op.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid-2" style="margin-top: 18px;">
+        <div>
+          <h4 style="font-family: var(--sans); font-size: 14px; font-weight: 600; color: var(--ink); margin-bottom: 8px;">Bone health — worth checking before surgery</h4>
+          <p style="font-size: 13px; color: var(--text); line-height: 1.6;">She's a 63yo post-menopausal woman with prior cisplatin + bilateral neck IMRT history. <strong>Bone density (DEXA) is worth getting before the orthopedic surgery</strong> if not done recently — both for surgical planning and for post-op recovery. Avoid IV bisphosphonates (zoledronate) given the ORN risk in her irradiated jaw.</p>
+        </div>
+        <div>
+          <h4 style="font-family: var(--sans); font-size: 14px; font-weight: 600; color: var(--ink); margin-bottom: 8px;">After the joint is in</h4>
+          <p style="font-size: 13px; color: var(--text); line-height: 1.6;">Modern ADA/AAOS guidance: <strong>routine antibiotic prophylaxis before dental work is NOT recommended</strong> for most joint replacement patients, except case-by-case for high-risk individuals. With her active periodontitis + planned dysplasia excisions, she may be one of those case-by-case scenarios — worth asking orthopedics for written guidance she can hand to UCLA dental.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- ============== TUMOR GENOMICS ============== -->
   <section class="section" id="ch-genomics">
-    <div class="section-head">
+    <details class="section-collapsible">
+    <summary class="section-head">
       <h2>Tumor genomics · Caris MI Tumor Seek+ · 01/19/2024</h2>
-      <span class="note">Ch. 05 · specimen: right cervical LN (23-33210-LAXS-A4)</span>
-    </div>
+      <span class="note">Ch. 05 · PD-L1 CPS 5 · TMB low · PIK3CA E542K (favorable) · TP53 + CDKN2A (possible germline)</span>
+    </summary>
     <div class="section-body">
       <p class="lede-clinical">Whole exome and transcriptome sequencing of the right cervical node specimen identified <strong>PD-L1 positivity (CPS 5)</strong> — qualifying for pembrolizumab monotherapy if first-line treatment for recurrent/metastatic disease ever becomes necessary — and a <strong>PIK3CA E542K hotspot mutation</strong> opening eligibility for PI3K-inhibitor clinical trials. HPV and EBV negative. Microsatellite stable. Tumor mutational burden low (4 mut/Mb). Two mutations (TP53 R213P, CDKN2A R80*) at variant allele fractions consistent with possible germline origin warrant dedicated germline workup.</p>
     </div>
@@ -763,6 +915,7 @@
         </tbody>
       </table>
     </div>
+    </details>
   </section>
 
   <!-- ============== WORKING HYPOTHESIS ============== -->
@@ -939,7 +1092,8 @@
       <div style="font-family: var(--mono); font-size: 11px; text-transform: uppercase; color: var(--copper, #b45309); letter-spacing: 0.08em; margin-bottom: 12px;">The most likely modifiable drivers in her current life</div>
       <ol style="font-size: 14px; color: var(--ink-3); padding-left: 22px; line-height: 1.65;">
         <li style="margin-bottom: 12px;"><strong>Untreated active periodontitis.</strong> The single most concerning environmental factor on the current chart and the one most directly connected to recent OSCC-progression literature. <em>Underweighted.</em></li>
-        <li style="margin-bottom: 12px;"><strong>Inconsistent statin use.</strong> Dr. Kavafyan wrote "at least 3× weekly" — meaning Jan isn't even at 3×. LDL is trending up. Statins reduce systemic inflammation and carry a real HNSCC survival signal in observational data, on top of cardiovascular protection.</li>
+        <li style="margin-bottom: 12px;"><strong>Active vitamin A / E / β-carotene supplementation.</strong> Her current multi + separate vitamin A is exactly the combination the Bairati 2005 HNSCC RCT showed <em>increases</em> second primary risk (RR 2.88). This belongs in the "stop immediately" category, not the "watch" category.</li>
+        <li style="margin-bottom: 12px;"><strong>Statin possibly under-dosed.</strong> She is now on rosuvastatin 10 mg but LDL is still 204 — either compliance is intermittent (PCP previously wrote "at least 3× weekly") or her cholesterol biology needs more than 10 mg. Daily compliance verification + possible dose escalation is the move.</li>
         <li style="margin-bottom: 12px;"><strong>Possibly smoldering OLP without daily topical control.</strong> If clobetasol isn't being used consistently, the lichen planus inflammation is doing damage 24/7. Topical clobetasol is the OLP treatment with the lowest associated OSCC risk per 2024 BDJ Open data.</li>
         <li style="margin-bottom: 12px;"><strong>Mechanical irritation at her exact lesion sites.</strong> Hasn't been formally mapped or addressed in the records reviewed.</li>
         <li><strong>Diet / sleep / stress.</strong> Not visible from records — but for a never-smoker, never-drinker, these levers carry proportionally more weight than they would in a smoker.</li>
@@ -1085,9 +1239,9 @@
         <div class="rec high">
           <div class="rec-num">04</div>
           <div>
-            <div class="rec-title">Resume statin daily (not 3× weekly)</div>
-            <div class="rec-detail">LDL 204 mg/dL is well above goal of &lt; 70 for cardiac history; trending up from 177 in January 2026. Dr. Kavafyan has already written to recommend resumption. Beyond cardiovascular benefit, observational data link statin use to improved HNSCC survival and improved response to checkpoint inhibitors. The cardiac and oncologic arguments align.</div>
-            <div class="rec-ask"><strong>Ask:</strong> resume statin daily; recheck lipid panel in 8–12 weeks; consider dietitian referral for Mediterranean dietary pattern.</div>
+            <div class="rec-title">Stop the multivitamin + separate vitamin A · start low-dose aspirin</div>
+            <div class="rec-detail">Per the Bairati 2005 randomized trial in HNSCC, the combination of <strong>β-carotene + α-tocopherol increased second primary cancer risk</strong> (RR 2.88). Her current multi contains both, on top of separate vitamin A — exactly the contraindicated stack. Replace with a low-dose, β-carotene-free multi or skip and rely on Mediterranean diet. <strong>Add low-dose aspirin (81 mg)</strong> per ALASCCA 2025 PIK3CA evidence — but time around the hip replacement (typically stop 7 days pre-op). She is already on rosuvastatin 10 mg; confirm truly daily.</div>
+            <div class="rec-ask"><strong>Ask Dr. Scher:</strong> stop high-dose vitamin A + the current multi given Bairati 2005? Add 81 mg ASA (timing around hip)? Verify rosuvastatin compliance is daily, not 3×/week? Recheck lipids in 8–12 weeks?</div>
           </div>
           <div class="rec-priority"><span class="badge flag">High</span></div>
         </div>
@@ -1225,8 +1379,29 @@
         <div class="q">
           <div class="qnum">09</div>
           <div>
-            <div class="qbody">My LDL is 204 (was 177 in January) — and there is published data linking <span class="term" data-tip="Cholesterol-lowering medications (e.g., atorvastatin, rosuvastatin). Beyond cardiovascular protection, observational data link statin use to improved survival in head and neck cancer.">statins</span> to improved HNSCC survival in addition to cardiovascular benefit. Can I <strong>resume the statin daily</strong> instead of 3× weekly, with a lipid recheck in 8–12 weeks?</div>
+            <div class="qbody">Given the <strong>Bairati 2005 HNSCC RCT</strong> (α-tocopherol + β-carotene → RR 2.88 for second primaries), should I <strong>stop my high-potency multivitamin and the separate vitamin A</strong>? My current multi contains both β-carotene and d-α-tocopherol — exactly the contraindicated combination.</div>
+            <div class="qmeta">For: Dr. Scher + PCP</div>
+          </div>
+        </div>
+        <div class="q">
+          <div class="qnum">09a</div>
+          <div>
+            <div class="qbody">My LDL is 204 even though I'm on rosuvastatin 10 mg. Am I taking it truly daily? Should we escalate to 20 mg, or check for familial hypercholesterolemia? Recheck in 8–12 weeks?</div>
             <div class="qmeta">For: PCP — Dr. Kavafyan / Dr. Perlow</div>
+          </div>
+        </div>
+        <div class="q">
+          <div class="qnum">09b</div>
+          <div>
+            <div class="qbody"><strong>Sequencing question:</strong> with hip replacement coming up, should we get the <strong>active periodontitis + dental dysplasia excision dealt with first</strong> (to reduce oral bacteremia risk to the new joint)? What's the right order: hip ➝ then dental? Or dental ➝ then hip?</div>
+            <div class="qmeta">For: orthopedic surgeon + Dr. Kang + UCLA dental</div>
+          </div>
+        </div>
+        <div class="q">
+          <div class="qnum">09c</div>
+          <div>
+            <div class="qbody">Pre-op questions for the hip replacement: should I get a <strong>DEXA scan</strong> first given my CRT history? What's the supplement stop-window (curcumin, vitamin K2, vitamin E)? What's the DVT prophylaxis plan? Should I get the 81 mg aspirin started <em>before</em> or <em>after</em> the hip recovery?</div>
+            <div class="qmeta">For: orthopedic surgeon</div>
           </div>
         </div>
         <div class="q">
@@ -1571,10 +1746,11 @@
 
   <!-- ============== CARE TEAM ============== -->
   <section class="section" id="ch-team">
-    <div class="section-head">
+    <details class="section-collapsible">
+    <summary class="section-head">
       <h2>Care team on file</h2>
       <span class="note">Ch. 09 · per medical records reviewed</span>
-    </div>
+    </summary>
     <div class="section-body nopad">
       <table class="team">
         <thead>
@@ -1604,14 +1780,16 @@
         </tbody>
       </table>
     </div>
+    </details>
   </section>
 
   <!-- ============== REFERENCES ============== -->
   <section class="section" id="ch-references">
-    <div class="section-head">
+    <details class="section-collapsible">
+    <summary class="section-head">
       <h2>Selected references</h2>
-      <span class="note">Ch. 10 · guidelines, trials, reviews</span>
-    </div>
+      <span class="note">Ch. 10 · ~40 guidelines, trials, reviews</span>
+    </summary>
     <div class="section-body">
       <ul class="refs">
         <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11717973/" target="_blank" rel="noopener">AHNS 2024 update on oral leukoplakia management — Gates et al., <em>Head & Neck</em> (key guideline)</a></li>
@@ -1659,12 +1837,13 @@
         <li><a href="https://www.cancer.gov/research/infrastructure/cancer-centers/find" target="_blank" rel="noopener">NCI-designated cancer centers — finder</a></li>
       </ul>
     </div>
+    </details>
   </section>
 
   <div class="footer-note">
     <span>Patient: Roper, Janice S. · MRN 020518503</span>
     <span>Records reviewed: 18 PDFs · 2021–2026</span>
-    <span>Compiled 05/20/2026 · build <strong>2026-05-20.8</strong> · <a href="../index.html">janroper.com</a></span>
+    <span>Compiled 05/20/2026 · build <strong>2026-05-20.9</strong> · <a href="../index.html">janroper.com</a></span>
   </div>
 
 </main>
