@@ -848,12 +848,367 @@ table.data td.right, table.data th.right { text-align: right; }
   margin-bottom: 6px;
 }
 
+/* ============================================================
+   Mobile improvements
+   ============================================================ */
+
+/* Tighter shell padding on small screens */
+@media (max-width: 600px) {
+  .shell { padding: 0 10px 40px; }
+}
+@media (max-width: 400px) {
+  .shell { padding: 0 8px 32px; }
+}
+
+/* Topbar — keep readable when wrapping */
+@media (max-width: 700px) {
+  .topbar { padding: 8px 0; }
+  .topbar .inner {
+    font-size: 10px;
+    gap: 6px;
+    padding: 0 14px;
+  }
+  .topbar .brand { font-size: 11px; }
+}
+
+/* Patient header — already stacks to 1 column at 520px; tighten sizes */
+@media (max-width: 600px) {
+  .patient-header { padding: 14px 16px; gap: 10px; margin-top: 14px; }
+  .patient-header h1 { font-size: 18px; }
+  .patient-header .demo { font-size: 11px; }
+  .patient-header .demo span { margin-right: 12px; display: inline-block; }
+  .patient-header .field-label { font-size: 9px; }
+  .patient-header .field-value { font-size: 13px; }
+  .patient-header .field-value.small { font-size: 12px; }
+}
+
+/* Status banner — stack vertically with cleaner spacing */
+@media (max-width: 700px) {
+  .status-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+  .status-banner .when {
+    margin-left: 0;
+    font-size: 10px;
+  }
+  .status-banner .indicator { margin-top: 4px; }
+}
+
+/* Advisory + glossary hint */
+@media (max-width: 600px) {
+  .advisory { padding: 10px 14px; font-size: 12px; }
+  .glossary-hint {
+    font-size: 10px;
+    padding: 5px 8px;
+    flex-wrap: wrap;
+  }
+}
+
+/* Section frame tighter */
+@media (max-width: 600px) {
+  .section { margin-top: 14px; }
+  .section-head { padding: 10px 14px; gap: 8px; flex-wrap: wrap; }
+  .section-head h2 { font-size: 12px; }
+  .section-head .note {
+    font-size: 10px;
+    margin-left: 0;
+    flex-basis: 100%;
+    line-height: 1.4;
+  }
+  .section-body { padding: 14px; }
+  .section-body.compact { padding: 10px 14px; }
+}
+
+/* Lede paragraph */
+@media (max-width: 600px) {
+  .lede-clinical { font-size: 13px; line-height: 1.55; }
+}
+
+/* Findings tiles — already 1 col at 480; tighten typography */
+@media (max-width: 600px) {
+  .finding { padding: 11px 13px; }
+  .finding .label { font-size: 9px; }
+  .finding .value { font-size: 15px; }
+  .finding .sub { font-size: 11px; }
+}
+
+/* KV definition list */
+@media (max-width: 600px) {
+  .kv {
+    grid-template-columns: 1fr;
+    gap: 2px 0;
+  }
+  .kv dt { margin-top: 8px; }
+  .kv dd { font-size: 12px; }
+}
+
+/* Data tables: horizontal scroll on mobile (preserves table layout) */
+@media (max-width: 720px) {
+  .section-body.nopad {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  table.data, table.team {
+    font-size: 12px;
+    min-width: 560px;
+  }
+  table.data th, table.data td,
+  table.team th, table.team td {
+    padding: 8px 12px;
+  }
+  table.data thead th, table.team thead th {
+    font-size: 9px;
+    white-space: nowrap;
+  }
+  /* Add a subtle scroll hint */
+  .section-body.nopad::-webkit-scrollbar {
+    height: 6px;
+  }
+  .section-body.nopad::-webkit-scrollbar-thumb {
+    background: var(--line);
+    border-radius: 3px;
+  }
+}
+
+/* Labs grid — already responsive; tighten on small */
+@media (max-width: 600px) {
+  .lab { padding: 12px 14px; gap: 5px; min-height: auto; }
+  .lab .lab-value { font-size: 18px; }
+  .lab .lab-range { font-size: 10px; }
+  .lab .lab-name { font-size: 11px; }
+}
+
+/* Timeline — keep readable when narrow */
+@media (max-width: 600px) {
+  .tl-row {
+    padding: 10px 14px;
+    grid-template-columns: 60px 16px 1fr;
+    gap: 10px;
+  }
+  .tl-row .tl-date { font-size: 10px; }
+  .tl-row .tl-body .tl-title { font-size: 13px; }
+  .tl-row .tl-body .tl-detail { font-size: 12px; }
+  .tl-row .tl-marker { width: 10px; height: 10px; margin-top: 5px; }
+}
+
+/* Recommendations — already responsive; tighter spacing */
+@media (max-width: 600px) {
+  .rec {
+    padding: 12px 14px;
+    grid-template-columns: 22px 1fr;
+    gap: 10px;
+  }
+  .rec .rec-num { font-size: 12px; }
+  .rec .rec-title { font-size: 13px; }
+  .rec .rec-detail { font-size: 12px; }
+  .rec .rec-ask { padding: 7px 9px; font-size: 11px; }
+  .rec .rec-priority { padding-top: 4px; }
+}
+
+/* Questions */
+@media (max-width: 600px) {
+  .qs .q {
+    padding: 12px 14px;
+    grid-template-columns: 22px 1fr;
+    gap: 10px;
+  }
+  .qs .q .qnum { font-size: 12px; }
+  .qs .q .qbody { font-size: 13px; line-height: 1.5; }
+  .qs .q .qmeta { font-size: 10px; }
+}
+
+/* Decision tree (family section) */
+@media (max-width: 600px) {
+  .tree-step { padding: 12px 14px; }
+  .tree-step .step-title { font-size: 13px; }
+  .tree-step .step-detail { font-size: 11px; }
+}
+
+/* Expand cards (details/summary) */
+@media (max-width: 600px) {
+  .expand-card summary {
+    padding: 12px 14px;
+    font-size: 13px;
+    gap: 10px;
+  }
+  .expand-card summary .summary-meta {
+    display: none;
+  }
+  .expand-card summary::before {
+    width: 16px;
+    height: 16px;
+    font-size: 13px;
+  }
+  .expand-content {
+    padding: 14px;
+    font-size: 12px;
+  }
+  .expand-content ul, .expand-content ol {
+    padding-left: 18px;
+  }
+}
+
+/* Deep callout */
+@media (max-width: 600px) {
+  .deep { padding: 10px 12px; font-size: 12px; }
+}
+
+/* References — already 1 col under 720px */
+@media (max-width: 600px) {
+  .refs { font-size: 11px; }
+}
+
+/* Footer */
+@media (max-width: 600px) {
+  .footer-note {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px 16px;
+    font-size: 10px;
+    gap: 6px;
+  }
+}
+
+/* ============================================================
+   Touch-friendly tooltips
+   ============================================================ */
+
+/* On touch devices, the dotted underline gets a little more affordance */
+@media (hover: none) and (pointer: coarse) {
+  .term {
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    padding-bottom: 1px;
+  }
+  /* Tooltip when toggled open via JS */
+  .term.open::after,
+  .term.open::before {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+  }
+  .term.open::after {
+    transform: translateX(-50%) translateY(-2px);
+    max-width: min(320px, calc(100vw - 32px));
+    font-size: 12px;
+  }
+  /* When the tooltip is anchored to right edge */
+  .term.open.tip-right::after {
+    transform: translateY(-2px);
+  }
+}
+
+/* ============================================================
+   Back-to-top button
+   ============================================================ */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--bone);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.25);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 200ms ease, visibility 0s linear 200ms, transform 200ms ease;
+}
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+.back-to-top:hover {
+  background: var(--info);
+  transform: translateY(-2px);
+}
+.back-to-top::before {
+  content: "↑";
+  font-family: var(--mono);
+}
+
+/* ============================================================
+   Section nav (mobile jump-to chapter)
+   ============================================================ */
+.mobile-nav {
+  display: none;
+}
+@media (max-width: 700px) {
+  .mobile-nav {
+    display: block;
+    margin: 14px 0;
+    padding: 12px 14px;
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+  }
+  .mobile-nav summary {
+    cursor: pointer;
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--info);
+    font-weight: 600;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    user-select: none;
+  }
+  .mobile-nav summary::-webkit-details-marker { display: none; }
+  .mobile-nav summary::before {
+    content: "›";
+    color: var(--info);
+    display: inline-block;
+    width: 12px;
+    transition: transform 200ms ease;
+  }
+  .mobile-nav[open] summary::before { transform: rotate(90deg); }
+  .mobile-nav .nav-list {
+    list-style: none;
+    margin: 12px 0 4px;
+    padding: 0;
+    display: grid;
+    gap: 4px;
+  }
+  .mobile-nav .nav-list a {
+    display: block;
+    padding: 8px 10px;
+    border-radius: 4px;
+    background: var(--bg-tint);
+    color: var(--ink-2);
+    font-size: 12px;
+    text-decoration: none;
+  }
+  .mobile-nav .nav-list a:hover { background: var(--bg-tint-2); }
+}
+
 /* Print */
 @media print {
   body { background: white; }
   .topbar { display: none; }
+  .back-to-top { display: none; }
+  .mobile-nav { display: none; }
   .section { break-inside: avoid; }
   .advisory { background: white !important; }
   .term { border-bottom: none; }
   .term::after, .term::before { display: none; }
+  .expand-card[open] .expand-content { display: block !important; }
+  .expand-card { background: white !important; border: 1px solid #ccc !important; }
+  details > *:not(summary) { display: block !important; }
 }

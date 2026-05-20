@@ -9,12 +9,12 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate, max-age=0">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<meta name="build-version" content="2026-05-20.7">
+<meta name="build-version" content="2026-05-20.8">
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="cancer.css?v=2026-05-20.7">
+<link rel="stylesheet" href="cancer.css?v=2026-05-20.8">
 <script>
 // Light-touch cache-buster: if the page came from cache and the user hits reload,
 // force a fresh fetch of the HTML by appending a timestamp once per session.
@@ -79,12 +79,32 @@
   <div class="advisory">
     <strong>Read me.</strong> This is a layperson-readable synthesis of the medical records on file as of May 2026 plus published literature. It is for personal use to support conversations with your medical team. It is <strong>not medical advice</strong> and does not replace direct guidance from your oncology, surgical, dental, and primary care providers.
     <div style="margin-top: 8px;">
-      <span class="glossary-hint">Glossary · hover any <span class="demo">underlined term</span> for a plain-language explanation</span>
+      <span class="glossary-hint">Glossary · hover or tap any <span class="demo">underlined term</span> for a plain-language explanation</span>
     </div>
   </div>
 
+  <!-- Mobile chapter nav -->
+  <details class="mobile-nav">
+    <summary>Jump to chapter</summary>
+    <ul class="nav-list">
+      <li><a href="#ch-findings">Key findings at a glance</a></li>
+      <li><a href="#ch-diagnosis">Ch. 01 · Diagnosis summary</a></li>
+      <li><a href="#ch-biopsy">Ch. 02a · Current biopsy</a></li>
+      <li><a href="#ch-research">Ch. 02b · Deep-dive literature</a></li>
+      <li><a href="#ch-imaging">Ch. 03 · Most recent imaging</a></li>
+      <li><a href="#ch-labs">Ch. 04 · Latest labs</a></li>
+      <li><a href="#ch-genomics">Ch. 05 · Tumor genomics</a></li>
+      <li><a href="#ch-hypothesis">Ch. 05b · Working hypothesis</a></li>
+      <li><a href="#ch-recommendations">Ch. 06 · Recommendations</a></li>
+      <li><a href="#ch-questions">Ch. 07 · Doctor questions</a></li>
+      <li><a href="#ch-family">Ch. 08 · For the family</a></li>
+      <li><a href="#ch-team">Ch. 09 · Care team</a></li>
+      <li><a href="#ch-references">Ch. 10 · References</a></li>
+    </ul>
+  </details>
+
   <!-- ============== KEY FINDINGS ============== -->
-  <section class="section">
+  <section class="section" id="ch-findings">
     <div class="section-head">
       <h2>Key findings at a glance</h2>
       <span class="note">4 critical · 3 follow-up · 1 advisory</span>
@@ -141,7 +161,7 @@
   </section>
 
   <!-- ============== DIAGNOSIS SUMMARY ============== -->
-  <section class="section">
+  <section class="section" id="ch-diagnosis">
     <div class="section-head">
       <h2>Diagnosis summary</h2>
       <span class="note">Ch. 01</span>
@@ -164,7 +184,7 @@
   </section>
 
   <!-- ============== CURRENT BIOPSY FINDING ============== -->
-  <section class="section">
+  <section class="section" id="ch-biopsy">
     <div class="section-head">
       <h2>Current biopsy finding · UCLA SSW-26-05090</h2>
       <span class="note">Ch. 02a · the most recent and most actionable item</span>
@@ -340,7 +360,7 @@
   </section>
 
   <!-- ============== DEEP DIVE — WHAT THE 2024–2026 LITERATURE SAYS ============== -->
-  <section class="section">
+  <section class="section" id="ch-research">
     <div class="section-head">
       <h2>Deep-dive · what the latest literature says about this biopsy</h2>
       <span class="note">Ch. 02b · evidence digest, 2024–2026</span>
@@ -457,7 +477,7 @@
   </section>
 
   <!-- ============== CURRENT IMAGING ============== -->
-  <section class="section">
+  <section class="section" id="ch-imaging">
     <div class="section-head">
       <h2>Most recent imaging</h2>
       <span class="note">Ch. 03 · imaging only — see Ch. 02a for the biopsy</span>
@@ -501,7 +521,7 @@
   </section>
 
   <!-- ============== LATEST LABS ============== -->
-  <section class="section">
+  <section class="section" id="ch-labs">
     <div class="section-head">
       <h2>Latest labs · 05/04/2026</h2>
       <span class="note">Ch. 04 · drawn 8:16 AM, Cedars-Sinai / Quest</span>
@@ -648,7 +668,7 @@
   </section>
 
   <!-- ============== TUMOR GENOMICS ============== -->
-  <section class="section">
+  <section class="section" id="ch-genomics">
     <div class="section-head">
       <h2>Tumor genomics · Caris MI Tumor Seek+ · 01/19/2024</h2>
       <span class="note">Ch. 05 · specimen: right cervical LN (23-33210-LAXS-A4)</span>
@@ -746,7 +766,7 @@
   </section>
 
   <!-- ============== WORKING HYPOTHESIS ============== -->
-  <section class="section">
+  <section class="section" id="ch-hypothesis">
     <div class="section-head">
       <h2>Working hypothesis · what might be driving the pattern</h2>
       <span class="note">Ch. 05b · synthesis from the records · not consensus, not medical advice</span>
@@ -1028,7 +1048,7 @@
   </section>
 
   <!-- ============== ACTIVE CONCERNS / RECOMMENDATIONS ============== -->
-  <section class="section">
+  <section class="section" id="ch-recommendations">
     <div class="section-head">
       <h2>Recommendations — prioritized</h2>
       <span class="note">Ch. 06 · 11 items · 4 high-priority</span>
@@ -1139,7 +1159,7 @@
   </section>
 
   <!-- ============== QUESTIONS FOR DOCTORS ============== -->
-  <section class="section">
+  <section class="section" id="ch-questions">
     <div class="section-head">
       <h2>Questions to bring to the next appointment</h2>
       <span class="note">Ch. 07 · 13 questions · top 3 are the expert-level reframing questions</span>
@@ -1242,7 +1262,7 @@
   </section>
 
   <!-- ============== FAMILY IMPLICATIONS ============== -->
-  <section class="section">
+  <section class="section" id="ch-family">
     <div class="section-head">
       <h2>What this means for the family</h2>
       <span class="note">Ch. 08 · hereditary risk for Jan's daughter and son · click each card to expand</span>
@@ -1550,7 +1570,7 @@
   </section>
 
   <!-- ============== CARE TEAM ============== -->
-  <section class="section">
+  <section class="section" id="ch-team">
     <div class="section-head">
       <h2>Care team on file</h2>
       <span class="note">Ch. 09 · per medical records reviewed</span>
@@ -1587,7 +1607,7 @@
   </section>
 
   <!-- ============== REFERENCES ============== -->
-  <section class="section">
+  <section class="section" id="ch-references">
     <div class="section-head">
       <h2>Selected references</h2>
       <span class="note">Ch. 10 · guidelines, trials, reviews</span>
@@ -1644,10 +1664,75 @@
   <div class="footer-note">
     <span>Patient: Roper, Janice S. · MRN 020518503</span>
     <span>Records reviewed: 18 PDFs · 2021–2026</span>
-    <span>Compiled 05/20/2026 · build <strong>2026-05-20.7</strong> · <a href="../index.html">janroper.com</a></span>
+    <span>Compiled 05/20/2026 · build <strong>2026-05-20.8</strong> · <a href="../index.html">janroper.com</a></span>
   </div>
 
 </main>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top"></button>
+
+<script>
+(function() {
+  // ---- Tooltip touch/click support ----
+  // Tap a .term to toggle its tooltip; tap outside to close.
+  // Also auto-flip tooltip to right-anchored if too close to viewport edge.
+  document.addEventListener('click', function(e) {
+    var term = e.target.closest('.term');
+    var openTerms = document.querySelectorAll('.term.open');
+    openTerms.forEach(function(t) {
+      if (t !== term) t.classList.remove('open');
+    });
+    if (term) {
+      e.preventDefault();
+      e.stopPropagation();
+      // Position check before opening
+      if (!term.classList.contains('open')) {
+        var rect = term.getBoundingClientRect();
+        var vw = window.innerWidth;
+        term.classList.remove('tip-right', 'tip-left');
+        if (rect.right > vw - 60) term.classList.add('tip-right');
+      }
+      term.classList.toggle('open');
+    }
+  });
+
+  // Close any open tooltip on escape
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.term.open').forEach(function(t) {
+        t.classList.remove('open');
+      });
+    }
+  });
+
+  // ---- Back-to-top button ----
+  var btn = document.getElementById('backToTop');
+  var threshold = 600;
+  function checkScroll() {
+    if (window.scrollY > threshold) {
+      btn.classList.add('show');
+    } else {
+      btn.classList.remove('show');
+    }
+  }
+  window.addEventListener('scroll', checkScroll, { passive: true });
+  btn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  checkScroll();
+
+  // ---- Smooth-scroll mobile-nav links and auto-close menu ----
+  var mobileNav = document.querySelector('.mobile-nav');
+  if (mobileNav) {
+    mobileNav.querySelectorAll('.nav-list a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        // Let the browser do the scroll; just close the dropdown
+        setTimeout(function() { mobileNav.open = false; }, 100);
+      });
+    });
+  }
+})();
+</script>
 
 </body>
 </html>
