@@ -5,11 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Patient Health Summary — J. Roper</title>
 <meta name="robots" content="noindex, nofollow">
+<!-- Cache control — make sure browsers re-check for updates -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate, max-age=0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="build-version" content="2026-05-20.4">
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="cancer.css">
+<link rel="stylesheet" href="cancer.css?v=2026-05-20.4">
+<script>
+// Light-touch cache-buster: if the page came from cache and the user hits reload,
+// force a fresh fetch of the HTML by appending a timestamp once per session.
+(function() {
+  try {
+    var url = new URL(window.location.href);
+    if (!url.searchParams.has('v') && performance && performance.getEntriesByType) {
+      var nav = performance.getEntriesByType('navigation')[0];
+      if (nav && nav.type === 'reload') {
+        url.searchParams.set('v', Date.now());
+        window.location.replace(url.toString());
+      }
+    }
+  } catch (e) { /* no-op */ }
+})();
+</script>
 </head>
 <body>
 
@@ -1227,7 +1248,7 @@
   <div class="footer-note">
     <span>Patient: Roper, Janice S. · MRN 020518503</span>
     <span>Records reviewed: 18 PDFs · 2021–2026</span>
-    <span>Compiled 05/20/2026 · <a href="../index.html">janroper.com</a></span>
+    <span>Compiled 05/20/2026 · build <strong>2026-05-20.4</strong> · <a href="../index.html">janroper.com</a></span>
   </div>
 
 </main>
