@@ -9,12 +9,12 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate, max-age=0">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<meta name="build-version" content="2026-05-20.5">
+<meta name="build-version" content="2026-05-20.6">
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="cancer.css?v=2026-05-20.5">
+<link rel="stylesheet" href="cancer.css?v=2026-05-20.6">
 <script>
 // Light-touch cache-buster: if the page came from cache and the user hits reload,
 // force a fresh fetch of the HTML by appending a timestamp once per session.
@@ -1160,7 +1160,13 @@
       <span class="note">Ch. 08 · hereditary risk for Jan's daughter and son · click each card to expand</span>
     </div>
     <div class="section-body">
-      <p class="lede-clinical">Two of the mutations in Jan's tumor — <strong>TP53 R213P</strong> and <strong>CDKN2A R80*</strong> — have established hereditary forms. The variant fractions (34% and 36%) are consistent with — but don't prove — a germline origin. Combined with her four primaries and her mother's melanoma + uterine + cervical precancer history, the probability that at least one is inherited is meaningful. <strong>Formal germline testing on Jan is the trigger for everything below.</strong></p>
+      <p class="lede-clinical">Two of the mutations in Jan's tumor — <strong>TP53 R213P</strong> and <strong>CDKN2A R80*</strong> — have established hereditary forms. The variant fractions (34% and 36%) are consistent with — but don't prove — a germline origin. Combined with her four primaries and her mother's melanoma + uterine + cervical precancer history, the probability that at least one is inherited is meaningful.</p>
+      <p class="lede-clinical" style="margin-top: 10px;"><strong>Three generations are affected if she's a carrier:</strong> Jan → her <strong>daughter (35, has a 1-year-old son)</strong> → her son. Two specific consequences of those ages:</p>
+      <ul style="font-size: 14px; color: var(--text); padding-left: 22px; line-height: 1.7; margin-top: 8px;">
+        <li><strong>If LFS is present, the daughter is already overdue</strong> for breast MRI surveillance — that protocol starts at age 20.</li>
+        <li><strong>The grandson opens a third generation</strong>. His prior risk of carrying the variant is ~25% (50% per generation), and pediatric LFS surveillance protocols do exist.</li>
+      </ul>
+      <p class="lede-clinical" style="margin-top: 10px;"><strong>Formal germline testing on Jan is the trigger for everything below.</strong></p>
     </div>
 
     <!-- Decision tree -->
@@ -1174,13 +1180,13 @@
         </div>
         <div class="tree-step pos">
           <div class="step-num">Step 2a · if positive</div>
-          <div class="step-title">Cascade test the kids</div>
-          <div class="step-detail">Cheap single-variant test (~$100–300) since the family variant is now known. Each child has a 50% chance of carrying it.</div>
+          <div class="step-title">Cascade test daughter (35) and son (39)</div>
+          <div class="step-detail">Cheap single-variant test (~$100–300) since the family variant is known. Each adult child has a 50% chance of carrying. If either tests positive, surveillance protocols start <em>immediately</em>.</div>
         </div>
-        <div class="tree-step neg">
-          <div class="step-num">Step 2b · if negative</div>
-          <div class="step-title">Lower urgency, still some action</div>
-          <div class="step-detail">Family history alone still warrants baseline awareness, annual skin checks, and informed primary care. Genetics counselor can guide depth.</div>
+        <div class="tree-step pos">
+          <div class="step-num">Step 2c · if daughter is positive</div>
+          <div class="step-title">Pediatric question for the grandson (1)</div>
+          <div class="step-detail">Genetics counselor walks parents through whether/when to test a 1-year-old. For LFS specifically, earlier testing is increasingly supported because pediatric surveillance can save lives.</div>
         </div>
       </div>
     </div>
@@ -1286,47 +1292,158 @@
 
       <details class="expand-card">
         <summary>
-          <span class="summary-text">Daughter-specific considerations</span>
-          <span class="summary-meta">Breast MRI · reproductive planning</span>
+          <span class="summary-text">Daughter (35) — already past several LFS surveillance start dates</span>
+          <span class="summary-meta">Postpartum window · breast MRI overdue if positive</span>
         </summary>
         <div class="expand-content">
+          <p><strong>At 35 with a 1-year-old, she's at a window where multiple things matter at once — the timing makes her case the most time-sensitive of the three adults.</strong></p>
+
+          <h4>If LFS confirmed</h4>
           <ul>
-            <li><strong>If LFS confirmed in her —</strong> annual <strong>breast MRI starting age 20</strong> is the single most important surveillance step. Women with LFS have ~50% breast cancer risk by age 30, often very young. Breast MRI screening catches cancers when they're still curable. <em>Mammography is generally avoided in LFS carriers due to radiation exposure.</em></li>
-            <li><strong>Reproductive considerations —</strong> if she's planning children and tests positive, <strong><span class="term" data-tip="Preimplantation Genetic Diagnosis — a technique used with IVF where embryos are tested before implantation. Allows selection of embryos that don't carry a known hereditary cancer variant. Available for LFS, CDKN2A, BRCA, and many other syndromes.">preimplantation genetic diagnosis (PGD)</span></strong> is an option to avoid passing on the variant. Worth being aware of even years in advance — it requires IVF and adds time to family planning.</li>
-            <li><strong>Hormone-related considerations —</strong> if positive, discuss any future hormonal birth control or HRT with a genetics-aware provider. The TP53 + estrogen interaction is biologically real.</li>
-            <li><strong>If CDKN2A confirmed —</strong> annual dermatology starting now, plus eventually annual pancreatic surveillance from age 40. Aggressive sun protection from day one.</li>
+            <li><strong>Annual breast MRI is already overdue.</strong> The Toronto Protocol starts breast MRI at age 20 in women with LFS — she's 15 years past that start point. ~50% of women with LFS develop breast cancer by age 30. <em>If she tests positive, breast MRI within 30 days of result.</em></li>
+            <li><strong>Postpartum complications for breast imaging</strong> — postpartum/breastfeeding tissue can complicate MRI interpretation. Ask whether the radiologist has experience reading lactation-period MRIs. Don't let this delay starting; just brief the radiologist.</li>
+            <li><strong>Mammography is generally avoided in LFS carriers</strong> due to radiation. MRI is the imaging of record.</li>
+            <li><strong>Whole-body MRI</strong> (the rest of the Toronto Protocol) — also overdue. Coordinate baseline within the same window as the breast MRI.</li>
+            <li><strong>Abdominal/pelvic ultrasound</strong> every 3–4 months once on protocol.</li>
+            <li><strong>Discuss any future hormonal contraception or HRT</strong> with a genetics-aware provider before resuming or starting. The TP53 + estrogen interaction is biologically real.</li>
+          </ul>
+
+          <h4>If CDKN2A confirmed</h4>
+          <ul>
+            <li><strong>Annual dermatology now</strong> with a high-risk-aware dermatologist. Full-body skin map; photographs of suspect lesions for serial comparison.</li>
+            <li><strong>Pancreatic surveillance starting at age 40</strong> (5 years away) — alternating EUS and MRI/MRCP per CAPS Consortium protocol.</li>
+            <li><strong>Strict daily SPF + sun-protective clothing from now on</strong>; no tanning beds ever.</li>
+          </ul>
+
+          <h4>Reproductive planning — particularly relevant now</h4>
+          <ul>
+            <li><strong>If she's planning more children</strong> and tests positive, <span class="term" data-tip="Preimplantation Genetic Diagnosis — a technique used with IVF where embryos are tested before implantation. Allows selection of embryos that don't carry a known hereditary cancer variant.">PGD via IVF</span> is an option to avoid passing the variant to future children. Requires planning (months of cycle prep + IVF), so the decision can't be left to "later."</li>
+            <li><strong>Her 1-year-old son</strong> is a separate question — see the next card.</li>
           </ul>
         </div>
       </details>
 
       <details class="expand-card">
         <summary>
-          <span class="summary-text">Son-specific considerations</span>
-          <span class="summary-meta">Different cancer spectrum · same inheritance question for his own kids</span>
+          <span class="summary-text">Grandson (1 year old) — the pediatric question</span>
+          <span class="summary-meta">Prior probability ~25% · pediatric protocols exist</span>
         </summary>
         <div class="expand-content">
+          <p><strong>This is the gentlest, most uncertain branch of the tree.</strong> Genetic testing of a 1-year-old is a different conversation than testing an adult — both medically and emotionally — and the right people to lead it are a pediatric genetic counselor plus his pediatrician.</p>
+
+          <h4>The risk math</h4>
           <ul>
-            <li><strong>If LFS confirmed —</strong> different dominant cancer spectrum than for women. Sarcomas (bone, soft-tissue), brain tumors, leukemias, colon cancer are the higher-risk slots. Same Toronto Protocol applies — annual whole-body MRI, brain MRI, abdominal ultrasound, labs.</li>
-            <li><strong>If CDKN2A confirmed —</strong> same melanoma + pancreatic surveillance as daughter.</li>
-            <li><strong>For his own future children —</strong> same 50% inheritance question per pregnancy. Same PGD option available if he and a partner want to use it.</li>
-            <li><strong>Testicular self-awareness —</strong> not LFS-specific, but worth maintaining baseline awareness given the family pattern.</li>
+            <li><strong>If Jan is a carrier</strong>, her daughter has a 50% chance. If the daughter is a carrier, the grandson has a 50% chance. <strong>Prior probability without further testing: ~25%.</strong></li>
+            <li>Once the daughter is tested, this collapses to either 0% (mother negative — no further concern) or 50% (mother positive — pediatric decision).</li>
           </ul>
+
+          <h4>If Jan is positive but daughter has not yet tested</h4>
+          <ul>
+            <li>Get the daughter's cascade test first — it's almost certainly faster and clearer than testing the grandson directly.</li>
+            <li>If the daughter is negative, the grandson is off the chart for that variant.</li>
+            <li>If the daughter is positive, the pediatric question opens.</li>
+          </ul>
+
+          <h4>If the daughter tests positive — pediatric LFS testing considerations</h4>
+          <ul>
+            <li><strong>For most adult-onset hereditary cancer syndromes, pediatric testing is deferred</strong> until the child can assent (typically age 7+). LFS is increasingly treated as an exception because <strong>childhood cancers do occur</strong> in LFS — sarcomas, adrenocortical carcinoma, brain tumors, leukemia — and pediatric surveillance saves lives.</li>
+            <li>The American College of Medical Genetics and the National Comprehensive Cancer Network now support testing children for LFS when a family variant is known, with appropriate counseling.</li>
+            <li><strong>Pediatric Toronto Protocol</strong> (if grandson tests positive):
+              <ul>
+                <li>Abdominal ultrasound every 3–4 months from infancy</li>
+                <li>Annual whole-body MRI typically starting age 3–5 (when sedation tolerance allows)</li>
+                <li>Annual brain MRI from age 3–5</li>
+                <li>Physical exam every 3–4 months</li>
+                <li>Comprehensive labs every 6 months</li>
+              </ul>
+            </li>
+            <li><strong>Radiation avoidance from day one</strong> if positive — no elective CT, no dental X-rays unless clearly necessary, no routine chest X-rays.</li>
+          </ul>
+
+          <h4>If the daughter tests positive for CDKN2A</h4>
+          <ul>
+            <li>Childhood melanoma is rare; pediatric testing for CDKN2A typically deferred until adolescence.</li>
+            <li>What matters from infancy: <strong>aggressive sun protection</strong> for the grandson regardless of test status. Sun damage in childhood drives melanoma risk decades later.</li>
+            <li>Decision about testing him for CDKN2A can wait until early teens when surveillance would actually begin.</li>
+          </ul>
+
+          <div class="deep" style="margin-top: 14px;">
+            <h5>One thing to know going in</h5>
+            Pediatric genetic testing decisions are sensitive. There is no single right answer about timing — it depends on family values, the specific syndrome, surveillance protocols available, and what testing would change. <strong>Push for a pediatric genetic counselor referral</strong> as soon as the daughter's result is in, so the family has expert support for this specific conversation.
+          </div>
         </div>
       </details>
 
       <details class="expand-card">
         <summary>
-          <span class="summary-text">This week — concrete action items</span>
-          <span class="summary-meta">Practical · time-bounded</span>
+          <span class="summary-text">Son (39, very healthy) — past several surveillance start ages</span>
+          <span class="summary-meta">Healthy ≠ low-risk · approaching CDKN2A pancreatic age</span>
         </summary>
         <div class="expand-content">
+          <p><strong>Being symptom-free at 39 is good but does not change the inherited risk.</strong> LFS carriers can be completely healthy until they're not — that is precisely why surveillance exists. If he's a carrier and asymptomatic, the right move is to <em>stay</em> that way by catching anything early. If he's not a carrier, surveillance comes off the table.</p>
+
+          <h4>If LFS confirmed</h4>
+          <ul>
+            <li>Different dominant cancer spectrum than for women — <strong>sarcomas (bone and soft-tissue), brain tumors, colon cancer, leukemia/lymphoma</strong> are the higher-risk slots. Breast cancer in male LFS carriers is rare but not zero.</li>
+            <li><strong>Toronto Protocol</strong> — annual whole-body MRI, annual brain MRI, abdominal/pelvic ultrasound every 3–4 months, comprehensive labs every 6 months. He's been at elevated risk for years already without surveillance — the goal is to start now, not to retroactively regret the gap.</li>
+            <li><strong>Colonoscopy</strong> — LFS carriers are recommended to start colon cancer screening at age 25 (or 5 years before earliest family case, whichever is sooner). At 39 he's well past that start point.</li>
+            <li><strong>Radiation avoidance going forward</strong> — MRI/ultrasound over CT whenever clinically reasonable.</li>
+          </ul>
+
+          <h4>If CDKN2A confirmed</h4>
+          <ul>
+            <li>Same melanoma + pancreatic surveillance as daughter.</li>
+            <li><strong>Pancreatic surveillance starting at age 40</strong> is only a year away — he's right at the start point. Alternating EUS and MRI/MRCP per CAPS Consortium protocol.</li>
+            <li>Annual full-skin dermatology now. Aggressive sun protection.</li>
+          </ul>
+
+          <h4>For his own future family</h4>
+          <ul>
+            <li>If he has or plans children, same 50% inheritance question per pregnancy.</li>
+            <li><span class="term" data-tip="Preimplantation Genetic Diagnosis — embryos screened during IVF so non-carriers can be selected. Available for LFS, CDKN2A, BRCA, and many other syndromes.">PGD via IVF</span> is available if he and a partner want to avoid passing the variant.</li>
+          </ul>
+
+          <div class="deep" style="margin-top: 14px;">
+            <h5>One specific note for healthy 30-somethings</h5>
+            The most common failure mode for asymptomatic carriers is "I feel fine, I'll get to surveillance later." That delay is where preventable cancers happen. If the test is positive, the surveillance protocol starts the next available calendar opening — not "after the next quarter at work."
+          </div>
+        </div>
+      </details>
+
+      <details class="expand-card">
+        <summary>
+          <span class="summary-text">This week — concrete action items, ranked by urgency</span>
+          <span class="summary-meta">Daughter at 35 with infant raises the time-pressure</span>
+        </summary>
+        <div class="expand-content">
+          <h4>Now — this week</h4>
           <ol>
-            <li><strong>Push for Jan's germline test now.</strong> This is the single most consequential thing on the chart for the family. UCLA Cancer Genetics is the right referral. Insurance usually covers it given her history (NCCN/ACS criteria met multiple times over).</li>
-            <li><strong>Both kids: book a dermatologist appointment for the next 60–90 days.</strong> Full-skin check. Covered as preventive care by most plans.</li>
-            <li><strong>Both kids: write up the family history page.</strong> Jan's 4 primaries + dates + sites; her mother's melanoma, uterine cancer, cervical precancer + ages. Save as a PDF you can text to any new provider.</li>
-            <li><strong>Both kids: identify a PCP who will engage</strong> with the family-history conversation, not just stamp the form.</li>
-            <li><strong>Hold off on the kids' own genetic testing until Jan's result is in.</strong> The math: cascade testing for a known variant is ~$150. Full hereditary cancer panel without a known family variant is $250–500. Wait two months, save money, get better data.</li>
+            <li><strong>Push for Jan's germline test.</strong> Single most consequential step. UCLA Cancer Genetics is the right referral. Insurance almost certainly covers it (NCCN criteria met several times over). Ask the genetics counselor to use a <strong>non-blood specimen (cultured skin fibroblasts)</strong> to rule out clonal hematopoiesis as a confounder.</li>
+            <li><strong>Daughter:</strong> identify a high-risk-aware OB/breast-imaging center now. If Jan's test comes back positive for TP53, breast MRI should be scheduled within 30 days — knowing where you'll go saves weeks. (UCLA Health, Cedars-Sinai Saul and Joyce Brandman, and City of Hope all have high-risk breast programs.)</li>
+            <li><strong>Daughter:</strong> if currently breastfeeding, brief future radiologist about postpartum status — it affects MRI interpretation but doesn't preclude it.</li>
+            <li><strong>Both kids: book a dermatologist appointment for the next 30 days.</strong> Full-skin baseline. Covered as preventive care.</li>
+            <li><strong>Both kids: identify a PCP</strong> who will engage with the family-history conversation rather than just stamp the form.</li>
           </ol>
+
+          <h4>Within the month</h4>
+          <ol style="counter-reset: list 5;">
+            <li><strong>Write the family history page as a single PDF</strong> — Jan's 4 primaries with dates/sites; her mother's melanoma + uterine + cervical precancer + ages; daughter age and parity; son age and health status. Text-able. Reused across every new provider for the next 30 years.</li>
+            <li><strong>Son:</strong> if he hasn't had a colonoscopy and turns out to be LFS-positive, he is 14 years past the recommended start age (25 in LFS carriers). Get this on the radar even pre-result so the scheduling is teed up.</li>
+            <li><strong>Daughter:</strong> if she's considering another pregnancy, have an early conversation with a fertility specialist who understands <span class="term" data-tip="Preimplantation Genetic Diagnosis — embryos tested during IVF so only non-carriers can be selected for implantation. Available for LFS, CDKN2A, BRCA, and many others.">PGD</span>. Knowing the timeline (months of prep) helps decision-making once results are in.</li>
+          </ol>
+
+          <h4>Once Jan's result is in</h4>
+          <ol style="counter-reset: list 8;">
+            <li><strong>If positive:</strong> cascade test daughter and son immediately. ~$100–300 each. Result usually 2–4 weeks.</li>
+            <li><strong>If daughter is positive:</strong> her surveillance starts within 30 days (breast MRI + whole-body MRI baseline), <em>and</em> the pediatric genetic counselor conversation about the grandson begins.</li>
+            <li><strong>If son is positive:</strong> his surveillance starts within 30 days (Toronto Protocol or CAPS, depending on which gene).</li>
+            <li><strong>Hold off on the kids' broad-panel genetic testing until Jan's result is in.</strong> Cascade testing for a known family variant is much cheaper and more informative than a fresh full panel.</li>
+          </ol>
+
+          <div class="deep" style="margin-top: 14px;">
+            <h5>Why the daughter's case is the most time-sensitive</h5>
+            She's 35. The Toronto Protocol begins breast MRI at 20. If she's a carrier, she has 15 years of missed surveillance to make up for in one appointment. Setting up the imaging pipeline <em>before</em> the test result is the single biggest time-saver here.
+          </div>
         </div>
       </details>
 
@@ -1439,7 +1556,7 @@
   <div class="footer-note">
     <span>Patient: Roper, Janice S. · MRN 020518503</span>
     <span>Records reviewed: 18 PDFs · 2021–2026</span>
-    <span>Compiled 05/20/2026 · build <strong>2026-05-20.5</strong> · <a href="../index.html">janroper.com</a></span>
+    <span>Compiled 05/20/2026 · build <strong>2026-05-20.6</strong> · <a href="../index.html">janroper.com</a></span>
   </div>
 
 </main>
